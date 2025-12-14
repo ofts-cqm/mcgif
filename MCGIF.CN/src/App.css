@@ -1,0 +1,219 @@
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.text-input {
+    --show-background-color: rgba(173, 216, 230);
+    --theme-color: rgb(83, 146, 239);
+    --theme-color-alpha: rgba(83, 146, 239, .3);
+    --theme-shadow: 0 4px 15px rgba(83, 146, 239, .3);
+    --white: #fff;
+    --error-color: rgb(242, 116, 116);
+    --success-color: rgb(96, 191, 128);
+    --warning-color: rgb(240, 194, 86);
+    --footer-color: rgb(160, 175, 206);
+    --footer-bg: rgb(236, 242, 251);
+    --footer-hover: rgb(102, 113, 133);
+    --radius-sm: 5px;
+    --radius-md: 10px;
+    --radius-lg: 15px;
+    --transition-normal: .5s;
+    --transition-fast: .3s;
+    --grid-3-col: repeat(3, 1fr);
+    height: 55px;
+    width: 100%;
+    margin: 20px 0;
+    font-size: 18px;
+    padding: 10px;
+    text-align: center;
+    font-family: Pixel;
+    box-sizing: border-box;
+    border-radius: var(--radius-sm);
+    transition: all var(--transition-fast);
+    border: 2px solid var(--theme-color);
+    box-shadow: var(--theme-shadow);
+}
+
+.text-input:focus {
+    outline: none;
+    box-shadow: 0 4px 30px #5392ef80
+}
+
+/* From Uiverse.io by adamgiebl */
+.gen {
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    padding: 0.7em 2em;
+    border: 3px solid rgb(83, 146, 239);
+    border-radius: 2px;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+    color: rgb(83, 146, 239);
+    text-decoration: none;
+    transition: 0.3s ease all;
+    z-index: 1;
+    max-width: 60%;
+    margin-left: 40%;
+}
+
+    .gen:before {
+        transition: 0.5s all ease;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        right: 50%;
+        bottom: 0;
+        opacity: 0;
+        content: '';
+        background-color: #5392ef80;
+        z-index: -1;
+    }
+
+    .gen:hover, .gen:focus {
+        color: white;
+    }
+
+        .gen:hover:before, .gen:focus:before {
+            transition: 0.5s all ease;
+            left: 0;
+            right: 0;
+            opacity: 1;
+        }
+
+    .gen:active {
+        transform: scale(0.9);
+    }
+
+/* From Uiverse.io by vinodjangid07 */
+.Btn {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background-color: rgb(200, 200, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    transition-duration: .3s;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.11);
+}
+
+.svgIcon {
+    fill: rgb(150, 150, 200);
+}
+
+.icon2 {
+    width: 18px;
+    height: 5px;
+    border-bottom: 2px solid rgb(150, 150, 200);
+    border-left: 2px solid rgb(150, 150, 200);
+    border-right: 2px solid rgb(150, 150, 200);
+}
+
+.tooltip {
+    position: absolute;
+    right: -105px;
+    opacity: 0;
+    background-color: rgb(12, 12, 12);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: .2s;
+    pointer-events: none;
+    letter-spacing: 0.5px;
+}
+
+    .tooltip::before {
+        position: absolute;
+        content: "";
+        width: 10px;
+        height: 10px;
+        background-color: rgb(12, 12, 12);
+        background-size: 1000%;
+        background-position: center;
+        transform: rotate(45deg);
+        left: -5%;
+        transition-duration: .3s;
+    }
+
+.Btn:hover .tooltip {
+    opacity: 1;
+    transition-duration: .3s;
+}
+
+.Btn:hover {
+    background-color: rgb(150, 150, 255);
+    transition-duration: .3s;
+}
+
+    .Btn:hover .icon2 {
+        border-bottom: 2px solid rgb(235, 235, 235);
+        border-left: 2px solid rgb(235, 235, 235);
+        border-right: 2px solid rgb(235, 235, 235);
+    }
+
+    .Btn:hover .svgIcon {
+        fill: rgb(255, 255, 255);
+        animation: slide-in-top 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    }
+
+@keyframes slide-in-top {
+    0% {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
