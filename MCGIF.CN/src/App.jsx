@@ -70,7 +70,7 @@ export default function App() {
 
         const parsedBG = transparentBG ? "0x00000000" : background.replace("#", "0x");
         const parsedLight = light.replace("#", "0x");
-        let args = `?bg=${parsedBG}&light=${parsedLight}&head=${headSize}&x=${1 / speed * 20}&y=${pitch}`;
+        let args = `bg=${parsedBG}&light=${parsedLight}&head=${headSize}&x=${1 / speed * 20}&y=${pitch}`;
 
         if (slim !== 0) {
             args += `&t=${slim === 2}`;
@@ -80,7 +80,7 @@ export default function App() {
             args += "&duration=" + (Math.round((100 / speed) / 10) * 10).toString();
         } else args += "&duration=100"
 
-        fetch("http://localhost:5173/api/render/name/" + userId + "/" + genContent + args).then(parseGen);
+        fetch(`http://localhost:3001/api/render/?name=${userId}&pose=${genContent}&${args}`).then(parseGen);
     }
 
     function handleDownload() {
