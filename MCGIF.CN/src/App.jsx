@@ -1,5 +1,6 @@
 ﻿import './App.css'
-import { Box, Paper, Grid, Divider, Stack, Alert, Typography } from '@mui/material';
+import { FormGroup, Button, Checkbox, FormControlLabel, Slider, Paper, Grid, Divider, Stack, Alert, Typography } from '@mui/material';
+import { MuiColorInput } from 'mui-color-input'
 import { useState } from "react";
 import OptionItem from './OptionItem';
 import ContentOption from './ContentOption';
@@ -19,6 +20,19 @@ export default function App() {
     const [userId, setUserId] = useState("");
     const [lastGen, setLastGen] = useState(new Date().getTime());
     const [isStatic, setIsStatic] = useState(false);
+    const [background, setBackground] = useState('#ffffff');
+    const [transparentBG, setTransparentBG] = useState(false);
+    const [light, setLight] = useState('#ffffff');
+    const [headSize, setHeadSize] = useState(1);
+    const [speed, setSpeed] = useState(1);
+    const [pitch, setPitch] = useState(0);
+    const [slim, setSlim] = useState(0);
+
+    const states = [
+        { label: "默认", value: 0 },
+        { label: "标准", value: 1 },
+        { label: "瘦", value: 2 },
+    ];
 
     async function parseGen(res) {
         try {
@@ -53,7 +67,20 @@ export default function App() {
         setImgSrc("w")
         setErrorMsg("")
         setWarnMsg("")
-        fetch("http://localhost:5173/api/render/name/" + userId + "/" + genContent + "?bg=0xA7A7FF&light=0xF7F7FF").then(parseGen);
+
+        const parsedBG = transparentBG ? "0x00000000" : background.replace("#", "0x");
+        const parsedLight = light.replace("#", "0x");
+        let args = `?bg=${parsedBG}&light=${parsedLight}&head=${headSize}&x=${1 / speed * 20}&y=${pitch}`;
+
+        if (slim !== 0) {
+            args += `&t=${slim === 2}`;
+        }
+
+        if (genContent === "sneak") {
+            args += "&duration=" + (Math.round((100 / speed) / 10) * 10).toString();
+        } else args += "&duration=100"
+
+        fetch("http://localhost:5173/api/render/name/" + userId + "/" + genContent + args).then(parseGen);
     }
 
     function handleDownload() {
@@ -71,6 +98,10 @@ export default function App() {
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
+    }
+
+    function handleSlim() {
+        setSlim((slim + 1) % states.length);
     }
 
     return (
@@ -119,23 +150,63 @@ export default function App() {
                         </Divider>
 
 
-                        <OptionItem name="背景颜色：">
-                            <Typography>还没设置好</Typography>
+                        <OptionItem name="背景颜色：" disabled={false}>
+                            <Stack direction="row" sx={{
+                                justifyContent: "flex-start",
+                                alignItems: "center",
+                            }}>
+                                <MuiColorInput format="hex" value={background} onChange={(v) => setBackground(v)} sx={{ mr: 2 }} style={
+                                    transparentBG ? {
+                                        pointerEvents: "none",
+                                        opacity: 0.5,
+                                    } : {}
+                                } />
+                                <FormGroup>
+                                    <FormControlLabel control={<Checkbox checked={transparentBG} onChange={event => setTransparentBG(event.target.checked)} />} label="透明" />
+                                </FormGroup>
+                            </Stack>
                         </OptionItem>
-                        <OptionItem name="环境光颜色：">
-                            <Typography>还没设置好</Typography>
+                        <OptionItem name="环境光颜色：" disabled={false}>
+                            <MuiColorInput format="hex" value={light} onChange={(v) => setLight(v)} />
                         </OptionItem>
-                        <OptionItem name="头大小：">
-                            <Typography>还没设置好</Typography>
+                        <OptionItem name="头大小：" disabled={genContent === "head" || genContent === "dhead"}>
+                            <Slider
+                                min={0}
+                                max={5}
+                                value={headSize}
+                                onChange={(e, v) => setHeadSize(v)}
+                                step={0.01 }
+                                valueLabelDisplay="auto"
+                                valueLabelFormat={(value) => `${~~(value * 100)}%`}
+                            />
                         </OptionItem>
-                        <OptionItem name="旋转速度：">
-                            <Typography>还没设置好</Typography>
+                        <OptionItem name="速度：" disabled={genContent !== "dsk" && genContent !== "sneak" && genContent !== "dhead"}>
+                            <Slider
+                                min={0.3}
+                                max={5}
+                                value={speed}
+                                onChange={(e, v) => setSpeed(v)}
+                                step={0.01}
+                                valueLabelDisplay="auto"
+                                valueLabelFormat={(value) => `${~~(value * 100)}%`}
+                            />
                         </OptionItem>
-                        <OptionItem name="俯视角：">
-                            <Typography>还没设置好</Typography>
+                        <OptionItem name="俯视角：" disabled={genContent !== "dsk" && genContent !== "dhead"}>
+                            <Slider
+                                min={-90}
+                                max={90}
+                                value={pitch}
+                                onChange={(e, v) => setPitch(v)}
+                                valueLabelDisplay="auto"
+                            />
                         </OptionItem>
-                        <OptionItem name="瘦模型：">
-                            <Typography>还没设置好</Typography>
+                        <OptionItem name="瘦模型：" disabled={genContent === "head" || genContent === "dhead" || genContent === "homo"}>
+                            <Button
+                                variant="contained"
+                                onClick={handleSlim}
+                            >
+                                {states[slim].label}
+                            </Button>
                         </OptionItem>
                     </Stack>
 
@@ -153,12 +224,12 @@ export default function App() {
                         alignItems: "center",
                     }}>
                         <Typography variant="h4" align="left" sx={{ my: 2 }}>图片预览：</Typography>
- 
-                        <button className="Btn" onClick={handleDownload }>
-                                <svg className="svgIcon" viewBox="0 0 384 512" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path></svg>
-                                <span className="icon2"></span>
-                                <span className="tooltip">下载图片</span>
-                            </button>
+
+                        <button className="Btn" onClick={handleDownload}>
+                            <svg className="svgIcon" viewBox="0 0 384 512" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path></svg>
+                            <span className="icon2"></span>
+                            <span className="tooltip">下载图片</span>
+                        </button>
                     </Stack>
 
                     {warnMsg !== "" && <Alert severity="warning">{warnMsg}</Alert>}
@@ -179,8 +250,6 @@ export default function App() {
                     </Paper>}
                 </Grid>
             </Grid>
-
-
         </Stack>
     );
 }
