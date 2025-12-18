@@ -1,150 +1,150 @@
-[15:32:57.857] [org.apache.ibatis.logging.LogFactory/DEBUG] Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-[15:32:57.859] [org.apache.ibatis.logging.LogFactory/DEBUG] Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
-[15:32:57.861] [org.apache.ibatis.io.VFS/DEBUG] Class not found: org.jboss.vfs.VFS
-[15:32:57.861] [org.apache.ibatis.io.JBoss6VFS/DEBUG] JBoss 6 VFS API is not available in this environment.
-[15:32:57.861] [org.apache.ibatis.io.VFS/DEBUG] Class not found: org.jboss.vfs.VirtualFile
-[15:32:57.861] [org.apache.ibatis.io.VFS/DEBUG] VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
-[15:32:57.862] [org.apache.ibatis.io.VFS/DEBUG] Using VFS adapter org.apache.ibatis.io.DefaultVFS
-[15:32:57.862] [org.apache.ibatis.io.DefaultVFS/DEBUG] Find JAR URL: jar:file:/C:/Minecraft/cocosili/api/server.jar!/top/e404/skin/server/sql/pojo
-[15:32:57.862] [org.apache.ibatis.io.DefaultVFS/DEBUG] Inner URL: file:/C:/Minecraft/cocosili/api/server.jar!/top/e404/skin/server/sql/pojo
-[15:32:57.862] [org.apache.ibatis.io.DefaultVFS/DEBUG] Extracted JAR URL: file:/C:/Minecraft/cocosili/api/server.jar
-[15:32:57.863] [org.apache.ibatis.io.DefaultVFS/DEBUG] Found JAR: file:/C:/Minecraft/cocosili/api/server.jar
-[15:32:57.863] [org.apache.ibatis.io.DefaultVFS/DEBUG] Listing jar:file:/C:/Minecraft/cocosili/api/server.jar!/top/e404/skin/server/sql/pojo
-[15:32:57.868] [org.apache.ibatis.io.DefaultVFS/DEBUG] Found resource: /top/e404/skin/server/sql/pojo/SkinData$$serializer.class
-[15:32:57.868] [org.apache.ibatis.io.DefaultVFS/DEBUG] Found resource: /top/e404/skin/server/sql/pojo/SkinData$Companion.class
-[15:32:57.868] [org.apache.ibatis.io.DefaultVFS/DEBUG] Found resource: /top/e404/skin/server/sql/pojo/SkinData$skinBytes$1.class
-[15:32:57.869] [org.apache.ibatis.io.DefaultVFS/DEBUG] Found resource: /top/e404/skin/server/sql/pojo/SkinData$updateSkinFile$1.class
-[15:32:57.869] [org.apache.ibatis.io.DefaultVFS/DEBUG] Found resource: /top/e404/skin/server/sql/pojo/SkinData.class
-[15:32:58.780] [org.apache.ibatis.io.ResolverUtil/DEBUG] Checking to see if class top.e404.skin.server.sql.pojo.SkinData$$serializer matches criteria [is assignable to Object]
-[15:32:58.780] [org.apache.ibatis.io.ResolverUtil/DEBUG] Checking to see if class top.e404.skin.server.sql.pojo.SkinData$Companion matches criteria [is assignable to Object]
-[15:32:58.780] [org.apache.ibatis.io.ResolverUtil/DEBUG] Checking to see if class top.e404.skin.server.sql.pojo.SkinData$skinBytes$1 matches criteria [is assignable to Object]
-[15:32:58.781] [org.apache.ibatis.io.ResolverUtil/DEBUG] Checking to see if class top.e404.skin.server.sql.pojo.SkinData$updateSkinFile$1 matches criteria [is assignable to Object]
-[15:32:58.781] [org.apache.ibatis.io.ResolverUtil/DEBUG] Checking to see if class top.e404.skin.server.sql.pojo.SkinData matches criteria [is assignable to Object]
-[15:32:58.797] [com.zaxxer.hikari.HikariConfig/DEBUG] HikariPool-1 - configuration:
-[15:32:58.801] [com.zaxxer.hikari.HikariConfig/DEBUG] allowPoolSuspension.............false
-[15:32:58.801] [com.zaxxer.hikari.HikariConfig/DEBUG] autoCommit......................true
-[15:32:58.801] [com.zaxxer.hikari.HikariConfig/DEBUG] catalog.........................none
-[15:32:58.801] [com.zaxxer.hikari.HikariConfig/DEBUG] connectionInitSql...............none
-[15:32:58.801] [com.zaxxer.hikari.HikariConfig/DEBUG] connectionTestQuery.............none
-[15:32:58.801] [com.zaxxer.hikari.HikariConfig/DEBUG] connectionTimeout...............30000
-[15:32:58.802] [com.zaxxer.hikari.HikariConfig/DEBUG] dataSource......................none
-[15:32:58.802] [com.zaxxer.hikari.HikariConfig/DEBUG] dataSourceClassName.............none
-[15:32:58.802] [com.zaxxer.hikari.HikariConfig/DEBUG] dataSourceJNDI..................none
-[15:32:58.802] [com.zaxxer.hikari.HikariConfig/DEBUG] dataSourceProperties............{password=<masked>}
-[15:32:58.802] [com.zaxxer.hikari.HikariConfig/DEBUG] driverClassName.................none
-[15:32:58.802] [com.zaxxer.hikari.HikariConfig/DEBUG] exceptionOverrideClassName......none
-[15:32:58.803] [com.zaxxer.hikari.HikariConfig/DEBUG] healthCheckProperties...........{}
-[15:32:58.803] [com.zaxxer.hikari.HikariConfig/DEBUG] healthCheckRegistry.............none
-[15:32:58.803] [com.zaxxer.hikari.HikariConfig/DEBUG] idleTimeout.....................600000
-[15:32:58.803] [com.zaxxer.hikari.HikariConfig/DEBUG] initializationFailTimeout.......1
-[15:32:58.803] [com.zaxxer.hikari.HikariConfig/DEBUG] isolateInternalQueries..........false
-[15:32:58.803] [com.zaxxer.hikari.HikariConfig/DEBUG] jdbcUrl.........................jdbc:mysql://127.0.0.1:3306/skin?useSSL=false
-[15:32:58.803] [com.zaxxer.hikari.HikariConfig/DEBUG] keepaliveTime...................0
-[15:32:58.803] [com.zaxxer.hikari.HikariConfig/DEBUG] leakDetectionThreshold..........0
-[15:32:58.803] [com.zaxxer.hikari.HikariConfig/DEBUG] maxLifetime.....................1800000
-[15:32:58.803] [com.zaxxer.hikari.HikariConfig/DEBUG] maximumPoolSize.................10
-[15:32:58.803] [com.zaxxer.hikari.HikariConfig/DEBUG] metricRegistry..................none
-[15:32:58.803] [com.zaxxer.hikari.HikariConfig/DEBUG] metricsTrackerFactory...........none
-[15:32:58.803] [com.zaxxer.hikari.HikariConfig/DEBUG] minimumIdle.....................10
-[15:32:58.803] [com.zaxxer.hikari.HikariConfig/DEBUG] password........................<masked>
-[15:32:58.804] [com.zaxxer.hikari.HikariConfig/DEBUG] poolName........................"HikariPool-1"
-[15:32:58.804] [com.zaxxer.hikari.HikariConfig/DEBUG] readOnly........................false
-[15:32:58.804] [com.zaxxer.hikari.HikariConfig/DEBUG] registerMbeans..................false
-[15:32:58.804] [com.zaxxer.hikari.HikariConfig/DEBUG] scheduledExecutor...............none
-[15:32:58.804] [com.zaxxer.hikari.HikariConfig/DEBUG] schema..........................none
-[15:32:58.804] [com.zaxxer.hikari.HikariConfig/DEBUG] threadFactory...................internal
-[15:32:58.804] [com.zaxxer.hikari.HikariConfig/DEBUG] transactionIsolation............default
-[15:32:58.804] [com.zaxxer.hikari.HikariConfig/DEBUG] username........................"root"
-[15:32:58.804] [com.zaxxer.hikari.HikariConfig/DEBUG] validationTimeout...............5000
-[15:32:58.808] [com.zaxxer.hikari.HikariDataSource/INFO ] HikariPool-1 - Starting...
-[15:32:58.821] [com.zaxxer.hikari.util.DriverDataSource/DEBUG] Loaded driver with class name com.mysql.cj.jdbc.Driver for jdbcUrl=jdbc:mysql://127.0.0.1:3306/skin?useSSL=false
-[15:32:58.954] [com.zaxxer.hikari.pool.HikariPool/INFO ] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@56f1ed93
-[15:32:58.954] [com.zaxxer.hikari.HikariDataSource/INFO ] HikariPool-1 - Start completed.
-[15:32:58.964] [net.sf.ehcache.config.ConfigurationFactory/DEBUG] Configuring ehcache from ehcache.xml found in the classpath: jar:file:/C:/Minecraft/cocosili/api/server.jar!/ehcache.xml
-[15:32:58.964] [net.sf.ehcache.config.ConfigurationFactory/DEBUG] Configuring ehcache from URL: jar:file:/C:/Minecraft/cocosili/api/server.jar!/ehcache.xml
-[15:32:58.964] [net.sf.ehcache.config.ConfigurationFactory/DEBUG] Configuring ehcache from InputStream
-[15:32:58.975] [net.sf.ehcache.config.BeanHandler/DEBUG] Ignoring ehcache attribute xmlns:xsi
-[15:32:58.975] [net.sf.ehcache.config.BeanHandler/DEBUG] Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
-[15:32:58.977] [net.sf.ehcache.config.DiskStoreConfiguration/DEBUG] Disk Store Path: C:\Minecraft\cocosili\api/eh_cache
-[15:32:58.981] [net.sf.ehcache.CacheManager/DEBUG] Creating new CacheManager with default config
-[15:32:58.983] [net.sf.ehcache.util.PropertyUtil/DEBUG] propertiesString is null.
-[15:32:58.985] [net.sf.ehcache.config.ConfigurationHelper/DEBUG] No CacheManagerEventListenerFactory class specified. Skipping...
-[15:32:59.027] [net.sf.ehcache.Cache/DEBUG] No BootstrapCacheLoaderFactory class specified. Skipping...
-[15:32:59.027] [net.sf.ehcache.Cache/DEBUG] CacheWriter factory not configured. Skipping...
-[15:32:59.027] [net.sf.ehcache.config.ConfigurationHelper/DEBUG] No CacheExceptionHandlerFactory class specified. Skipping...
-[15:32:59.030] [net.sf.ehcache.Cache/DEBUG] No BootstrapCacheLoaderFactory class specified. Skipping...
-[15:32:59.030] [net.sf.ehcache.Cache/DEBUG] CacheWriter factory not configured. Skipping...
-[15:32:59.030] [net.sf.ehcache.config.ConfigurationHelper/DEBUG] No CacheExceptionHandlerFactory class specified. Skipping...
-[15:32:59.038] [net.sf.ehcache.store.MemoryStore/DEBUG] Initialized net.sf.ehcache.store.MemoryStore for cloud_user
-[15:32:59.056] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
-[15:32:59.057] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
-[15:32:59.057] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Pass-Through Statistic: LOCAL_DISK_SIZE
-[15:32:59.058] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Pass-Through Statistic: LOCAL_DISK_SIZE_BYTES
-[15:32:59.058] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
-[15:32:59.058] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Pass-Through Statistic: REMOTE_SIZE
-[15:32:59.058] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
-[15:32:59.059] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
-[15:32:59.064] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@23789bed
-[15:32:59.067] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Operation Statistic: OFFHEAP_GET
-[15:32:59.068] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Operation Statistic: OFFHEAP_PUT
-[15:32:59.068] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Operation Statistic: OFFHEAP_REMOVE
-[15:32:59.069] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Operation Statistic: DISK_GET
-[15:32:59.069] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Operation Statistic: DISK_PUT
-[15:32:59.069] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Operation Statistic: DISK_REMOVE
-[15:32:59.069] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Operation Statistic: XA_COMMIT
-[15:32:59.069] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Operation Statistic: XA_ROLLBACK
-[15:32:59.070] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Operation Statistic: XA_RECOVERY
-[15:32:59.070] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Operation Statistic: CLUSTER_EVENT
-[15:32:59.070] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Operation Statistic: NONSTOP
-[15:32:59.073] [net.sf.ehcache.Cache/DEBUG] Initialised cache: cloud_user
-[15:32:59.073] [net.sf.ehcache.config.ConfigurationHelper/DEBUG] CacheDecoratorFactory not configured. Skipping for 'cloud_user'.
-[15:32:59.073] [net.sf.ehcache.config.ConfigurationHelper/DEBUG] CacheDecoratorFactory not configured for defaultCache. Skipping for 'cloud_user'.
-[15:32:59.076] [net.sf.ehcache.store.MemoryStore/DEBUG] Initialized net.sf.ehcache.store.MemoryStore for top.e404.skin.server.sql.mapper.SkinMapper
-[15:32:59.077] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
-[15:32:59.077] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
-[15:32:59.077] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Pass-Through Statistic: LOCAL_DISK_SIZE
-[15:32:59.077] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Pass-Through Statistic: LOCAL_DISK_SIZE_BYTES
-[15:32:59.077] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
-[15:32:59.077] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Pass-Through Statistic: REMOTE_SIZE
-[15:32:59.077] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
-[15:32:59.078] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Operation Statistic: OFFHEAP_GET
-[15:32:59.078] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Operation Statistic: OFFHEAP_PUT
-[15:32:59.078] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Operation Statistic: OFFHEAP_REMOVE
-[15:32:59.078] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Operation Statistic: DISK_GET
-[15:32:59.078] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Operation Statistic: DISK_PUT
-[15:32:59.078] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Operation Statistic: DISK_REMOVE
-[15:32:59.078] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Operation Statistic: XA_COMMIT
-[15:32:59.078] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Operation Statistic: XA_ROLLBACK
-[15:32:59.078] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Operation Statistic: XA_RECOVERY
-[15:32:59.078] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Operation Statistic: CLUSTER_EVENT
-[15:32:59.078] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Operation Statistic: NONSTOP
-[15:32:59.079] [net.sf.ehcache.Cache/DEBUG] Initialised cache: top.e404.skin.server.sql.mapper.SkinMapper
-[15:32:59.079] [net.sf.ehcache.config.ConfigurationHelper/DEBUG] CacheDecoratorFactory not configured for defaultCache. Skipping for 'top.e404.skin.server.sql.mapper.SkinMapper'.
-[15:32:59.093] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@342d8394
-[15:32:59.109] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4cef9df3
-[15:32:59.125] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5a036c63
-[15:32:59.141] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@57eb3298
-[15:32:59.157] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@47858489
-[15:32:59.158] [org.apache.ibatis.transaction.jdbc.JdbcTransaction/DEBUG] Opening JDBC Connection
-[15:32:59.171] [top.e404.skin.server.sql.mapper.SkinMapper.initTable/DEBUG] ==>  Preparing: CREATE TABLE IF NOT EXISTS skin ( `uuid` CHAR(36) NOT NULL PRIMARY KEY COMMENT '玩家uuid, 唯一且不可变', `name` VARCHAR(16) NOT NULL COMMENT '玩家名, 可变', `slim` BOOLEAN NOT NULL COMMENT '玩家皮肤模型', `update` BIGINT UNSIGNED NOT NULL COMMENT '最后更新时间', `hash` CHAR(64) NOT NULL COMMENT '用于获取皮肤的url后的hash值' ) ENGINE InnoDB DEFAULT CHARSET UTF8MB4
-[15:32:59.187] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@774d8ab2
-[15:32:59.210] [top.e404.skin.server.sql.mapper.SkinMapper.initTable/DEBUG] ==> Parameters: 
-[15:32:59.215] [top.e404.skin.server.sql.mapper.SkinMapper.initTable/DEBUG] <==    Updates: 0
-[15:32:59.217] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3e8305bd
-[15:32:59.237] [org.apache.ibatis.transaction.jdbc.JdbcTransaction/DEBUG] Closing JDBC Connection [HikariProxyConnection@2129478412 wrapping com.mysql.cj.jdbc.ConnectionImpl@56f1ed93]
-[15:32:59.243] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3c629fa6
-[15:32:59.259] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
-[15:32:59.525] [ktor.application/INFO ] Autoreload is disabled because the development mode is off.
-[15:32:59.955] [ktor.application/INFO ] Application started in 0.473 seconds.
-[15:32:59.955] [ktor.application/INFO ] Application started: io.ktor.server.application.Application@3843d8b7
-[15:32:59.960] [io.netty.util.internal.logging.InternalLoggerFactory/DEBUG] Using SLF4J as the default logging framework
-[15:32:59.977] [io.netty.util.internal.PlatformDependent0/DEBUG] -Dio.netty.noUnsafe: false
-[15:32:59.977] [io.netty.util.internal.PlatformDependent0/DEBUG] Java version: 21
-[15:32:59.979] [io.netty.util.internal.PlatformDependent0/DEBUG] sun.misc.Unsafe.theUnsafe: available
-[15:32:59.979] [io.netty.util.internal.PlatformDependent0/DEBUG] sun.misc.Unsafe.copyMemory: available
-[15:32:59.980] [io.netty.util.internal.PlatformDependent0/DEBUG] sun.misc.Unsafe.storeFence: available
-[15:32:59.981] [io.netty.util.internal.PlatformDependent0/DEBUG] java.nio.Buffer.address: available
-[15:32:59.981] [io.netty.util.internal.PlatformDependent0/DEBUG] direct buffer constructor: unavailable
+[20:56:05.559] [org.apache.ibatis.logging.LogFactory/DEBUG] Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[20:56:05.560] [org.apache.ibatis.logging.LogFactory/DEBUG] Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+[20:56:05.562] [org.apache.ibatis.io.VFS/DEBUG] Class not found: org.jboss.vfs.VFS
+[20:56:05.562] [org.apache.ibatis.io.JBoss6VFS/DEBUG] JBoss 6 VFS API is not available in this environment.
+[20:56:05.562] [org.apache.ibatis.io.VFS/DEBUG] Class not found: org.jboss.vfs.VirtualFile
+[20:56:05.562] [org.apache.ibatis.io.VFS/DEBUG] VFS implementation org.apache.ibatis.io.JBoss6VFS is not valid in this environment.
+[20:56:05.562] [org.apache.ibatis.io.VFS/DEBUG] Using VFS adapter org.apache.ibatis.io.DefaultVFS
+[20:56:05.562] [org.apache.ibatis.io.DefaultVFS/DEBUG] Find JAR URL: jar:file:/C:/Minecraft/cocosili/api/server.jar!/top/e404/skin/server/sql/pojo
+[20:56:05.562] [org.apache.ibatis.io.DefaultVFS/DEBUG] Inner URL: file:/C:/Minecraft/cocosili/api/server.jar!/top/e404/skin/server/sql/pojo
+[20:56:05.562] [org.apache.ibatis.io.DefaultVFS/DEBUG] Extracted JAR URL: file:/C:/Minecraft/cocosili/api/server.jar
+[20:56:05.563] [org.apache.ibatis.io.DefaultVFS/DEBUG] Found JAR: file:/C:/Minecraft/cocosili/api/server.jar
+[20:56:05.563] [org.apache.ibatis.io.DefaultVFS/DEBUG] Listing jar:file:/C:/Minecraft/cocosili/api/server.jar!/top/e404/skin/server/sql/pojo
+[20:56:05.565] [org.apache.ibatis.io.DefaultVFS/DEBUG] Found resource: /top/e404/skin/server/sql/pojo/SkinData$$serializer.class
+[20:56:05.565] [org.apache.ibatis.io.DefaultVFS/DEBUG] Found resource: /top/e404/skin/server/sql/pojo/SkinData$Companion.class
+[20:56:05.565] [org.apache.ibatis.io.DefaultVFS/DEBUG] Found resource: /top/e404/skin/server/sql/pojo/SkinData$skinBytes$1.class
+[20:56:05.565] [org.apache.ibatis.io.DefaultVFS/DEBUG] Found resource: /top/e404/skin/server/sql/pojo/SkinData$updateSkinFile$1.class
+[20:56:05.565] [org.apache.ibatis.io.DefaultVFS/DEBUG] Found resource: /top/e404/skin/server/sql/pojo/SkinData.class
+[20:56:06.262] [org.apache.ibatis.io.ResolverUtil/DEBUG] Checking to see if class top.e404.skin.server.sql.pojo.SkinData$$serializer matches criteria [is assignable to Object]
+[20:56:06.262] [org.apache.ibatis.io.ResolverUtil/DEBUG] Checking to see if class top.e404.skin.server.sql.pojo.SkinData$Companion matches criteria [is assignable to Object]
+[20:56:06.263] [org.apache.ibatis.io.ResolverUtil/DEBUG] Checking to see if class top.e404.skin.server.sql.pojo.SkinData$skinBytes$1 matches criteria [is assignable to Object]
+[20:56:06.263] [org.apache.ibatis.io.ResolverUtil/DEBUG] Checking to see if class top.e404.skin.server.sql.pojo.SkinData$updateSkinFile$1 matches criteria [is assignable to Object]
+[20:56:06.263] [org.apache.ibatis.io.ResolverUtil/DEBUG] Checking to see if class top.e404.skin.server.sql.pojo.SkinData matches criteria [is assignable to Object]
+[20:56:06.275] [com.zaxxer.hikari.HikariConfig/DEBUG] HikariPool-1 - configuration:
+[20:56:06.280] [com.zaxxer.hikari.HikariConfig/DEBUG] allowPoolSuspension.............false
+[20:56:06.280] [com.zaxxer.hikari.HikariConfig/DEBUG] autoCommit......................true
+[20:56:06.280] [com.zaxxer.hikari.HikariConfig/DEBUG] catalog.........................none
+[20:56:06.280] [com.zaxxer.hikari.HikariConfig/DEBUG] connectionInitSql...............none
+[20:56:06.280] [com.zaxxer.hikari.HikariConfig/DEBUG] connectionTestQuery.............none
+[20:56:06.280] [com.zaxxer.hikari.HikariConfig/DEBUG] connectionTimeout...............30000
+[20:56:06.280] [com.zaxxer.hikari.HikariConfig/DEBUG] dataSource......................none
+[20:56:06.280] [com.zaxxer.hikari.HikariConfig/DEBUG] dataSourceClassName.............none
+[20:56:06.280] [com.zaxxer.hikari.HikariConfig/DEBUG] dataSourceJNDI..................none
+[20:56:06.281] [com.zaxxer.hikari.HikariConfig/DEBUG] dataSourceProperties............{password=<masked>}
+[20:56:06.281] [com.zaxxer.hikari.HikariConfig/DEBUG] driverClassName.................none
+[20:56:06.281] [com.zaxxer.hikari.HikariConfig/DEBUG] exceptionOverrideClassName......none
+[20:56:06.281] [com.zaxxer.hikari.HikariConfig/DEBUG] healthCheckProperties...........{}
+[20:56:06.281] [com.zaxxer.hikari.HikariConfig/DEBUG] healthCheckRegistry.............none
+[20:56:06.281] [com.zaxxer.hikari.HikariConfig/DEBUG] idleTimeout.....................600000
+[20:56:06.281] [com.zaxxer.hikari.HikariConfig/DEBUG] initializationFailTimeout.......1
+[20:56:06.281] [com.zaxxer.hikari.HikariConfig/DEBUG] isolateInternalQueries..........false
+[20:56:06.281] [com.zaxxer.hikari.HikariConfig/DEBUG] jdbcUrl.........................jdbc:mysql://127.0.0.1:3306/skin?useSSL=false
+[20:56:06.281] [com.zaxxer.hikari.HikariConfig/DEBUG] keepaliveTime...................0
+[20:56:06.282] [com.zaxxer.hikari.HikariConfig/DEBUG] leakDetectionThreshold..........0
+[20:56:06.282] [com.zaxxer.hikari.HikariConfig/DEBUG] maxLifetime.....................1800000
+[20:56:06.282] [com.zaxxer.hikari.HikariConfig/DEBUG] maximumPoolSize.................10
+[20:56:06.282] [com.zaxxer.hikari.HikariConfig/DEBUG] metricRegistry..................none
+[20:56:06.282] [com.zaxxer.hikari.HikariConfig/DEBUG] metricsTrackerFactory...........none
+[20:56:06.282] [com.zaxxer.hikari.HikariConfig/DEBUG] minimumIdle.....................10
+[20:56:06.282] [com.zaxxer.hikari.HikariConfig/DEBUG] password........................<masked>
+[20:56:06.282] [com.zaxxer.hikari.HikariConfig/DEBUG] poolName........................"HikariPool-1"
+[20:56:06.282] [com.zaxxer.hikari.HikariConfig/DEBUG] readOnly........................false
+[20:56:06.282] [com.zaxxer.hikari.HikariConfig/DEBUG] registerMbeans..................false
+[20:56:06.282] [com.zaxxer.hikari.HikariConfig/DEBUG] scheduledExecutor...............none
+[20:56:06.282] [com.zaxxer.hikari.HikariConfig/DEBUG] schema..........................none
+[20:56:06.282] [com.zaxxer.hikari.HikariConfig/DEBUG] threadFactory...................internal
+[20:56:06.282] [com.zaxxer.hikari.HikariConfig/DEBUG] transactionIsolation............default
+[20:56:06.282] [com.zaxxer.hikari.HikariConfig/DEBUG] username........................"root"
+[20:56:06.282] [com.zaxxer.hikari.HikariConfig/DEBUG] validationTimeout...............5000
+[20:56:06.286] [com.zaxxer.hikari.HikariDataSource/INFO ] HikariPool-1 - Starting...
+[20:56:06.296] [com.zaxxer.hikari.util.DriverDataSource/DEBUG] Loaded driver with class name com.mysql.cj.jdbc.Driver for jdbcUrl=jdbc:mysql://127.0.0.1:3306/skin?useSSL=false
+[20:56:06.395] [com.zaxxer.hikari.pool.HikariPool/INFO ] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@56f1ed93
+[20:56:06.396] [com.zaxxer.hikari.HikariDataSource/INFO ] HikariPool-1 - Start completed.
+[20:56:06.405] [net.sf.ehcache.config.ConfigurationFactory/DEBUG] Configuring ehcache from ehcache.xml found in the classpath: jar:file:/C:/Minecraft/cocosili/api/server.jar!/ehcache.xml
+[20:56:06.405] [net.sf.ehcache.config.ConfigurationFactory/DEBUG] Configuring ehcache from URL: jar:file:/C:/Minecraft/cocosili/api/server.jar!/ehcache.xml
+[20:56:06.405] [net.sf.ehcache.config.ConfigurationFactory/DEBUG] Configuring ehcache from InputStream
+[20:56:06.412] [net.sf.ehcache.config.BeanHandler/DEBUG] Ignoring ehcache attribute xmlns:xsi
+[20:56:06.412] [net.sf.ehcache.config.BeanHandler/DEBUG] Ignoring ehcache attribute xsi:noNamespaceSchemaLocation
+[20:56:06.413] [net.sf.ehcache.config.DiskStoreConfiguration/DEBUG] Disk Store Path: C:\Minecraft\cocosili\api/eh_cache
+[20:56:06.417] [net.sf.ehcache.CacheManager/DEBUG] Creating new CacheManager with default config
+[20:56:06.418] [net.sf.ehcache.util.PropertyUtil/DEBUG] propertiesString is null.
+[20:56:06.421] [net.sf.ehcache.config.ConfigurationHelper/DEBUG] No CacheManagerEventListenerFactory class specified. Skipping...
+[20:56:06.448] [net.sf.ehcache.Cache/DEBUG] No BootstrapCacheLoaderFactory class specified. Skipping...
+[20:56:06.448] [net.sf.ehcache.Cache/DEBUG] CacheWriter factory not configured. Skipping...
+[20:56:06.448] [net.sf.ehcache.config.ConfigurationHelper/DEBUG] No CacheExceptionHandlerFactory class specified. Skipping...
+[20:56:06.451] [net.sf.ehcache.Cache/DEBUG] No BootstrapCacheLoaderFactory class specified. Skipping...
+[20:56:06.451] [net.sf.ehcache.Cache/DEBUG] CacheWriter factory not configured. Skipping...
+[20:56:06.451] [net.sf.ehcache.config.ConfigurationHelper/DEBUG] No CacheExceptionHandlerFactory class specified. Skipping...
+[20:56:06.456] [net.sf.ehcache.store.MemoryStore/DEBUG] Initialized net.sf.ehcache.store.MemoryStore for cloud_user
+[20:56:06.463] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
+[20:56:06.463] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
+[20:56:06.463] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Pass-Through Statistic: LOCAL_DISK_SIZE
+[20:56:06.463] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Pass-Through Statistic: LOCAL_DISK_SIZE_BYTES
+[20:56:06.463] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
+[20:56:06.463] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Pass-Through Statistic: REMOTE_SIZE
+[20:56:06.463] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
+[20:56:06.467] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Operation Statistic: OFFHEAP_GET
+[20:56:06.469] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Operation Statistic: OFFHEAP_PUT
+[20:56:06.469] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Operation Statistic: OFFHEAP_REMOVE
+[20:56:06.469] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Operation Statistic: DISK_GET
+[20:56:06.469] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Operation Statistic: DISK_PUT
+[20:56:06.469] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Operation Statistic: DISK_REMOVE
+[20:56:06.469] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Operation Statistic: XA_COMMIT
+[20:56:06.469] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Operation Statistic: XA_ROLLBACK
+[20:56:06.469] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Operation Statistic: XA_RECOVERY
+[20:56:06.470] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Operation Statistic: CLUSTER_EVENT
+[20:56:06.470] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Operation Statistic: NONSTOP
+[20:56:06.472] [net.sf.ehcache.Cache/DEBUG] Initialised cache: cloud_user
+[20:56:06.472] [net.sf.ehcache.config.ConfigurationHelper/DEBUG] CacheDecoratorFactory not configured. Skipping for 'cloud_user'.
+[20:56:06.472] [net.sf.ehcache.config.ConfigurationHelper/DEBUG] CacheDecoratorFactory not configured for defaultCache. Skipping for 'cloud_user'.
+[20:56:06.474] [net.sf.ehcache.store.MemoryStore/DEBUG] Initialized net.sf.ehcache.store.MemoryStore for top.e404.skin.server.sql.mapper.SkinMapper
+[20:56:06.474] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE
+[20:56:06.474] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Pass-Through Statistic: LOCAL_OFFHEAP_SIZE_BYTES
+[20:56:06.474] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Pass-Through Statistic: LOCAL_DISK_SIZE
+[20:56:06.474] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Pass-Through Statistic: LOCAL_DISK_SIZE_BYTES
+[20:56:06.474] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Pass-Through Statistic: WRITER_QUEUE_LENGTH
+[20:56:06.474] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Pass-Through Statistic: REMOTE_SIZE
+[20:56:06.474] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Pass-Through Statistic: LAST_REJOIN_TIMESTAMP
+[20:56:06.475] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Operation Statistic: OFFHEAP_GET
+[20:56:06.475] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Operation Statistic: OFFHEAP_PUT
+[20:56:06.475] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Operation Statistic: OFFHEAP_REMOVE
+[20:56:06.475] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Operation Statistic: DISK_GET
+[20:56:06.475] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Operation Statistic: DISK_PUT
+[20:56:06.475] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Operation Statistic: DISK_REMOVE
+[20:56:06.475] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Operation Statistic: XA_COMMIT
+[20:56:06.475] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Operation Statistic: XA_ROLLBACK
+[20:56:06.475] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Operation Statistic: XA_RECOVERY
+[20:56:06.475] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Operation Statistic: CLUSTER_EVENT
+[20:56:06.476] [net.sf.ehcache.statistics.extended.ExtendedStatisticsImpl/DEBUG] Mocking Operation Statistic: NONSTOP
+[20:56:06.476] [net.sf.ehcache.Cache/DEBUG] Initialised cache: top.e404.skin.server.sql.mapper.SkinMapper
+[20:56:06.476] [net.sf.ehcache.config.ConfigurationHelper/DEBUG] CacheDecoratorFactory not configured for defaultCache. Skipping for 'top.e404.skin.server.sql.mapper.SkinMapper'.
+[20:56:06.500] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=1, active=0, idle=1, waiting=0)
+[20:56:06.503] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@579387fa
+[20:56:06.505] [org.apache.ibatis.transaction.jdbc.JdbcTransaction/DEBUG] Opening JDBC Connection
+[20:56:06.510] [top.e404.skin.server.sql.mapper.SkinMapper.initTable/DEBUG] ==>  Preparing: CREATE TABLE IF NOT EXISTS skin ( `uuid` CHAR(36) NOT NULL PRIMARY KEY COMMENT '玩家uuid, 唯一且不可变', `name` VARCHAR(16) NOT NULL COMMENT '玩家名, 可变', `slim` BOOLEAN NOT NULL COMMENT '玩家皮肤模型', `update` BIGINT UNSIGNED NOT NULL COMMENT '最后更新时间', `hash` CHAR(64) NOT NULL COMMENT '用于获取皮肤的url后的hash值' ) ENGINE InnoDB DEFAULT CHARSET UTF8MB4
+[20:56:06.518] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6c952cc6
+[20:56:06.524] [top.e404.skin.server.sql.mapper.SkinMapper.initTable/DEBUG] ==> Parameters: 
+[20:56:06.532] [top.e404.skin.server.sql.mapper.SkinMapper.initTable/DEBUG] <==    Updates: 0
+[20:56:06.533] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@14a3255e
+[20:56:06.538] [org.apache.ibatis.transaction.jdbc.JdbcTransaction/DEBUG] Closing JDBC Connection [HikariProxyConnection@233798018 wrapping com.mysql.cj.jdbc.ConnectionImpl@56f1ed93]
+[20:56:06.548] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@33b79384
+[20:56:06.565] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@fa76ec6
+[20:56:06.580] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7debeed0
+[20:56:06.596] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@52a6abce
+[20:56:06.612] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@799a5b76
+[20:56:06.618] [ktor.application/INFO ] Autoreload is disabled because the development mode is off.
+[20:56:06.626] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@61fd285a
+[20:56:06.639] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - After adding stats (total=10, active=0, idle=10, waiting=0)
+[20:56:06.978] [ktor.application/INFO ] Application started in 0.372 seconds.
+[20:56:06.978] [ktor.application/INFO ] Application started: io.ktor.server.application.Application@7b028f00
+[20:56:06.983] [io.netty.util.internal.logging.InternalLoggerFactory/DEBUG] Using SLF4J as the default logging framework
+[20:56:06.996] [io.netty.util.internal.PlatformDependent0/DEBUG] -Dio.netty.noUnsafe: false
+[20:56:06.996] [io.netty.util.internal.PlatformDependent0/DEBUG] Java version: 21
+[20:56:06.997] [io.netty.util.internal.PlatformDependent0/DEBUG] sun.misc.Unsafe.theUnsafe: available
+[20:56:06.997] [io.netty.util.internal.PlatformDependent0/DEBUG] sun.misc.Unsafe.copyMemory: available
+[20:56:06.997] [io.netty.util.internal.PlatformDependent0/DEBUG] sun.misc.Unsafe.storeFence: available
+[20:56:06.997] [io.netty.util.internal.PlatformDependent0/DEBUG] java.nio.Buffer.address: available
+[20:56:06.998] [io.netty.util.internal.PlatformDependent0/DEBUG] direct buffer constructor: unavailable
 java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
 	at io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31) ~[server.jar:?]
 	at io.netty.util.internal.PlatformDependent0$5.run(PlatformDependent0.java:293) ~[server.jar:?]
@@ -184,8 +184,8 @@ java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:800) ~[server.jar:?]
 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:704) ~[server.jar:?]
 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:691) ~[server.jar:?]
-[15:32:59.981] [io.netty.util.internal.PlatformDependent0/DEBUG] java.nio.Bits.unaligned: available, true
-[15:32:59.983] [io.netty.util.internal.PlatformDependent0/DEBUG] jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
+[20:56:06.998] [io.netty.util.internal.PlatformDependent0/DEBUG] java.nio.Bits.unaligned: available, true
+[20:56:06.998] [io.netty.util.internal.PlatformDependent0/DEBUG] jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
 java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent0$7 cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to unnamed module @45afc369
 	at jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:394) ~[?:?]
 	at java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:714) ~[?:?]
@@ -227,463 +227,128 @@ java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent
 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.executeTask(CoroutineScheduler.kt:800) ~[server.jar:?]
 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.runWorker(CoroutineScheduler.kt:704) ~[server.jar:?]
 	at kotlinx.coroutines.scheduling.CoroutineScheduler$Worker.run(CoroutineScheduler.kt:691) ~[server.jar:?]
-[15:32:59.987] [io.netty.util.internal.PlatformDependent0/DEBUG] java.nio.DirectByteBuffer.<init>(long, {int,long}): unavailable
-[15:32:59.987] [io.netty.util.internal.PlatformDependent/DEBUG] sun.misc.Unsafe: available
-[15:32:59.987] [io.netty.util.internal.PlatformDependent/DEBUG] -Dio.netty.tmpdir: C:\Users\10173\AppData\Local\Temp (java.io.tmpdir)
-[15:32:59.987] [io.netty.util.internal.PlatformDependent/DEBUG] -Dio.netty.bitMode: 64 (sun.arch.data.model)
-[15:32:59.987] [io.netty.util.internal.PlatformDependent/DEBUG] Platform: Windows
-[15:32:59.989] [io.netty.util.internal.PlatformDependent/DEBUG] -Dio.netty.maxDirectMemory: -1 bytes
-[15:32:59.989] [io.netty.util.internal.PlatformDependent/DEBUG] -Dio.netty.uninitializedArrayAllocationThreshold: -1
-[15:32:59.990] [io.netty.util.internal.CleanerJava9/DEBUG] java.nio.ByteBuffer.cleaner(): available
-[15:32:59.990] [io.netty.util.internal.PlatformDependent/DEBUG] -Dio.netty.noPreferDirect: false
-[15:33:00.057] [io.netty.channel.MultithreadEventLoopGroup/DEBUG] -Dio.netty.eventLoopThreads: 64
-[15:33:00.063] [io.netty.util.concurrent.GlobalEventExecutor/DEBUG] -Dio.netty.globalEventExecutor.quietPeriodSeconds: 1
-[15:33:00.066] [io.netty.util.internal.InternalThreadLocalMap/DEBUG] -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
-[15:33:00.066] [io.netty.util.internal.InternalThreadLocalMap/DEBUG] -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
-[15:33:00.069] [io.netty.channel.nio.NioEventLoop/DEBUG] -Dio.netty.noKeySetOptimization: false
-[15:33:00.069] [io.netty.channel.nio.NioEventLoop/DEBUG] -Dio.netty.selectorAutoRebuildThreshold: 512
-[15:33:00.073] [io.netty.util.internal.PlatformDependent/DEBUG] org.jctools-core.MpscChunkedArrayQueue: available
-[15:33:00.077] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@6367dd3f
-[15:33:00.079] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@76a1efcd
-[15:33:00.080] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@7589e9f4
-[15:33:00.081] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@5521a0fc
-[15:33:00.082] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@357d4599
-[15:33:00.083] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@4cdb1b7c
-[15:33:00.085] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@76a79d5a
-[15:33:00.086] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@2e59e532
-[15:33:00.088] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@71d73ced
-[15:33:00.089] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@6543d950
-[15:33:00.092] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@2fc4d5ef
-[15:33:00.093] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@4e55c550
-[15:33:00.094] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@62da823
-[15:33:00.095] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@7ddf78ef
-[15:33:00.096] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@743db116
-[15:33:00.097] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@14a29584
-[15:33:00.098] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@7fa54b83
-[15:33:00.099] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@18f6a12d
-[15:33:00.102] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@1a8c0f51
-[15:33:00.104] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@9e11185
-[15:33:00.105] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@17ba2868
-[15:33:00.107] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@3a681c7b
-[15:33:00.108] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@40e46ae0
-[15:33:00.111] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@41083640
-[15:33:00.113] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@737bf61
-[15:33:00.114] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@7dc6f038
-[15:33:00.115] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@1e16260a
-[15:33:00.117] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@1e2ca9be
-[15:33:00.119] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@245ac1ad
-[15:33:00.121] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@6e57b22e
-[15:33:00.123] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@41deef98
-[15:33:00.125] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@3a44cf44
-[15:33:00.127] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@48e13608
-[15:33:00.128] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@1bf42bf8
-[15:33:00.135] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@501cf0cf
-[15:33:00.137] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@4415c333
-[15:33:00.139] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@5ef51b1d
-[15:33:00.141] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@3b11b83e
-[15:33:00.143] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@c3cbd1b
-[15:33:00.145] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@66daebf4
-[15:33:00.146] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@108129c1
-[15:33:00.148] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@2667a3a7
-[15:33:00.150] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@4f5a0615
-[15:33:00.152] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@7eeec141
-[15:33:00.153] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@67b8207c
-[15:33:00.155] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@7c59ddb7
-[15:33:00.157] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@63ac1687
-[15:33:00.159] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@6b40277a
-[15:33:00.160] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@4ddd41ae
-[15:33:00.161] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@7fdb89c7
-[15:33:00.164] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@7c40b095
-[15:33:00.166] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@16d12390
-[15:33:00.167] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@3126c0d5
-[15:33:00.169] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@1210e287
-[15:33:00.171] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@6b2d2c48
-[15:33:00.173] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@747f4f1e
-[15:33:00.173] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@7358192c
-[15:33:00.174] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@6649d91a
-[15:33:00.175] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@6404e6f7
-[15:33:00.176] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@6a0d42d6
-[15:33:00.177] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@59afb7c2
-[15:33:00.179] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@718624e4
-[15:33:00.180] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@3276477d
-[15:33:00.183] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@32edb817
-[15:33:00.184] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@1658082f
-[15:33:00.186] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@56b9bf04
-[15:33:00.194] [io.netty.channel.DefaultChannelId/DEBUG] -Dio.netty.processId: 50984 (auto-detected)
-[15:33:00.198] [io.netty.util.NetUtil/DEBUG] -Djava.net.preferIPv4Stack: false
-[15:33:00.198] [io.netty.util.NetUtil/DEBUG] -Djava.net.preferIPv6Addresses: false
-[15:33:00.202] [io.netty.util.NetUtilInitializations/DEBUG] Loopback interface: loopback_0 (Software Loopback Interface 1, 0:0:0:0:0:0:0:1)
-[15:33:00.203] [io.netty.util.NetUtil/DEBUG] Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
-[15:33:00.205] [io.netty.channel.DefaultChannelId/DEBUG] -Dio.netty.machineId: 60:cf:84:ff:fe:5d:f2:de (auto-detected)
-[15:33:00.212] [io.netty.util.ResourceLeakDetector/DEBUG] -Dio.netty.leakDetection.level: simple
-[15:33:00.212] [io.netty.util.ResourceLeakDetector/DEBUG] -Dio.netty.leakDetection.targetRecords: 4
-[15:33:00.227] [io.netty.buffer.PooledByteBufAllocator/DEBUG] -Dio.netty.allocator.numHeapArenas: 64
-[15:33:00.227] [io.netty.buffer.PooledByteBufAllocator/DEBUG] -Dio.netty.allocator.numDirectArenas: 64
-[15:33:00.227] [io.netty.buffer.PooledByteBufAllocator/DEBUG] -Dio.netty.allocator.pageSize: 8192
-[15:33:00.227] [io.netty.buffer.PooledByteBufAllocator/DEBUG] -Dio.netty.allocator.maxOrder: 9
-[15:33:00.227] [io.netty.buffer.PooledByteBufAllocator/DEBUG] -Dio.netty.allocator.chunkSize: 4194304
-[15:33:00.227] [io.netty.buffer.PooledByteBufAllocator/DEBUG] -Dio.netty.allocator.smallCacheSize: 256
-[15:33:00.227] [io.netty.buffer.PooledByteBufAllocator/DEBUG] -Dio.netty.allocator.normalCacheSize: 64
-[15:33:00.227] [io.netty.buffer.PooledByteBufAllocator/DEBUG] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
-[15:33:00.227] [io.netty.buffer.PooledByteBufAllocator/DEBUG] -Dio.netty.allocator.cacheTrimInterval: 8192
-[15:33:00.227] [io.netty.buffer.PooledByteBufAllocator/DEBUG] -Dio.netty.allocator.cacheTrimIntervalMillis: 0
-[15:33:00.227] [io.netty.buffer.PooledByteBufAllocator/DEBUG] -Dio.netty.allocator.useCacheForAllThreads: false
-[15:33:00.227] [io.netty.buffer.PooledByteBufAllocator/DEBUG] -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
-[15:33:00.240] [io.netty.buffer.ByteBufUtil/DEBUG] -Dio.netty.allocator.type: pooled
-[15:33:00.240] [io.netty.buffer.ByteBufUtil/DEBUG] -Dio.netty.threadLocalDirectBufferSize: 0
-[15:33:00.240] [io.netty.buffer.ByteBufUtil/DEBUG] -Dio.netty.maxThreadLocalCharBufferSize: 16384
-[15:33:00.241] [io.netty.bootstrap.ChannelInitializerExtensions/DEBUG] -Dio.netty.bootstrap.extensions: null
-[15:33:00.255] [ktor.application/INFO ] Responding at http://127.0.0.1:2345
-[15:33:29.063] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[15:33:29.063] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[15:33:59.069] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[15:33:59.069] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[15:34:29.083] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[15:34:29.083] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[15:34:59.085] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[15:34:59.085] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[15:35:29.091] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[15:35:29.091] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[15:35:59.096] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[15:35:59.096] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[15:36:29.102] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[15:36:29.102] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[15:36:59.111] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[15:36:59.111] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[15:37:29.117] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[15:37:29.117] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[15:37:59.126] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[15:37:59.126] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[15:38:29.133] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[15:38:29.133] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[15:38:59.139] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[15:38:59.139] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[15:39:29.144] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[15:39:29.144] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[15:39:59.159] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[15:39:59.159] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[15:40:29.165] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[15:40:29.165] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[15:40:59.177] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[15:40:59.177] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[15:41:29.192] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[15:41:29.192] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[15:41:59.195] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[15:41:59.195] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[15:42:29.206] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[15:42:29.206] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[15:42:59.210] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[15:42:59.210] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[15:43:29.214] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[15:43:29.214] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[15:43:58.614] [io.netty.buffer.AbstractByteBuf/DEBUG] -Dio.netty.buffer.checkAccessible: true
-[15:43:58.614] [io.netty.buffer.AbstractByteBuf/DEBUG] -Dio.netty.buffer.checkBounds: true
-[15:43:58.615] [io.netty.util.ResourceLeakDetectorFactory/DEBUG] Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@2fe6c2e4
-[15:43:58.636] [io.netty.util.Recycler/DEBUG] -Dio.netty.recycler.maxCapacityPerThread: 4096
-[15:43:58.636] [io.netty.util.Recycler/DEBUG] -Dio.netty.recycler.ratio: 8
-[15:43:58.636] [io.netty.util.Recycler/DEBUG] -Dio.netty.recycler.chunkSize: 32
-[15:43:58.636] [io.netty.util.Recycler/DEBUG] -Dio.netty.recycler.blocking: false
-[15:43:58.636] [io.netty.util.Recycler/DEBUG] -Dio.netty.recycler.batchFastThreadLocalOnly: true
-[15:43:58.666] [io.ktor.routing.Routing/TRACE] Trace for [render, name, Aayong, sk]
-/, segment:0 -> SUCCESS @ /
-  /render, segment:1 -> SUCCESS @ /render
-    /render/{type}, segment:2 -> SUCCESS; Parameters [type=[name]] @ /render/{type}
-      /render/{type}/{content}, segment:3 -> SUCCESS; Parameters [content=[Aayong]] @ /render/{type}/{content}
-        /render/{type}/{content}/{position}, segment:4 -> SUCCESS; Parameters [position=[sk]] @ /render/{type}/{content}/{position}
-          /render/{type}/{content}/{position}/(method:GET), segment:4 -> SUCCESS @ /render/{type}/{content}/{position}/(method:GET)
-  /refresh, segment:0 -> FAILURE "Selector didn't match" @ /refresh
-  /data, segment:0 -> FAILURE "Selector didn't match" @ /data
-  /face, segment:0 -> FAILURE "Selector didn't match" @ /face
-Matched routes:
-  "" -> "render" -> "{type}" -> "{content}" -> "{position}" -> "(method:GET)"
-Route resolve result:
-  SUCCESS; Parameters [type=[name], content=[Aayong], position=[sk]] @ /render/{type}/{content}/{position}/(method:GET)
-[15:43:58.670] [org.apache.ibatis.transaction.jdbc.JdbcTransaction/DEBUG] Opening JDBC Connection
-[15:43:58.670] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] ==>  Preparing: SELECT uuid, name, slim, `update`, hash FROM `skin` WHERE name = ?
-[15:43:58.672] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] ==> Parameters: Aayong(String)
-[15:43:58.687] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/TRACE] <==    Columns: uuid, name, slim, update, hash
-[15:43:58.687] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/TRACE] <==        Row: a430252e63104405ab1c262eab6ed890, Aayong, 0, 1765726990733, ba6d75a46dbaf19d5259441413f4c7e94614cf489577f495bceafc4d046e9ef3
-[15:43:58.690] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] <==      Total: 1
-[15:43:58.692] [org.apache.ibatis.transaction.jdbc.JdbcTransaction/DEBUG] Closing JDBC Connection [HikariProxyConnection@2113121430 wrapping com.mysql.cj.jdbc.ConnectionImpl@56f1ed93]
-[15:43:59.047] [io.ktor.server.plugins.contentnegotiation.ContentNegotiation/TRACE] Skipping because body is already converted.
-[15:43:59.054] [ktor.application/INFO ] [200] [GET] /render/name/Aayong/sk okhttp/4.12.0
-[15:43:59.223] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[15:43:59.223] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[15:44:29.228] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[15:44:29.228] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[15:44:57.183] [io.ktor.routing.Routing/TRACE] Trace for [render, name, Aayong, sk]
-/, segment:0 -> SUCCESS @ /
-  /render, segment:1 -> SUCCESS @ /render
-    /render/{type}, segment:2 -> SUCCESS; Parameters [type=[name]] @ /render/{type}
-      /render/{type}/{content}, segment:3 -> SUCCESS; Parameters [content=[Aayong]] @ /render/{type}/{content}
-        /render/{type}/{content}/{position}, segment:4 -> SUCCESS; Parameters [position=[sk]] @ /render/{type}/{content}/{position}
-          /render/{type}/{content}/{position}/(method:GET), segment:4 -> SUCCESS @ /render/{type}/{content}/{position}/(method:GET)
-  /refresh, segment:0 -> FAILURE "Selector didn't match" @ /refresh
-  /data, segment:0 -> FAILURE "Selector didn't match" @ /data
-  /face, segment:0 -> FAILURE "Selector didn't match" @ /face
-Matched routes:
-  "" -> "render" -> "{type}" -> "{content}" -> "{position}" -> "(method:GET)"
-Route resolve result:
-  SUCCESS; Parameters [type=[name], content=[Aayong], position=[sk]] @ /render/{type}/{content}/{position}/(method:GET)
-[15:44:57.183] [org.apache.ibatis.transaction.jdbc.JdbcTransaction/DEBUG] Opening JDBC Connection
-[15:44:57.184] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] ==>  Preparing: SELECT uuid, name, slim, `update`, hash FROM `skin` WHERE name = ?
-[15:44:57.184] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] ==> Parameters: Aayong(String)
-[15:44:57.185] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/TRACE] <==    Columns: uuid, name, slim, update, hash
-[15:44:57.185] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/TRACE] <==        Row: a430252e63104405ab1c262eab6ed890, Aayong, 0, 1765726990733, ba6d75a46dbaf19d5259441413f4c7e94614cf489577f495bceafc4d046e9ef3
-[15:44:57.186] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] <==      Total: 1
-[15:44:57.186] [org.apache.ibatis.transaction.jdbc.JdbcTransaction/DEBUG] Closing JDBC Connection [HikariProxyConnection@1083314142 wrapping com.mysql.cj.jdbc.ConnectionImpl@56f1ed93]
-[15:44:57.339] [io.ktor.server.plugins.contentnegotiation.ContentNegotiation/TRACE] Skipping because body is already converted.
-[15:44:57.340] [ktor.application/INFO ] [200] [GET] /render/name/Aayong/sk okhttp/4.12.0
-[15:44:59.230] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[15:44:59.230] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[15:45:29.243] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[15:45:29.243] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[15:45:59.256] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[15:45:59.256] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[15:46:29.265] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[15:46:29.265] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[15:46:59.273] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[15:46:59.273] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[15:47:29.280] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[15:47:29.280] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[15:47:59.287] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[15:47:59.287] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[15:48:13.645] [ktor.application/DEBUG] I/O operation failed
-java.net.SocketException: Connection reset
-	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401) ~[?:?]
-	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434) ~[?:?]
-	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:254) ~[server.jar:?]
-	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[server.jar:?]
-	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357) ~[server.jar:?]
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151) ~[server.jar:?]
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[server.jar:?]
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[server.jar:?]
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[server.jar:?]
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[server.jar:?]
-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[server.jar:?]
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[server.jar:?]
-	at io.ktor.server.netty.EventLoopGroupProxy$Companion.create$lambda$1$lambda$0(NettyApplicationEngine.kt:296) ~[server.jar:?]
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[server.jar:?]
-	at java.lang.Thread.run(Thread.java:1583) [?:?]
-[15:48:21.863] [io.ktor.routing.Routing/TRACE] Trace for [render, name, Aayong, sk]
-/, segment:0 -> SUCCESS @ /
-  /render, segment:1 -> SUCCESS @ /render
-    /render/{type}, segment:2 -> SUCCESS; Parameters [type=[name]] @ /render/{type}
-      /render/{type}/{content}, segment:3 -> SUCCESS; Parameters [content=[Aayong]] @ /render/{type}/{content}
-        /render/{type}/{content}/{position}, segment:4 -> SUCCESS; Parameters [position=[sk]] @ /render/{type}/{content}/{position}
-          /render/{type}/{content}/{position}/(method:GET), segment:4 -> SUCCESS @ /render/{type}/{content}/{position}/(method:GET)
-  /refresh, segment:0 -> FAILURE "Selector didn't match" @ /refresh
-  /data, segment:0 -> FAILURE "Selector didn't match" @ /data
-  /face, segment:0 -> FAILURE "Selector didn't match" @ /face
-Matched routes:
-  "" -> "render" -> "{type}" -> "{content}" -> "{position}" -> "(method:GET)"
-Route resolve result:
-  SUCCESS; Parameters [type=[name], content=[Aayong], position=[sk]] @ /render/{type}/{content}/{position}/(method:GET)
-[15:48:21.863] [org.apache.ibatis.transaction.jdbc.JdbcTransaction/DEBUG] Opening JDBC Connection
-[15:48:21.864] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] ==>  Preparing: SELECT uuid, name, slim, `update`, hash FROM `skin` WHERE name = ?
-[15:48:21.864] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] ==> Parameters: Aayong(String)
-[15:48:21.864] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/TRACE] <==    Columns: uuid, name, slim, update, hash
-[15:48:21.864] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/TRACE] <==        Row: a430252e63104405ab1c262eab6ed890, Aayong, 0, 1765726990733, ba6d75a46dbaf19d5259441413f4c7e94614cf489577f495bceafc4d046e9ef3
-[15:48:21.866] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] <==      Total: 1
-[15:48:21.866] [org.apache.ibatis.transaction.jdbc.JdbcTransaction/DEBUG] Closing JDBC Connection [HikariProxyConnection@1493846411 wrapping com.mysql.cj.jdbc.ConnectionImpl@56f1ed93]
-[15:48:22.008] [io.ktor.server.plugins.contentnegotiation.ContentNegotiation/TRACE] Skipping because body is already converted.
-[15:48:22.008] [ktor.application/INFO ] [200] [GET] /render/name/Aayong/sk okhttp/4.12.0
-[15:48:29.291] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[15:48:29.291] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[15:48:39.071] [io.ktor.routing.Routing/TRACE] Trace for [render, name, Aayong, sneak]
-/, segment:0 -> SUCCESS @ /
-  /render, segment:1 -> SUCCESS @ /render
-    /render/{type}, segment:2 -> SUCCESS; Parameters [type=[name]] @ /render/{type}
-      /render/{type}/{content}, segment:3 -> SUCCESS; Parameters [content=[Aayong]] @ /render/{type}/{content}
-        /render/{type}/{content}/{position}, segment:4 -> SUCCESS; Parameters [position=[sneak]] @ /render/{type}/{content}/{position}
-          /render/{type}/{content}/{position}/(method:GET), segment:4 -> SUCCESS @ /render/{type}/{content}/{position}/(method:GET)
-  /refresh, segment:0 -> FAILURE "Selector didn't match" @ /refresh
-  /data, segment:0 -> FAILURE "Selector didn't match" @ /data
-  /face, segment:0 -> FAILURE "Selector didn't match" @ /face
-Matched routes:
-  "" -> "render" -> "{type}" -> "{content}" -> "{position}" -> "(method:GET)"
-Route resolve result:
-  SUCCESS; Parameters [type=[name], content=[Aayong], position=[sneak]] @ /render/{type}/{content}/{position}/(method:GET)
-[15:48:39.071] [org.apache.ibatis.transaction.jdbc.JdbcTransaction/DEBUG] Opening JDBC Connection
-[15:48:39.072] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] ==>  Preparing: SELECT uuid, name, slim, `update`, hash FROM `skin` WHERE name = ?
-[15:48:39.072] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] ==> Parameters: Aayong(String)
-[15:48:39.073] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/TRACE] <==    Columns: uuid, name, slim, update, hash
-[15:48:39.073] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/TRACE] <==        Row: a430252e63104405ab1c262eab6ed890, Aayong, 0, 1765726990733, ba6d75a46dbaf19d5259441413f4c7e94614cf489577f495bceafc4d046e9ef3
-[15:48:39.073] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] <==      Total: 1
-[15:48:39.073] [org.apache.ibatis.transaction.jdbc.JdbcTransaction/DEBUG] Closing JDBC Connection [HikariProxyConnection@573069321 wrapping com.mysql.cj.jdbc.ConnectionImpl@56f1ed93]
-[15:48:40.278] [io.ktor.server.plugins.contentnegotiation.ContentNegotiation/TRACE] Skipping because body is already converted.
-[15:48:40.278] [ktor.application/INFO ] [200] [GET] /render/name/Aayong/sneak okhttp/4.12.0
-[15:48:58.029] [ktor.application/DEBUG] I/O operation failed
-java.net.SocketException: Connection reset
-	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401) ~[?:?]
-	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434) ~[?:?]
-	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:254) ~[server.jar:?]
-	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[server.jar:?]
-	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357) ~[server.jar:?]
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151) ~[server.jar:?]
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[server.jar:?]
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[server.jar:?]
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[server.jar:?]
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[server.jar:?]
-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[server.jar:?]
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[server.jar:?]
-	at io.ktor.server.netty.EventLoopGroupProxy$Companion.create$lambda$1$lambda$0(NettyApplicationEngine.kt:296) ~[server.jar:?]
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[server.jar:?]
-	at java.lang.Thread.run(Thread.java:1583) [?:?]
-[15:48:59.299] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[15:48:59.299] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[15:49:29.306] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[15:49:29.306] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[15:49:59.308] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[15:49:59.308] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[15:50:29.309] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[15:50:29.309] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[15:50:59.311] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[15:50:59.311] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[15:51:29.320] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[15:51:29.320] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[15:51:59.325] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[15:51:59.325] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[15:52:29.328] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[15:52:29.328] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[15:52:59.341] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[15:52:59.341] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[15:53:29.342] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[15:53:29.342] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[15:53:59.350] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[15:53:59.350] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[15:54:29.365] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[15:54:29.365] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[15:54:59.370] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[15:54:59.370] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[15:55:29.386] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[15:55:29.386] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[15:55:59.393] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[15:55:59.393] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[15:56:29.399] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[15:56:29.399] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[15:56:59.401] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[15:56:59.401] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[15:57:29.409] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[15:57:29.409] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[15:57:59.411] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[15:57:59.411] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[15:58:29.423] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[15:58:29.423] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[15:58:59.435] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[15:58:59.435] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[15:59:29.449] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[15:59:29.449] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[15:59:59.453] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[15:59:59.453] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:00:29.464] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:00:29.464] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:00:59.477] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:00:59.477] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:01:29.483] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:01:29.483] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:01:59.484] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:01:59.484] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:02:19.228] [com.zaxxer.hikari.pool.PoolBase/DEBUG] HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@3e8305bd: (connection has passed maxLifetime)
-[16:02:19.239] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3cb12d32
-[16:02:19.733] [com.zaxxer.hikari.pool.PoolBase/DEBUG] HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@23789bed: (connection has passed maxLifetime)
-[16:02:19.746] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7d8c2709
-[16:02:21.113] [com.zaxxer.hikari.pool.PoolBase/DEBUG] HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@3c629fa6: (connection has passed maxLifetime)
-[16:02:21.116] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4cbbb9a4
-[16:02:24.133] [com.zaxxer.hikari.pool.PoolBase/DEBUG] HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@4cef9df3: (connection has passed maxLifetime)
-[16:02:24.136] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1da3d846
-[16:02:24.923] [com.zaxxer.hikari.pool.PoolBase/DEBUG] HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@774d8ab2: (connection has passed maxLifetime)
-[16:02:24.927] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@43453bc1
-[16:02:27.309] [com.zaxxer.hikari.pool.PoolBase/DEBUG] HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@5a036c63: (connection has passed maxLifetime)
-[16:02:27.313] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@19ed215c
-[16:02:29.492] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:02:29.492] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:02:36.037] [com.zaxxer.hikari.pool.PoolBase/DEBUG] HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@57eb3298: (connection has passed maxLifetime)
-[16:02:36.042] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@528d8dd6
-[16:02:38.332] [com.zaxxer.hikari.pool.PoolBase/DEBUG] HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@56f1ed93: (connection has passed maxLifetime)
-[16:02:38.337] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@13b087ed
-[16:02:39.969] [com.zaxxer.hikari.pool.PoolBase/DEBUG] HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@47858489: (connection has passed maxLifetime)
-[16:02:39.972] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@22e953c9
-[16:02:43.888] [com.zaxxer.hikari.pool.PoolBase/DEBUG] HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@342d8394: (connection has passed maxLifetime)
-[16:02:43.892] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@739f78a2
-[16:02:59.497] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:02:59.497] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:03:29.500] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:03:29.500] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:03:59.507] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:03:59.507] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:04:29.518] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:04:29.518] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:04:32.176] [io.ktor.routing.Routing/TRACE] Trace for [render, name, OFTS_CQM, sk]
-/, segment:0 -> SUCCESS @ /
-  /render, segment:1 -> SUCCESS @ /render
-    /render/{type}, segment:2 -> SUCCESS; Parameters [type=[name]] @ /render/{type}
-      /render/{type}/{content}, segment:3 -> SUCCESS; Parameters [content=[OFTS_CQM]] @ /render/{type}/{content}
-        /render/{type}/{content}/{position}, segment:4 -> SUCCESS; Parameters [position=[sk]] @ /render/{type}/{content}/{position}
-          /render/{type}/{content}/{position}/(method:GET), segment:4 -> SUCCESS @ /render/{type}/{content}/{position}/(method:GET)
-  /refresh, segment:0 -> FAILURE "Selector didn't match" @ /refresh
-  /data, segment:0 -> FAILURE "Selector didn't match" @ /data
-  /face, segment:0 -> FAILURE "Selector didn't match" @ /face
-Matched routes:
-  "" -> "render" -> "{type}" -> "{content}" -> "{position}" -> "(method:GET)"
-Route resolve result:
-  SUCCESS; Parameters [type=[name], content=[OFTS_CQM], position=[sk]] @ /render/{type}/{content}/{position}/(method:GET)
-[16:04:32.177] [org.apache.ibatis.transaction.jdbc.JdbcTransaction/DEBUG] Opening JDBC Connection
-[16:04:32.177] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] ==>  Preparing: SELECT uuid, name, slim, `update`, hash FROM `skin` WHERE name = ?
-[16:04:32.179] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] ==> Parameters: OFTS_CQM(String)
-[16:04:32.180] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/TRACE] <==    Columns: uuid, name, slim, update, hash
-[16:04:32.181] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/TRACE] <==        Row: abce627c54db4577a6830c8270705252, OFTS_CQM, 1, 1765493032741, 89ceac7dd7922230f61687918de93c45bc8418d00ca256e268db455eb9d3d322
-[16:04:32.181] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] <==      Total: 1
-[16:04:32.181] [org.apache.ibatis.transaction.jdbc.JdbcTransaction/DEBUG] Closing JDBC Connection [HikariProxyConnection@1667882328 wrapping com.mysql.cj.jdbc.ConnectionImpl@3cb12d32]
-[16:04:32.326] [io.ktor.server.plugins.contentnegotiation.ContentNegotiation/TRACE] Skipping because body is already converted.
-[16:04:32.327] [ktor.application/INFO ] [200] [GET] /render/name/OFTS_CQM/sk okhttp/4.12.0
-[16:04:36.983] [io.ktor.routing.Routing/TRACE] Trace for [render, name, OFTS_CQM, dsk]
-/, segment:0 -> SUCCESS @ /
-  /render, segment:1 -> SUCCESS @ /render
-    /render/{type}, segment:2 -> SUCCESS; Parameters [type=[name]] @ /render/{type}
-      /render/{type}/{content}, segment:3 -> SUCCESS; Parameters [content=[OFTS_CQM]] @ /render/{type}/{content}
-        /render/{type}/{content}/{position}, segment:4 -> SUCCESS; Parameters [position=[dsk]] @ /render/{type}/{content}/{position}
-          /render/{type}/{content}/{position}/(method:GET), segment:4 -> SUCCESS @ /render/{type}/{content}/{position}/(method:GET)
-  /refresh, segment:0 -> FAILURE "Selector didn't match" @ /refresh
-  /data, segment:0 -> FAILURE "Selector didn't match" @ /data
-  /face, segment:0 -> FAILURE "Selector didn't match" @ /face
-Matched routes:
-  "" -> "render" -> "{type}" -> "{content}" -> "{position}" -> "(method:GET)"
-Route resolve result:
-  SUCCESS; Parameters [type=[name], content=[OFTS_CQM], position=[dsk]] @ /render/{type}/{content}/{position}/(method:GET)
-[16:04:36.983] [org.apache.ibatis.transaction.jdbc.JdbcTransaction/DEBUG] Opening JDBC Connection
-[16:04:36.984] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] ==>  Preparing: SELECT uuid, name, slim, `update`, hash FROM `skin` WHERE name = ?
-[16:04:36.984] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] ==> Parameters: OFTS_CQM(String)
-[16:04:36.985] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/TRACE] <==    Columns: uuid, name, slim, update, hash
-[16:04:36.985] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/TRACE] <==        Row: abce627c54db4577a6830c8270705252, OFTS_CQM, 1, 1765493032741, 89ceac7dd7922230f61687918de93c45bc8418d00ca256e268db455eb9d3d322
-[16:04:36.985] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] <==      Total: 1
-[16:04:36.985] [org.apache.ibatis.transaction.jdbc.JdbcTransaction/DEBUG] Closing JDBC Connection [HikariProxyConnection@1849562702 wrapping com.mysql.cj.jdbc.ConnectionImpl@3cb12d32]
-[16:04:39.993] [io.ktor.server.plugins.contentnegotiation.ContentNegotiation/TRACE] Skipping because body is already converted.
-[16:04:39.993] [ktor.application/INFO ] [200] [GET] /render/name/OFTS_CQM/dsk okhttp/4.12.0
-[16:04:48.307] [io.ktor.routing.Routing/TRACE] Trace for [render, name, OFTS_CQM, sneak]
-/, segment:0 -> SUCCESS @ /
-  /render, segment:1 -> SUCCESS @ /render
-    /render/{type}, segment:2 -> SUCCESS; Parameters [type=[name]] @ /render/{type}
-      /render/{type}/{content}, segment:3 -> SUCCESS; Parameters [content=[OFTS_CQM]] @ /render/{type}/{content}
-        /render/{type}/{content}/{position}, segment:4 -> SUCCESS; Parameters [position=[sneak]] @ /render/{type}/{content}/{position}
-          /render/{type}/{content}/{position}/(method:GET), segment:4 -> SUCCESS @ /render/{type}/{content}/{position}/(method:GET)
-  /refresh, segment:0 -> FAILURE "Selector didn't match" @ /refresh
-  /data, segment:0 -> FAILURE "Selector didn't match" @ /data
-  /face, segment:0 -> FAILURE "Selector didn't match" @ /face
-Matched routes:
-  "" -> "render" -> "{type}" -> "{content}" -> "{position}" -> "(method:GET)"
-Route resolve result:
-  SUCCESS; Parameters [type=[name], content=[OFTS_CQM], position=[sneak]] @ /render/{type}/{content}/{position}/(method:GET)
-[16:04:48.307] [org.apache.ibatis.transaction.jdbc.JdbcTransaction/DEBUG] Opening JDBC Connection
-[16:04:48.307] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] ==>  Preparing: SELECT uuid, name, slim, `update`, hash FROM `skin` WHERE name = ?
-[16:04:48.309] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] ==> Parameters: OFTS_CQM(String)
-[16:04:48.310] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/TRACE] <==    Columns: uuid, name, slim, update, hash
-[16:04:48.311] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/TRACE] <==        Row: abce627c54db4577a6830c8270705252, OFTS_CQM, 1, 1765493032741, 89ceac7dd7922230f61687918de93c45bc8418d00ca256e268db455eb9d3d322
-[16:04:48.311] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] <==      Total: 1
-[16:04:48.311] [org.apache.ibatis.transaction.jdbc.JdbcTransaction/DEBUG] Closing JDBC Connection [HikariProxyConnection@2095660118 wrapping com.mysql.cj.jdbc.ConnectionImpl@3cb12d32]
-[16:04:48.942] [io.ktor.server.plugins.contentnegotiation.ContentNegotiation/TRACE] Skipping because body is already converted.
-[16:04:48.943] [ktor.application/INFO ] [200] [GET] /render/name/OFTS_CQM/sneak okhttp/4.12.0
-[16:04:54.257] [io.ktor.routing.Routing/TRACE] Trace for [render, name, OFTS_CQM, homo]
+[20:56:07.000] [io.netty.util.internal.PlatformDependent0/DEBUG] java.nio.DirectByteBuffer.<init>(long, {int,long}): unavailable
+[20:56:07.000] [io.netty.util.internal.PlatformDependent/DEBUG] sun.misc.Unsafe: available
+[20:56:07.000] [io.netty.util.internal.PlatformDependent/DEBUG] -Dio.netty.tmpdir: C:\Users\10173\AppData\Local\Temp (java.io.tmpdir)
+[20:56:07.000] [io.netty.util.internal.PlatformDependent/DEBUG] -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[20:56:07.000] [io.netty.util.internal.PlatformDependent/DEBUG] Platform: Windows
+[20:56:07.002] [io.netty.util.internal.PlatformDependent/DEBUG] -Dio.netty.maxDirectMemory: -1 bytes
+[20:56:07.003] [io.netty.util.internal.PlatformDependent/DEBUG] -Dio.netty.uninitializedArrayAllocationThreshold: -1
+[20:56:07.004] [io.netty.util.internal.CleanerJava9/DEBUG] java.nio.ByteBuffer.cleaner(): available
+[20:56:07.004] [io.netty.util.internal.PlatformDependent/DEBUG] -Dio.netty.noPreferDirect: false
+[20:56:07.044] [io.netty.channel.MultithreadEventLoopGroup/DEBUG] -Dio.netty.eventLoopThreads: 64
+[20:56:07.047] [io.netty.util.concurrent.GlobalEventExecutor/DEBUG] -Dio.netty.globalEventExecutor.quietPeriodSeconds: 1
+[20:56:07.049] [io.netty.util.internal.InternalThreadLocalMap/DEBUG] -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+[20:56:07.049] [io.netty.util.internal.InternalThreadLocalMap/DEBUG] -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+[20:56:07.051] [io.netty.channel.nio.NioEventLoop/DEBUG] -Dio.netty.noKeySetOptimization: false
+[20:56:07.051] [io.netty.channel.nio.NioEventLoop/DEBUG] -Dio.netty.selectorAutoRebuildThreshold: 512
+[20:56:07.054] [io.netty.util.internal.PlatformDependent/DEBUG] org.jctools-core.MpscChunkedArrayQueue: available
+[20:56:07.056] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@40de55c3
+[20:56:07.058] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@62205382
+[20:56:07.058] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@76a1efcd
+[20:56:07.059] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@7589e9f4
+[20:56:07.061] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@5521a0fc
+[20:56:07.061] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@357d4599
+[20:56:07.062] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@4cdb1b7c
+[20:56:07.063] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@76a79d5a
+[20:56:07.064] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@2e59e532
+[20:56:07.065] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@71d73ced
+[20:56:07.066] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@6543d950
+[20:56:07.066] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@2fc4d5ef
+[20:56:07.067] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@4e55c550
+[20:56:07.068] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@62da823
+[20:56:07.068] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@7ddf78ef
+[20:56:07.070] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@743db116
+[20:56:07.071] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@14a29584
+[20:56:07.072] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@7eac0d3c
+[20:56:07.073] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@18f6a12d
+[20:56:07.073] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@1a8c0f51
+[20:56:07.074] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@9e11185
+[20:56:07.075] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@17ba2868
+[20:56:07.076] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@3a681c7b
+[20:56:07.077] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@40e46ae0
+[20:56:07.078] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@41083640
+[20:56:07.079] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@737bf61
+[20:56:07.080] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@7dc6f038
+[20:56:07.080] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@1e16260a
+[20:56:07.081] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@1e2ca9be
+[20:56:07.082] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@245ac1ad
+[20:56:07.083] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@6e57b22e
+[20:56:07.084] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@41deef98
+[20:56:07.084] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@3a44cf44
+[20:56:07.085] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@48e13608
+[20:56:07.088] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@1d4f19c4
+[20:56:07.089] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@501cf0cf
+[20:56:07.090] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@4415c333
+[20:56:07.090] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@5ef51b1d
+[20:56:07.091] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@3b11b83e
+[20:56:07.092] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@c3cbd1b
+[20:56:07.093] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@66daebf4
+[20:56:07.094] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@108129c1
+[20:56:07.094] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@2667a3a7
+[20:56:07.095] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@4f5a0615
+[20:56:07.096] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@7eeec141
+[20:56:07.096] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@67b8207c
+[20:56:07.097] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@7c59ddb7
+[20:56:07.098] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@63ac1687
+[20:56:07.099] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@6b40277a
+[20:56:07.101] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@4ddd41ae
+[20:56:07.102] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@7fdb89c7
+[20:56:07.103] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@7c40b095
+[20:56:07.103] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@16d12390
+[20:56:07.104] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@3126c0d5
+[20:56:07.105] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@1210e287
+[20:56:07.105] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@6b2d2c48
+[20:56:07.106] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@747f4f1e
+[20:56:07.107] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@7358192c
+[20:56:07.107] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@6649d91a
+[20:56:07.108] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@6404e6f7
+[20:56:07.109] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@6a0d42d6
+[20:56:07.110] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@59afb7c2
+[20:56:07.110] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@718624e4
+[20:56:07.111] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@3276477d
+[20:56:07.112] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@32edb817
+[20:56:07.112] [io.netty.channel.nio.NioEventLoop/TRACE] instrumented a special java.util.Set into: sun.nio.ch.WEPollSelectorImpl@1658082f
+[20:56:07.117] [io.netty.channel.DefaultChannelId/DEBUG] -Dio.netty.processId: 38772 (auto-detected)
+[20:56:07.118] [io.netty.util.NetUtil/DEBUG] -Djava.net.preferIPv4Stack: false
+[20:56:07.118] [io.netty.util.NetUtil/DEBUG] -Djava.net.preferIPv6Addresses: false
+[20:56:07.121] [io.netty.util.NetUtilInitializations/DEBUG] Loopback interface: loopback_0 (Software Loopback Interface 1, 0:0:0:0:0:0:0:1)
+[20:56:07.121] [io.netty.util.NetUtil/DEBUG] Failed to get SOMAXCONN from sysctl and file \proc\sys\net\core\somaxconn. Default: 200
+[20:56:07.123] [io.netty.channel.DefaultChannelId/DEBUG] -Dio.netty.machineId: 60:cf:84:ff:fe:5d:f2:de (auto-detected)
+[20:56:07.127] [io.netty.util.ResourceLeakDetector/DEBUG] -Dio.netty.leakDetection.level: simple
+[20:56:07.127] [io.netty.util.ResourceLeakDetector/DEBUG] -Dio.netty.leakDetection.targetRecords: 4
+[20:56:07.137] [io.netty.buffer.PooledByteBufAllocator/DEBUG] -Dio.netty.allocator.numHeapArenas: 64
+[20:56:07.137] [io.netty.buffer.PooledByteBufAllocator/DEBUG] -Dio.netty.allocator.numDirectArenas: 64
+[20:56:07.137] [io.netty.buffer.PooledByteBufAllocator/DEBUG] -Dio.netty.allocator.pageSize: 8192
+[20:56:07.137] [io.netty.buffer.PooledByteBufAllocator/DEBUG] -Dio.netty.allocator.maxOrder: 9
+[20:56:07.137] [io.netty.buffer.PooledByteBufAllocator/DEBUG] -Dio.netty.allocator.chunkSize: 4194304
+[20:56:07.138] [io.netty.buffer.PooledByteBufAllocator/DEBUG] -Dio.netty.allocator.smallCacheSize: 256
+[20:56:07.138] [io.netty.buffer.PooledByteBufAllocator/DEBUG] -Dio.netty.allocator.normalCacheSize: 64
+[20:56:07.138] [io.netty.buffer.PooledByteBufAllocator/DEBUG] -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+[20:56:07.138] [io.netty.buffer.PooledByteBufAllocator/DEBUG] -Dio.netty.allocator.cacheTrimInterval: 8192
+[20:56:07.138] [io.netty.buffer.PooledByteBufAllocator/DEBUG] -Dio.netty.allocator.cacheTrimIntervalMillis: 0
+[20:56:07.138] [io.netty.buffer.PooledByteBufAllocator/DEBUG] -Dio.netty.allocator.useCacheForAllThreads: false
+[20:56:07.138] [io.netty.buffer.PooledByteBufAllocator/DEBUG] -Dio.netty.allocator.maxCachedByteBuffersPerChunk: 1023
+[20:56:07.148] [io.netty.buffer.ByteBufUtil/DEBUG] -Dio.netty.allocator.type: pooled
+[20:56:07.148] [io.netty.buffer.ByteBufUtil/DEBUG] -Dio.netty.threadLocalDirectBufferSize: 0
+[20:56:07.148] [io.netty.buffer.ByteBufUtil/DEBUG] -Dio.netty.maxThreadLocalCharBufferSize: 16384
+[20:56:07.150] [io.netty.bootstrap.ChannelInitializerExtensions/DEBUG] -Dio.netty.bootstrap.extensions: null
+[20:56:07.165] [ktor.application/INFO ] Responding at http://127.0.0.1:2345
+[20:56:36.501] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[20:56:36.501] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+[20:57:06.508] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[20:57:06.508] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+[20:57:36.512] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[20:57:36.512] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+[20:57:48.159] [io.netty.buffer.AbstractByteBuf/DEBUG] -Dio.netty.buffer.checkAccessible: true
+[20:57:48.159] [io.netty.buffer.AbstractByteBuf/DEBUG] -Dio.netty.buffer.checkBounds: true
+[20:57:48.160] [io.netty.util.ResourceLeakDetectorFactory/DEBUG] Loaded default ResourceLeakDetector: io.netty.util.ResourceLeakDetector@9c2e609
+[20:57:48.186] [io.netty.util.Recycler/DEBUG] -Dio.netty.recycler.maxCapacityPerThread: 4096
+[20:57:48.186] [io.netty.util.Recycler/DEBUG] -Dio.netty.recycler.ratio: 8
+[20:57:48.186] [io.netty.util.Recycler/DEBUG] -Dio.netty.recycler.chunkSize: 32
+[20:57:48.186] [io.netty.util.Recycler/DEBUG] -Dio.netty.recycler.blocking: false
+[20:57:48.186] [io.netty.util.Recycler/DEBUG] -Dio.netty.recycler.batchFastThreadLocalOnly: true
+[20:57:48.223] [io.ktor.routing.Routing/TRACE] Trace for [render, name, OFTS_CQM, homo]
 /, segment:0 -> SUCCESS @ /
   /render, segment:1 -> SUCCESS @ /render
     /render/{type}, segment:2 -> SUCCESS; Parameters [type=[name]] @ /render/{type}
@@ -697,181 +362,389 @@ Matched routes:
   "" -> "render" -> "{type}" -> "{content}" -> "{position}" -> "(method:GET)"
 Route resolve result:
   SUCCESS; Parameters [type=[name], content=[OFTS_CQM], position=[homo]] @ /render/{type}/{content}/{position}/(method:GET)
-[16:04:54.257] [org.apache.ibatis.transaction.jdbc.JdbcTransaction/DEBUG] Opening JDBC Connection
-[16:04:54.257] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] ==>  Preparing: SELECT uuid, name, slim, `update`, hash FROM `skin` WHERE name = ?
-[16:04:54.258] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] ==> Parameters: OFTS_CQM(String)
-[16:04:54.259] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/TRACE] <==    Columns: uuid, name, slim, update, hash
-[16:04:54.259] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/TRACE] <==        Row: abce627c54db4577a6830c8270705252, OFTS_CQM, 1, 1765493032741, 89ceac7dd7922230f61687918de93c45bc8418d00ca256e268db455eb9d3d322
-[16:04:54.260] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] <==      Total: 1
-[16:04:54.260] [org.apache.ibatis.transaction.jdbc.JdbcTransaction/DEBUG] Closing JDBC Connection [HikariProxyConnection@1202222160 wrapping com.mysql.cj.jdbc.ConnectionImpl@3cb12d32]
-[16:04:54.455] [io.ktor.server.plugins.contentnegotiation.ContentNegotiation/TRACE] Skipping because body is already converted.
-[16:04:54.456] [ktor.application/INFO ] [200] [GET] /render/name/OFTS_CQM/homo okhttp/4.12.0
-[16:04:57.225] [ktor.application/DEBUG] I/O operation failed
-java.net.SocketException: Connection reset
-	at sun.nio.ch.SocketChannelImpl.throwConnectionReset(SocketChannelImpl.java:401) ~[?:?]
-	at sun.nio.ch.SocketChannelImpl.read(SocketChannelImpl.java:434) ~[?:?]
-	at io.netty.buffer.PooledByteBuf.setBytes(PooledByteBuf.java:254) ~[server.jar:?]
-	at io.netty.buffer.AbstractByteBuf.writeBytes(AbstractByteBuf.java:1132) ~[server.jar:?]
-	at io.netty.channel.socket.nio.NioSocketChannel.doReadBytes(NioSocketChannel.java:357) ~[server.jar:?]
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:151) ~[server.jar:?]
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788) ~[server.jar:?]
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724) ~[server.jar:?]
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650) ~[server.jar:?]
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562) ~[server.jar:?]
-	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997) ~[server.jar:?]
-	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[server.jar:?]
-	at io.ktor.server.netty.EventLoopGroupProxy$Companion.create$lambda$1$lambda$0(NettyApplicationEngine.kt:296) ~[server.jar:?]
-	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[server.jar:?]
-	at java.lang.Thread.run(Thread.java:1583) [?:?]
-[16:04:59.527] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:04:59.527] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:05:29.530] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:05:29.530] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:05:59.538] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:05:59.538] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:06:29.549] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:06:29.549] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:06:59.565] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:06:59.565] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:07:29.578] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:07:29.578] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:07:59.586] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:07:59.586] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:08:29.598] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:08:29.598] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:08:59.611] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:08:59.611] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:09:29.615] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:09:29.615] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:09:59.624] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:09:59.624] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:10:29.627] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:10:29.627] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:10:59.641] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:10:59.641] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:11:29.645] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:11:29.645] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:11:59.651] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:11:59.651] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:12:29.664] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:12:29.664] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:12:59.677] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:12:59.677] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:13:29.686] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:13:29.686] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:13:59.693] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:13:59.693] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:14:29.707] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:14:29.707] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:14:59.714] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:14:59.714] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:15:29.717] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:15:29.717] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:15:59.729] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:15:59.729] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:16:29.735] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:16:29.735] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:16:59.741] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:16:59.741] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:17:29.745] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:17:29.745] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:17:59.759] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:17:59.759] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:18:29.759] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:18:29.759] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:18:59.760] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:18:59.760] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:19:29.771] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:19:29.771] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:19:59.772] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:19:59.772] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:20:29.775] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:20:29.775] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:20:59.782] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:20:59.782] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:21:29.796] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:21:29.796] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:21:59.804] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:21:59.804] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:22:29.812] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:22:29.812] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:22:59.825] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:22:59.825] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:23:29.829] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:23:29.829] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:23:59.832] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:23:59.832] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:24:29.841] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:24:29.841] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:24:59.842] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:24:59.842] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:25:29.847] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:25:29.847] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:25:59.853] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:25:59.853] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:26:29.856] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:26:29.856] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:26:59.869] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:26:59.869] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:27:29.873] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:27:29.873] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:27:59.888] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:27:59.888] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:28:29.896] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:28:29.896] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:28:59.908] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:28:59.908] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:29:29.911] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:29:29.911] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:29:59.912] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:29:59.912] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:30:29.914] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:30:29.914] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:30:59.917] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:30:59.917] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:31:29.926] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:31:29.926] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:31:44.395] [com.zaxxer.hikari.pool.PoolBase/DEBUG] HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@3cb12d32: (connection has passed maxLifetime)
-[16:31:44.402] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@11c95afa
-[16:31:44.628] [com.zaxxer.hikari.pool.PoolBase/DEBUG] HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@4cbbb9a4: (connection has passed maxLifetime)
-[16:31:44.631] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@50f450c1
-[16:31:48.147] [com.zaxxer.hikari.pool.PoolBase/DEBUG] HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@7d8c2709: (connection has passed maxLifetime)
-[16:31:48.149] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@61ee837e
-[16:31:50.955] [com.zaxxer.hikari.pool.PoolBase/DEBUG] HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@43453bc1: (connection has passed maxLifetime)
-[16:31:50.958] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@30dbaf8e
-[16:31:59.929] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:31:59.929] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:32:05.737] [com.zaxxer.hikari.pool.PoolBase/DEBUG] HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@528d8dd6: (connection has passed maxLifetime)
-[16:32:05.740] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@64979f4e
-[16:32:06.647] [com.zaxxer.hikari.pool.PoolBase/DEBUG] HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@19ed215c: (connection has passed maxLifetime)
-[16:32:06.652] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@25aa9575
-[16:32:10.706] [com.zaxxer.hikari.pool.PoolBase/DEBUG] HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@22e953c9: (connection has passed maxLifetime)
-[16:32:10.709] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@14c57547
-[16:32:21.777] [com.zaxxer.hikari.pool.PoolBase/DEBUG] HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@1da3d846: (connection has passed maxLifetime)
-[16:32:21.779] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5545914f
-[16:32:29.943] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:32:29.943] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:32:32.728] [com.zaxxer.hikari.pool.PoolBase/DEBUG] HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@13b087ed: (connection has passed maxLifetime)
-[16:32:32.731] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@13aee177
-[16:32:36.182] [com.zaxxer.hikari.pool.PoolBase/DEBUG] HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@739f78a2: (connection has passed maxLifetime)
-[16:32:36.185] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5293eb4c
-[16:32:59.953] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:32:59.953] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:33:29.961] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:33:29.961] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:33:59.971] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:33:59.971] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:34:29.971] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:34:29.971] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:34:59.980] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:34:59.980] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:35:29.988] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:35:29.988] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:35:59.991] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:35:59.991] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:36:30.002] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
-[16:36:30.002] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
-[16:36:44.142] [App/INFO ] 正在关闭
-[16:36:45.155] [io.netty.buffer.PoolThreadCache/DEBUG] Freed 6 thread-local buffer(s) from thread: eventLoopGroupProxy-3-3
-[16:36:45.155] [io.netty.buffer.PoolThreadCache/DEBUG] Freed 3 thread-local buffer(s) from thread: eventLoopGroupProxy-3-2
-[16:36:45.155] [io.netty.buffer.PoolThreadCache/DEBUG] Freed 3 thread-local buffer(s) from thread: eventLoopGroupProxy-3-1
+[20:57:48.227] [org.apache.ibatis.transaction.jdbc.JdbcTransaction/DEBUG] Opening JDBC Connection
+[20:57:48.227] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] ==>  Preparing: SELECT uuid, name, slim, `update`, hash FROM `skin` WHERE name = ?
+[20:57:48.229] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] ==> Parameters: OFTS_CQM(String)
+[20:57:48.241] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/TRACE] <==    Columns: uuid, name, slim, update, hash
+[20:57:48.241] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/TRACE] <==        Row: abce627c54db4577a6830c8270705252, OFTS_CQM, 1, 1765493032741, 89ceac7dd7922230f61687918de93c45bc8418d00ca256e268db455eb9d3d322
+[20:57:48.244] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] <==      Total: 1
+[20:57:48.247] [org.apache.ibatis.transaction.jdbc.JdbcTransaction/DEBUG] Closing JDBC Connection [HikariProxyConnection@1080898241 wrapping com.mysql.cj.jdbc.ConnectionImpl@56f1ed93]
+[20:57:48.844] [io.ktor.server.plugins.contentnegotiation.ContentNegotiation/TRACE] Skipping because body is already converted.
+[20:57:48.848] [ktor.application/INFO ] [200] [GET] /render/name/OFTS_CQM/homo okhttp/4.12.0
+[20:57:52.205] [io.ktor.routing.Routing/TRACE] Trace for [render, name, Aayong, homo]
+/, segment:0 -> SUCCESS @ /
+  /render, segment:1 -> SUCCESS @ /render
+    /render/{type}, segment:2 -> SUCCESS; Parameters [type=[name]] @ /render/{type}
+      /render/{type}/{content}, segment:3 -> SUCCESS; Parameters [content=[Aayong]] @ /render/{type}/{content}
+        /render/{type}/{content}/{position}, segment:4 -> SUCCESS; Parameters [position=[homo]] @ /render/{type}/{content}/{position}
+          /render/{type}/{content}/{position}/(method:GET), segment:4 -> SUCCESS @ /render/{type}/{content}/{position}/(method:GET)
+  /refresh, segment:0 -> FAILURE "Selector didn't match" @ /refresh
+  /data, segment:0 -> FAILURE "Selector didn't match" @ /data
+  /face, segment:0 -> FAILURE "Selector didn't match" @ /face
+Matched routes:
+  "" -> "render" -> "{type}" -> "{content}" -> "{position}" -> "(method:GET)"
+Route resolve result:
+  SUCCESS; Parameters [type=[name], content=[Aayong], position=[homo]] @ /render/{type}/{content}/{position}/(method:GET)
+[20:57:52.205] [org.apache.ibatis.transaction.jdbc.JdbcTransaction/DEBUG] Opening JDBC Connection
+[20:57:52.206] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] ==>  Preparing: SELECT uuid, name, slim, `update`, hash FROM `skin` WHERE name = ?
+[20:57:52.206] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] ==> Parameters: Aayong(String)
+[20:57:52.207] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/TRACE] <==    Columns: uuid, name, slim, update, hash
+[20:57:52.207] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/TRACE] <==        Row: a430252e63104405ab1c262eab6ed890, Aayong, 0, 1765726990733, ba6d75a46dbaf19d5259441413f4c7e94614cf489577f495bceafc4d046e9ef3
+[20:57:52.207] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] <==      Total: 1
+[20:57:52.207] [org.apache.ibatis.transaction.jdbc.JdbcTransaction/DEBUG] Closing JDBC Connection [HikariProxyConnection@1300696244 wrapping com.mysql.cj.jdbc.ConnectionImpl@56f1ed93]
+[20:57:52.521] [io.ktor.server.plugins.contentnegotiation.ContentNegotiation/TRACE] Skipping because body is already converted.
+[20:57:52.521] [ktor.application/INFO ] [200] [GET] /render/name/Aayong/homo okhttp/4.12.0
+[20:57:58.234] [io.ktor.routing.Routing/TRACE] Trace for [render, name, Aayong, homo]
+/, segment:0 -> SUCCESS @ /
+  /render, segment:1 -> SUCCESS @ /render
+    /render/{type}, segment:2 -> SUCCESS; Parameters [type=[name]] @ /render/{type}
+      /render/{type}/{content}, segment:3 -> SUCCESS; Parameters [content=[Aayong]] @ /render/{type}/{content}
+        /render/{type}/{content}/{position}, segment:4 -> SUCCESS; Parameters [position=[homo]] @ /render/{type}/{content}/{position}
+          /render/{type}/{content}/{position}/(method:GET), segment:4 -> SUCCESS @ /render/{type}/{content}/{position}/(method:GET)
+  /refresh, segment:0 -> FAILURE "Selector didn't match" @ /refresh
+  /data, segment:0 -> FAILURE "Selector didn't match" @ /data
+  /face, segment:0 -> FAILURE "Selector didn't match" @ /face
+Matched routes:
+  "" -> "render" -> "{type}" -> "{content}" -> "{position}" -> "(method:GET)"
+Route resolve result:
+  SUCCESS; Parameters [type=[name], content=[Aayong], position=[homo]] @ /render/{type}/{content}/{position}/(method:GET)
+[20:57:58.235] [org.apache.ibatis.transaction.jdbc.JdbcTransaction/DEBUG] Opening JDBC Connection
+[20:57:58.236] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] ==>  Preparing: SELECT uuid, name, slim, `update`, hash FROM `skin` WHERE name = ?
+[20:57:58.236] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] ==> Parameters: Aayong(String)
+[20:57:58.238] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/TRACE] <==    Columns: uuid, name, slim, update, hash
+[20:57:58.238] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/TRACE] <==        Row: a430252e63104405ab1c262eab6ed890, Aayong, 0, 1765726990733, ba6d75a46dbaf19d5259441413f4c7e94614cf489577f495bceafc4d046e9ef3
+[20:57:58.238] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] <==      Total: 1
+[20:57:58.238] [org.apache.ibatis.transaction.jdbc.JdbcTransaction/DEBUG] Closing JDBC Connection [HikariProxyConnection@94545764 wrapping com.mysql.cj.jdbc.ConnectionImpl@56f1ed93]
+[20:57:58.439] [io.ktor.server.plugins.contentnegotiation.ContentNegotiation/TRACE] Skipping because body is already converted.
+[20:57:58.440] [ktor.application/INFO ] [200] [GET] /render/name/Aayong/homo okhttp/4.12.0
+[20:58:05.351] [io.ktor.routing.Routing/TRACE] Trace for [render, name, Aayong, homo]
+/, segment:0 -> SUCCESS @ /
+  /render, segment:1 -> SUCCESS @ /render
+    /render/{type}, segment:2 -> SUCCESS; Parameters [type=[name]] @ /render/{type}
+      /render/{type}/{content}, segment:3 -> SUCCESS; Parameters [content=[Aayong]] @ /render/{type}/{content}
+        /render/{type}/{content}/{position}, segment:4 -> SUCCESS; Parameters [position=[homo]] @ /render/{type}/{content}/{position}
+          /render/{type}/{content}/{position}/(method:GET), segment:4 -> SUCCESS @ /render/{type}/{content}/{position}/(method:GET)
+  /refresh, segment:0 -> FAILURE "Selector didn't match" @ /refresh
+  /data, segment:0 -> FAILURE "Selector didn't match" @ /data
+  /face, segment:0 -> FAILURE "Selector didn't match" @ /face
+Matched routes:
+  "" -> "render" -> "{type}" -> "{content}" -> "{position}" -> "(method:GET)"
+Route resolve result:
+  SUCCESS; Parameters [type=[name], content=[Aayong], position=[homo]] @ /render/{type}/{content}/{position}/(method:GET)
+[20:58:05.351] [org.apache.ibatis.transaction.jdbc.JdbcTransaction/DEBUG] Opening JDBC Connection
+[20:58:05.352] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] ==>  Preparing: SELECT uuid, name, slim, `update`, hash FROM `skin` WHERE name = ?
+[20:58:05.352] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] ==> Parameters: Aayong(String)
+[20:58:05.353] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/TRACE] <==    Columns: uuid, name, slim, update, hash
+[20:58:05.353] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/TRACE] <==        Row: a430252e63104405ab1c262eab6ed890, Aayong, 0, 1765726990733, ba6d75a46dbaf19d5259441413f4c7e94614cf489577f495bceafc4d046e9ef3
+[20:58:05.354] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] <==      Total: 1
+[20:58:05.354] [org.apache.ibatis.transaction.jdbc.JdbcTransaction/DEBUG] Closing JDBC Connection [HikariProxyConnection@1050793356 wrapping com.mysql.cj.jdbc.ConnectionImpl@56f1ed93]
+[20:58:05.553] [io.ktor.server.plugins.contentnegotiation.ContentNegotiation/TRACE] Skipping because body is already converted.
+[20:58:05.554] [ktor.application/INFO ] [200] [GET] /render/name/Aayong/homo okhttp/4.12.0
+[20:58:06.517] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[20:58:06.517] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+[20:58:10.158] [io.ktor.routing.Routing/TRACE] Trace for [render, name, Aayong, homo]
+/, segment:0 -> SUCCESS @ /
+  /render, segment:1 -> SUCCESS @ /render
+    /render/{type}, segment:2 -> SUCCESS; Parameters [type=[name]] @ /render/{type}
+      /render/{type}/{content}, segment:3 -> SUCCESS; Parameters [content=[Aayong]] @ /render/{type}/{content}
+        /render/{type}/{content}/{position}, segment:4 -> SUCCESS; Parameters [position=[homo]] @ /render/{type}/{content}/{position}
+          /render/{type}/{content}/{position}/(method:GET), segment:4 -> SUCCESS @ /render/{type}/{content}/{position}/(method:GET)
+  /refresh, segment:0 -> FAILURE "Selector didn't match" @ /refresh
+  /data, segment:0 -> FAILURE "Selector didn't match" @ /data
+  /face, segment:0 -> FAILURE "Selector didn't match" @ /face
+Matched routes:
+  "" -> "render" -> "{type}" -> "{content}" -> "{position}" -> "(method:GET)"
+Route resolve result:
+  SUCCESS; Parameters [type=[name], content=[Aayong], position=[homo]] @ /render/{type}/{content}/{position}/(method:GET)
+[20:58:10.158] [org.apache.ibatis.transaction.jdbc.JdbcTransaction/DEBUG] Opening JDBC Connection
+[20:58:10.158] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] ==>  Preparing: SELECT uuid, name, slim, `update`, hash FROM `skin` WHERE name = ?
+[20:58:10.160] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] ==> Parameters: Aayong(String)
+[20:58:10.161] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/TRACE] <==    Columns: uuid, name, slim, update, hash
+[20:58:10.161] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/TRACE] <==        Row: a430252e63104405ab1c262eab6ed890, Aayong, 0, 1765726990733, ba6d75a46dbaf19d5259441413f4c7e94614cf489577f495bceafc4d046e9ef3
+[20:58:10.162] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] <==      Total: 1
+[20:58:10.162] [org.apache.ibatis.transaction.jdbc.JdbcTransaction/DEBUG] Closing JDBC Connection [HikariProxyConnection@1031347628 wrapping com.mysql.cj.jdbc.ConnectionImpl@56f1ed93]
+[20:58:10.374] [io.ktor.server.plugins.contentnegotiation.ContentNegotiation/TRACE] Skipping because body is already converted.
+[20:58:10.374] [ktor.application/INFO ] [200] [GET] /render/name/Aayong/homo okhttp/4.12.0
+[20:58:14.150] [io.ktor.routing.Routing/TRACE] Trace for [render, name, Aayong, homo]
+/, segment:0 -> SUCCESS @ /
+  /render, segment:1 -> SUCCESS @ /render
+    /render/{type}, segment:2 -> SUCCESS; Parameters [type=[name]] @ /render/{type}
+      /render/{type}/{content}, segment:3 -> SUCCESS; Parameters [content=[Aayong]] @ /render/{type}/{content}
+        /render/{type}/{content}/{position}, segment:4 -> SUCCESS; Parameters [position=[homo]] @ /render/{type}/{content}/{position}
+          /render/{type}/{content}/{position}/(method:GET), segment:4 -> SUCCESS @ /render/{type}/{content}/{position}/(method:GET)
+  /refresh, segment:0 -> FAILURE "Selector didn't match" @ /refresh
+  /data, segment:0 -> FAILURE "Selector didn't match" @ /data
+  /face, segment:0 -> FAILURE "Selector didn't match" @ /face
+Matched routes:
+  "" -> "render" -> "{type}" -> "{content}" -> "{position}" -> "(method:GET)"
+Route resolve result:
+  SUCCESS; Parameters [type=[name], content=[Aayong], position=[homo]] @ /render/{type}/{content}/{position}/(method:GET)
+[20:58:14.150] [org.apache.ibatis.transaction.jdbc.JdbcTransaction/DEBUG] Opening JDBC Connection
+[20:58:14.151] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] ==>  Preparing: SELECT uuid, name, slim, `update`, hash FROM `skin` WHERE name = ?
+[20:58:14.152] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] ==> Parameters: Aayong(String)
+[20:58:14.154] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/TRACE] <==    Columns: uuid, name, slim, update, hash
+[20:58:14.154] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/TRACE] <==        Row: a430252e63104405ab1c262eab6ed890, Aayong, 0, 1765726990733, ba6d75a46dbaf19d5259441413f4c7e94614cf489577f495bceafc4d046e9ef3
+[20:58:14.154] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] <==      Total: 1
+[20:58:14.155] [org.apache.ibatis.transaction.jdbc.JdbcTransaction/DEBUG] Closing JDBC Connection [HikariProxyConnection@1742344019 wrapping com.mysql.cj.jdbc.ConnectionImpl@56f1ed93]
+[20:58:14.378] [io.ktor.server.plugins.contentnegotiation.ContentNegotiation/TRACE] Skipping because body is already converted.
+[20:58:14.378] [ktor.application/INFO ] [200] [GET] /render/name/Aayong/homo okhttp/4.12.0
+[20:58:22.923] [io.ktor.routing.Routing/TRACE] Trace for [render, name, Aayong, homo]
+/, segment:0 -> SUCCESS @ /
+  /render, segment:1 -> SUCCESS @ /render
+    /render/{type}, segment:2 -> SUCCESS; Parameters [type=[name]] @ /render/{type}
+      /render/{type}/{content}, segment:3 -> SUCCESS; Parameters [content=[Aayong]] @ /render/{type}/{content}
+        /render/{type}/{content}/{position}, segment:4 -> SUCCESS; Parameters [position=[homo]] @ /render/{type}/{content}/{position}
+          /render/{type}/{content}/{position}/(method:GET), segment:4 -> SUCCESS @ /render/{type}/{content}/{position}/(method:GET)
+  /refresh, segment:0 -> FAILURE "Selector didn't match" @ /refresh
+  /data, segment:0 -> FAILURE "Selector didn't match" @ /data
+  /face, segment:0 -> FAILURE "Selector didn't match" @ /face
+Matched routes:
+  "" -> "render" -> "{type}" -> "{content}" -> "{position}" -> "(method:GET)"
+Route resolve result:
+  SUCCESS; Parameters [type=[name], content=[Aayong], position=[homo]] @ /render/{type}/{content}/{position}/(method:GET)
+[20:58:22.923] [org.apache.ibatis.transaction.jdbc.JdbcTransaction/DEBUG] Opening JDBC Connection
+[20:58:22.924] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] ==>  Preparing: SELECT uuid, name, slim, `update`, hash FROM `skin` WHERE name = ?
+[20:58:22.924] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] ==> Parameters: Aayong(String)
+[20:58:22.925] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/TRACE] <==    Columns: uuid, name, slim, update, hash
+[20:58:22.925] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/TRACE] <==        Row: a430252e63104405ab1c262eab6ed890, Aayong, 0, 1765726990733, ba6d75a46dbaf19d5259441413f4c7e94614cf489577f495bceafc4d046e9ef3
+[20:58:22.926] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] <==      Total: 1
+[20:58:22.926] [org.apache.ibatis.transaction.jdbc.JdbcTransaction/DEBUG] Closing JDBC Connection [HikariProxyConnection@1960421724 wrapping com.mysql.cj.jdbc.ConnectionImpl@56f1ed93]
+[20:58:23.152] [io.ktor.server.plugins.contentnegotiation.ContentNegotiation/TRACE] Skipping because body is already converted.
+[20:58:23.152] [ktor.application/INFO ] [200] [GET] /render/name/Aayong/homo okhttp/4.12.0
+[20:58:33.432] [io.ktor.routing.Routing/TRACE] Trace for [render, name, Aayong, homo]
+/, segment:0 -> SUCCESS @ /
+  /render, segment:1 -> SUCCESS @ /render
+    /render/{type}, segment:2 -> SUCCESS; Parameters [type=[name]] @ /render/{type}
+      /render/{type}/{content}, segment:3 -> SUCCESS; Parameters [content=[Aayong]] @ /render/{type}/{content}
+        /render/{type}/{content}/{position}, segment:4 -> SUCCESS; Parameters [position=[homo]] @ /render/{type}/{content}/{position}
+          /render/{type}/{content}/{position}/(method:GET), segment:4 -> SUCCESS @ /render/{type}/{content}/{position}/(method:GET)
+  /refresh, segment:0 -> FAILURE "Selector didn't match" @ /refresh
+  /data, segment:0 -> FAILURE "Selector didn't match" @ /data
+  /face, segment:0 -> FAILURE "Selector didn't match" @ /face
+Matched routes:
+  "" -> "render" -> "{type}" -> "{content}" -> "{position}" -> "(method:GET)"
+Route resolve result:
+  SUCCESS; Parameters [type=[name], content=[Aayong], position=[homo]] @ /render/{type}/{content}/{position}/(method:GET)
+[20:58:33.432] [org.apache.ibatis.transaction.jdbc.JdbcTransaction/DEBUG] Opening JDBC Connection
+[20:58:33.434] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] ==>  Preparing: SELECT uuid, name, slim, `update`, hash FROM `skin` WHERE name = ?
+[20:58:33.434] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] ==> Parameters: Aayong(String)
+[20:58:33.435] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/TRACE] <==    Columns: uuid, name, slim, update, hash
+[20:58:33.435] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/TRACE] <==        Row: a430252e63104405ab1c262eab6ed890, Aayong, 0, 1765726990733, ba6d75a46dbaf19d5259441413f4c7e94614cf489577f495bceafc4d046e9ef3
+[20:58:33.435] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] <==      Total: 1
+[20:58:33.435] [org.apache.ibatis.transaction.jdbc.JdbcTransaction/DEBUG] Closing JDBC Connection [HikariProxyConnection@106824165 wrapping com.mysql.cj.jdbc.ConnectionImpl@56f1ed93]
+[20:58:33.656] [io.ktor.server.plugins.contentnegotiation.ContentNegotiation/TRACE] Skipping because body is already converted.
+[20:58:33.657] [ktor.application/INFO ] [200] [GET] /render/name/Aayong/homo okhttp/4.12.0
+[20:58:36.525] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[20:58:36.525] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+[20:58:37.272] [io.ktor.routing.Routing/TRACE] Trace for [render, name, Aayong, homo]
+/, segment:0 -> SUCCESS @ /
+  /render, segment:1 -> SUCCESS @ /render
+    /render/{type}, segment:2 -> SUCCESS; Parameters [type=[name]] @ /render/{type}
+      /render/{type}/{content}, segment:3 -> SUCCESS; Parameters [content=[Aayong]] @ /render/{type}/{content}
+        /render/{type}/{content}/{position}, segment:4 -> SUCCESS; Parameters [position=[homo]] @ /render/{type}/{content}/{position}
+          /render/{type}/{content}/{position}/(method:GET), segment:4 -> SUCCESS @ /render/{type}/{content}/{position}/(method:GET)
+  /refresh, segment:0 -> FAILURE "Selector didn't match" @ /refresh
+  /data, segment:0 -> FAILURE "Selector didn't match" @ /data
+  /face, segment:0 -> FAILURE "Selector didn't match" @ /face
+Matched routes:
+  "" -> "render" -> "{type}" -> "{content}" -> "{position}" -> "(method:GET)"
+Route resolve result:
+  SUCCESS; Parameters [type=[name], content=[Aayong], position=[homo]] @ /render/{type}/{content}/{position}/(method:GET)
+[20:58:37.272] [org.apache.ibatis.transaction.jdbc.JdbcTransaction/DEBUG] Opening JDBC Connection
+[20:58:37.272] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] ==>  Preparing: SELECT uuid, name, slim, `update`, hash FROM `skin` WHERE name = ?
+[20:58:37.272] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] ==> Parameters: Aayong(String)
+[20:58:37.273] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/TRACE] <==    Columns: uuid, name, slim, update, hash
+[20:58:37.273] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/TRACE] <==        Row: a430252e63104405ab1c262eab6ed890, Aayong, 0, 1765726990733, ba6d75a46dbaf19d5259441413f4c7e94614cf489577f495bceafc4d046e9ef3
+[20:58:37.274] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] <==      Total: 1
+[20:58:37.274] [org.apache.ibatis.transaction.jdbc.JdbcTransaction/DEBUG] Closing JDBC Connection [HikariProxyConnection@1487354804 wrapping com.mysql.cj.jdbc.ConnectionImpl@56f1ed93]
+[20:58:37.469] [io.ktor.server.plugins.contentnegotiation.ContentNegotiation/TRACE] Skipping because body is already converted.
+[20:58:37.469] [ktor.application/INFO ] [200] [GET] /render/name/Aayong/homo okhttp/4.12.0
+[20:58:41.166] [io.ktor.routing.Routing/TRACE] Trace for [render, name, Aayong, homo]
+/, segment:0 -> SUCCESS @ /
+  /render, segment:1 -> SUCCESS @ /render
+    /render/{type}, segment:2 -> SUCCESS; Parameters [type=[name]] @ /render/{type}
+      /render/{type}/{content}, segment:3 -> SUCCESS; Parameters [content=[Aayong]] @ /render/{type}/{content}
+        /render/{type}/{content}/{position}, segment:4 -> SUCCESS; Parameters [position=[homo]] @ /render/{type}/{content}/{position}
+          /render/{type}/{content}/{position}/(method:GET), segment:4 -> SUCCESS @ /render/{type}/{content}/{position}/(method:GET)
+  /refresh, segment:0 -> FAILURE "Selector didn't match" @ /refresh
+  /data, segment:0 -> FAILURE "Selector didn't match" @ /data
+  /face, segment:0 -> FAILURE "Selector didn't match" @ /face
+Matched routes:
+  "" -> "render" -> "{type}" -> "{content}" -> "{position}" -> "(method:GET)"
+Route resolve result:
+  SUCCESS; Parameters [type=[name], content=[Aayong], position=[homo]] @ /render/{type}/{content}/{position}/(method:GET)
+[20:58:41.167] [org.apache.ibatis.transaction.jdbc.JdbcTransaction/DEBUG] Opening JDBC Connection
+[20:58:41.167] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] ==>  Preparing: SELECT uuid, name, slim, `update`, hash FROM `skin` WHERE name = ?
+[20:58:41.168] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] ==> Parameters: Aayong(String)
+[20:58:41.168] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/TRACE] <==    Columns: uuid, name, slim, update, hash
+[20:58:41.168] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/TRACE] <==        Row: a430252e63104405ab1c262eab6ed890, Aayong, 0, 1765726990733, ba6d75a46dbaf19d5259441413f4c7e94614cf489577f495bceafc4d046e9ef3
+[20:58:41.170] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] <==      Total: 1
+[20:58:41.170] [org.apache.ibatis.transaction.jdbc.JdbcTransaction/DEBUG] Closing JDBC Connection [HikariProxyConnection@1401897030 wrapping com.mysql.cj.jdbc.ConnectionImpl@56f1ed93]
+[20:58:41.380] [io.ktor.server.plugins.contentnegotiation.ContentNegotiation/TRACE] Skipping because body is already converted.
+[20:58:41.381] [ktor.application/INFO ] [200] [GET] /render/name/Aayong/homo okhttp/4.12.0
+[20:58:50.268] [io.ktor.routing.Routing/TRACE] Trace for [render, name, Aayong, homo]
+/, segment:0 -> SUCCESS @ /
+  /render, segment:1 -> SUCCESS @ /render
+    /render/{type}, segment:2 -> SUCCESS; Parameters [type=[name]] @ /render/{type}
+      /render/{type}/{content}, segment:3 -> SUCCESS; Parameters [content=[Aayong]] @ /render/{type}/{content}
+        /render/{type}/{content}/{position}, segment:4 -> SUCCESS; Parameters [position=[homo]] @ /render/{type}/{content}/{position}
+          /render/{type}/{content}/{position}/(method:GET), segment:4 -> SUCCESS @ /render/{type}/{content}/{position}/(method:GET)
+  /refresh, segment:0 -> FAILURE "Selector didn't match" @ /refresh
+  /data, segment:0 -> FAILURE "Selector didn't match" @ /data
+  /face, segment:0 -> FAILURE "Selector didn't match" @ /face
+Matched routes:
+  "" -> "render" -> "{type}" -> "{content}" -> "{position}" -> "(method:GET)"
+Route resolve result:
+  SUCCESS; Parameters [type=[name], content=[Aayong], position=[homo]] @ /render/{type}/{content}/{position}/(method:GET)
+[20:58:50.268] [org.apache.ibatis.transaction.jdbc.JdbcTransaction/DEBUG] Opening JDBC Connection
+[20:58:50.269] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] ==>  Preparing: SELECT uuid, name, slim, `update`, hash FROM `skin` WHERE name = ?
+[20:58:50.269] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] ==> Parameters: Aayong(String)
+[20:58:50.270] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/TRACE] <==    Columns: uuid, name, slim, update, hash
+[20:58:50.270] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/TRACE] <==        Row: a430252e63104405ab1c262eab6ed890, Aayong, 0, 1765726990733, ba6d75a46dbaf19d5259441413f4c7e94614cf489577f495bceafc4d046e9ef3
+[20:58:50.270] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] <==      Total: 1
+[20:58:50.271] [org.apache.ibatis.transaction.jdbc.JdbcTransaction/DEBUG] Closing JDBC Connection [HikariProxyConnection@180862614 wrapping com.mysql.cj.jdbc.ConnectionImpl@56f1ed93]
+[20:58:50.490] [io.ktor.server.plugins.contentnegotiation.ContentNegotiation/TRACE] Skipping because body is already converted.
+[20:58:50.490] [ktor.application/INFO ] [200] [GET] /render/name/Aayong/homo okhttp/4.12.0
+[20:58:54.282] [io.ktor.routing.Routing/TRACE] Trace for [render, name, Aayong, homo]
+/, segment:0 -> SUCCESS @ /
+  /render, segment:1 -> SUCCESS @ /render
+    /render/{type}, segment:2 -> SUCCESS; Parameters [type=[name]] @ /render/{type}
+      /render/{type}/{content}, segment:3 -> SUCCESS; Parameters [content=[Aayong]] @ /render/{type}/{content}
+        /render/{type}/{content}/{position}, segment:4 -> SUCCESS; Parameters [position=[homo]] @ /render/{type}/{content}/{position}
+          /render/{type}/{content}/{position}/(method:GET), segment:4 -> SUCCESS @ /render/{type}/{content}/{position}/(method:GET)
+  /refresh, segment:0 -> FAILURE "Selector didn't match" @ /refresh
+  /data, segment:0 -> FAILURE "Selector didn't match" @ /data
+  /face, segment:0 -> FAILURE "Selector didn't match" @ /face
+Matched routes:
+  "" -> "render" -> "{type}" -> "{content}" -> "{position}" -> "(method:GET)"
+Route resolve result:
+  SUCCESS; Parameters [type=[name], content=[Aayong], position=[homo]] @ /render/{type}/{content}/{position}/(method:GET)
+[20:58:54.283] [org.apache.ibatis.transaction.jdbc.JdbcTransaction/DEBUG] Opening JDBC Connection
+[20:58:54.283] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] ==>  Preparing: SELECT uuid, name, slim, `update`, hash FROM `skin` WHERE name = ?
+[20:58:54.283] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] ==> Parameters: Aayong(String)
+[20:58:54.284] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/TRACE] <==    Columns: uuid, name, slim, update, hash
+[20:58:54.284] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/TRACE] <==        Row: a430252e63104405ab1c262eab6ed890, Aayong, 0, 1765726990733, ba6d75a46dbaf19d5259441413f4c7e94614cf489577f495bceafc4d046e9ef3
+[20:58:54.285] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] <==      Total: 1
+[20:58:54.285] [org.apache.ibatis.transaction.jdbc.JdbcTransaction/DEBUG] Closing JDBC Connection [HikariProxyConnection@1891048008 wrapping com.mysql.cj.jdbc.ConnectionImpl@56f1ed93]
+[20:58:54.488] [io.ktor.server.plugins.contentnegotiation.ContentNegotiation/TRACE] Skipping because body is already converted.
+[20:58:54.488] [ktor.application/INFO ] [200] [GET] /render/name/Aayong/homo okhttp/4.12.0
+[20:58:58.008] [io.ktor.routing.Routing/TRACE] Trace for [render, name, Aayong, homo]
+/, segment:0 -> SUCCESS @ /
+  /render, segment:1 -> SUCCESS @ /render
+    /render/{type}, segment:2 -> SUCCESS; Parameters [type=[name]] @ /render/{type}
+      /render/{type}/{content}, segment:3 -> SUCCESS; Parameters [content=[Aayong]] @ /render/{type}/{content}
+        /render/{type}/{content}/{position}, segment:4 -> SUCCESS; Parameters [position=[homo]] @ /render/{type}/{content}/{position}
+          /render/{type}/{content}/{position}/(method:GET), segment:4 -> SUCCESS @ /render/{type}/{content}/{position}/(method:GET)
+  /refresh, segment:0 -> FAILURE "Selector didn't match" @ /refresh
+  /data, segment:0 -> FAILURE "Selector didn't match" @ /data
+  /face, segment:0 -> FAILURE "Selector didn't match" @ /face
+Matched routes:
+  "" -> "render" -> "{type}" -> "{content}" -> "{position}" -> "(method:GET)"
+Route resolve result:
+  SUCCESS; Parameters [type=[name], content=[Aayong], position=[homo]] @ /render/{type}/{content}/{position}/(method:GET)
+[20:58:58.009] [org.apache.ibatis.transaction.jdbc.JdbcTransaction/DEBUG] Opening JDBC Connection
+[20:58:58.010] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] ==>  Preparing: SELECT uuid, name, slim, `update`, hash FROM `skin` WHERE name = ?
+[20:58:58.010] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] ==> Parameters: Aayong(String)
+[20:58:58.011] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/TRACE] <==    Columns: uuid, name, slim, update, hash
+[20:58:58.011] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/TRACE] <==        Row: a430252e63104405ab1c262eab6ed890, Aayong, 0, 1765726990733, ba6d75a46dbaf19d5259441413f4c7e94614cf489577f495bceafc4d046e9ef3
+[20:58:58.011] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] <==      Total: 1
+[20:58:58.012] [org.apache.ibatis.transaction.jdbc.JdbcTransaction/DEBUG] Closing JDBC Connection [HikariProxyConnection@230307499 wrapping com.mysql.cj.jdbc.ConnectionImpl@56f1ed93]
+[20:58:58.216] [io.ktor.server.plugins.contentnegotiation.ContentNegotiation/TRACE] Skipping because body is already converted.
+[20:58:58.217] [ktor.application/INFO ] [200] [GET] /render/name/Aayong/homo okhttp/4.12.0
+[20:59:01.877] [io.ktor.routing.Routing/TRACE] Trace for [render, name, Aayong, homo]
+/, segment:0 -> SUCCESS @ /
+  /render, segment:1 -> SUCCESS @ /render
+    /render/{type}, segment:2 -> SUCCESS; Parameters [type=[name]] @ /render/{type}
+      /render/{type}/{content}, segment:3 -> SUCCESS; Parameters [content=[Aayong]] @ /render/{type}/{content}
+        /render/{type}/{content}/{position}, segment:4 -> SUCCESS; Parameters [position=[homo]] @ /render/{type}/{content}/{position}
+          /render/{type}/{content}/{position}/(method:GET), segment:4 -> SUCCESS @ /render/{type}/{content}/{position}/(method:GET)
+  /refresh, segment:0 -> FAILURE "Selector didn't match" @ /refresh
+  /data, segment:0 -> FAILURE "Selector didn't match" @ /data
+  /face, segment:0 -> FAILURE "Selector didn't match" @ /face
+Matched routes:
+  "" -> "render" -> "{type}" -> "{content}" -> "{position}" -> "(method:GET)"
+Route resolve result:
+  SUCCESS; Parameters [type=[name], content=[Aayong], position=[homo]] @ /render/{type}/{content}/{position}/(method:GET)
+[20:59:01.877] [org.apache.ibatis.transaction.jdbc.JdbcTransaction/DEBUG] Opening JDBC Connection
+[20:59:01.878] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] ==>  Preparing: SELECT uuid, name, slim, `update`, hash FROM `skin` WHERE name = ?
+[20:59:01.878] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] ==> Parameters: Aayong(String)
+[20:59:01.878] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/TRACE] <==    Columns: uuid, name, slim, update, hash
+[20:59:01.878] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/TRACE] <==        Row: a430252e63104405ab1c262eab6ed890, Aayong, 0, 1765726990733, ba6d75a46dbaf19d5259441413f4c7e94614cf489577f495bceafc4d046e9ef3
+[20:59:01.879] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] <==      Total: 1
+[20:59:01.879] [org.apache.ibatis.transaction.jdbc.JdbcTransaction/DEBUG] Closing JDBC Connection [HikariProxyConnection@394011720 wrapping com.mysql.cj.jdbc.ConnectionImpl@56f1ed93]
+[20:59:02.104] [io.ktor.server.plugins.contentnegotiation.ContentNegotiation/TRACE] Skipping because body is already converted.
+[20:59:02.104] [ktor.application/INFO ] [200] [GET] /render/name/Aayong/homo okhttp/4.12.0
+[20:59:06.539] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[20:59:06.539] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+[20:59:23.026] [io.ktor.routing.Routing/TRACE] Trace for [render, name, Aayong, homo]
+/, segment:0 -> SUCCESS @ /
+  /render, segment:1 -> SUCCESS @ /render
+    /render/{type}, segment:2 -> SUCCESS; Parameters [type=[name]] @ /render/{type}
+      /render/{type}/{content}, segment:3 -> SUCCESS; Parameters [content=[Aayong]] @ /render/{type}/{content}
+        /render/{type}/{content}/{position}, segment:4 -> SUCCESS; Parameters [position=[homo]] @ /render/{type}/{content}/{position}
+          /render/{type}/{content}/{position}/(method:GET), segment:4 -> SUCCESS @ /render/{type}/{content}/{position}/(method:GET)
+  /refresh, segment:0 -> FAILURE "Selector didn't match" @ /refresh
+  /data, segment:0 -> FAILURE "Selector didn't match" @ /data
+  /face, segment:0 -> FAILURE "Selector didn't match" @ /face
+Matched routes:
+  "" -> "render" -> "{type}" -> "{content}" -> "{position}" -> "(method:GET)"
+Route resolve result:
+  SUCCESS; Parameters [type=[name], content=[Aayong], position=[homo]] @ /render/{type}/{content}/{position}/(method:GET)
+[20:59:23.026] [org.apache.ibatis.transaction.jdbc.JdbcTransaction/DEBUG] Opening JDBC Connection
+[20:59:23.027] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] ==>  Preparing: SELECT uuid, name, slim, `update`, hash FROM `skin` WHERE name = ?
+[20:59:23.027] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] ==> Parameters: Aayong(String)
+[20:59:23.028] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/TRACE] <==    Columns: uuid, name, slim, update, hash
+[20:59:23.028] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/TRACE] <==        Row: a430252e63104405ab1c262eab6ed890, Aayong, 0, 1765726990733, ba6d75a46dbaf19d5259441413f4c7e94614cf489577f495bceafc4d046e9ef3
+[20:59:23.028] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] <==      Total: 1
+[20:59:23.028] [org.apache.ibatis.transaction.jdbc.JdbcTransaction/DEBUG] Closing JDBC Connection [HikariProxyConnection@237669438 wrapping com.mysql.cj.jdbc.ConnectionImpl@56f1ed93]
+[20:59:23.221] [io.ktor.server.plugins.contentnegotiation.ContentNegotiation/TRACE] Skipping because body is already converted.
+[20:59:23.221] [ktor.application/INFO ] [200] [GET] /render/name/Aayong/homo okhttp/4.12.0
+[20:59:26.789] [io.ktor.routing.Routing/TRACE] Trace for [render, name, Aayong, homo]
+/, segment:0 -> SUCCESS @ /
+  /render, segment:1 -> SUCCESS @ /render
+    /render/{type}, segment:2 -> SUCCESS; Parameters [type=[name]] @ /render/{type}
+      /render/{type}/{content}, segment:3 -> SUCCESS; Parameters [content=[Aayong]] @ /render/{type}/{content}
+        /render/{type}/{content}/{position}, segment:4 -> SUCCESS; Parameters [position=[homo]] @ /render/{type}/{content}/{position}
+          /render/{type}/{content}/{position}/(method:GET), segment:4 -> SUCCESS @ /render/{type}/{content}/{position}/(method:GET)
+  /refresh, segment:0 -> FAILURE "Selector didn't match" @ /refresh
+  /data, segment:0 -> FAILURE "Selector didn't match" @ /data
+  /face, segment:0 -> FAILURE "Selector didn't match" @ /face
+Matched routes:
+  "" -> "render" -> "{type}" -> "{content}" -> "{position}" -> "(method:GET)"
+Route resolve result:
+  SUCCESS; Parameters [type=[name], content=[Aayong], position=[homo]] @ /render/{type}/{content}/{position}/(method:GET)
+[20:59:26.790] [org.apache.ibatis.transaction.jdbc.JdbcTransaction/DEBUG] Opening JDBC Connection
+[20:59:26.790] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] ==>  Preparing: SELECT uuid, name, slim, `update`, hash FROM `skin` WHERE name = ?
+[20:59:26.790] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] ==> Parameters: Aayong(String)
+[20:59:26.791] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/TRACE] <==    Columns: uuid, name, slim, update, hash
+[20:59:26.791] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/TRACE] <==        Row: a430252e63104405ab1c262eab6ed890, Aayong, 0, 1765726990733, ba6d75a46dbaf19d5259441413f4c7e94614cf489577f495bceafc4d046e9ef3
+[20:59:26.792] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] <==      Total: 1
+[20:59:26.792] [org.apache.ibatis.transaction.jdbc.JdbcTransaction/DEBUG] Closing JDBC Connection [HikariProxyConnection@1412695518 wrapping com.mysql.cj.jdbc.ConnectionImpl@56f1ed93]
+[20:59:27.004] [io.ktor.server.plugins.contentnegotiation.ContentNegotiation/TRACE] Skipping because body is already converted.
+[20:59:27.005] [ktor.application/INFO ] [200] [GET] /render/name/Aayong/homo okhttp/4.12.0
+[20:59:32.643] [io.ktor.routing.Routing/TRACE] Trace for [render, name, Aayong, homo]
+/, segment:0 -> SUCCESS @ /
+  /render, segment:1 -> SUCCESS @ /render
+    /render/{type}, segment:2 -> SUCCESS; Parameters [type=[name]] @ /render/{type}
+      /render/{type}/{content}, segment:3 -> SUCCESS; Parameters [content=[Aayong]] @ /render/{type}/{content}
+        /render/{type}/{content}/{position}, segment:4 -> SUCCESS; Parameters [position=[homo]] @ /render/{type}/{content}/{position}
+          /render/{type}/{content}/{position}/(method:GET), segment:4 -> SUCCESS @ /render/{type}/{content}/{position}/(method:GET)
+  /refresh, segment:0 -> FAILURE "Selector didn't match" @ /refresh
+  /data, segment:0 -> FAILURE "Selector didn't match" @ /data
+  /face, segment:0 -> FAILURE "Selector didn't match" @ /face
+Matched routes:
+  "" -> "render" -> "{type}" -> "{content}" -> "{position}" -> "(method:GET)"
+Route resolve result:
+  SUCCESS; Parameters [type=[name], content=[Aayong], position=[homo]] @ /render/{type}/{content}/{position}/(method:GET)
+[20:59:32.644] [org.apache.ibatis.transaction.jdbc.JdbcTransaction/DEBUG] Opening JDBC Connection
+[20:59:32.644] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] ==>  Preparing: SELECT uuid, name, slim, `update`, hash FROM `skin` WHERE name = ?
+[20:59:32.644] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] ==> Parameters: Aayong(String)
+[20:59:32.645] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/TRACE] <==    Columns: uuid, name, slim, update, hash
+[20:59:32.645] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/TRACE] <==        Row: a430252e63104405ab1c262eab6ed890, Aayong, 0, 1765726990733, ba6d75a46dbaf19d5259441413f4c7e94614cf489577f495bceafc4d046e9ef3
+[20:59:32.646] [top.e404.skin.server.sql.mapper.SkinMapper.getByName/DEBUG] <==      Total: 1
+[20:59:32.646] [org.apache.ibatis.transaction.jdbc.JdbcTransaction/DEBUG] Closing JDBC Connection [HikariProxyConnection@368739825 wrapping com.mysql.cj.jdbc.ConnectionImpl@56f1ed93]
+[20:59:32.915] [io.ktor.server.plugins.contentnegotiation.ContentNegotiation/TRACE] Skipping because body is already converted.
+[20:59:32.915] [ktor.application/INFO ] [200] [GET] /render/name/Aayong/homo okhttp/4.12.0
+[20:59:36.552] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[20:59:36.552] [com.zaxxer.hikari.pool.HikariPool/DEBUG] HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled (queueDepth=0).
+[20:59:53.776] [App/INFO ] 正在关闭

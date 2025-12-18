@@ -4,11 +4,15 @@ import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
 
+import java.net.ConnectException;
 import java.util.Objects;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 public class Main {
 
-    private static final String SKIN_VIEWER_BASE = "http://localhost:2345";
+    private static final String SKIN_VIEWER_BASE = "http://localhost:" + Config.API_PORT;
+    private static final ConcurrentHashMap<String, Long> lastAccess = new ConcurrentHashMap<>();
 
     public static void main(String[] args) {
         OkHttpClient client = new OkHttpClient();
@@ -20,9 +24,37 @@ public class Main {
                 staticFiles.directory = "/public";     // resources/public
                 staticFiles.location = Location.CLASSPATH;
             });
-        }).start(3001);
+        }).start(Config.LISTEN_PORT);
 
         app.get("/api/render", ctx -> {
+            long now = System.currentTimeMillis();
+            AtomicBoolean allowed = new AtomicBoolean(true);
+            String ip = ctx.header("X-Forwarded-For");
+
+            if (ip == null) {
+                ip = ctx.ip();
+            } else {
+                ip = ip.split(",")[0].trim();
+            }
+
+            lastAccess.compute(ip, (k, last) -> {
+                if (last != null && now - last < Config.COOLDOWN_MS) {
+                    allowed.set(false);
+                    return last;
+                }
+                return now;
+            });
+
+            if (!allowed.get()) {
+                ctx.status(429).result("Too many requests");
+                return;
+            }
+
+            if (lastAccess.size() > Config.MAX_ENTRIES) {
+                long cutoff = System.currentTimeMillis() - Config.CUTOFF_MS;
+                lastAccess.entrySet().removeIf(e -> e.getValue() < cutoff);
+            }
+
             String query = ctx.queryString();
             String url = SKIN_VIEWER_BASE + "/render/name/" + ctx.queryParam("name") + "/" + ctx.queryParam("pose") + (query != null ? "?" + query : "");
 
@@ -43,6 +75,8 @@ public class Main {
 
                 ctx.contentType(Objects.requireNonNull(response.header("Content-Type")));
                 ctx.result(bytes);
+            } catch (ConnectException e){
+                ctx.status(503).result("Failed to connect to target API");
             }
         });
     }

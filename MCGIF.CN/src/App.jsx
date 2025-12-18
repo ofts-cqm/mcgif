@@ -40,13 +40,17 @@ export default function App() {
                 case 200:
                     break;
                 case 400:
+                case 429:
                     setImgSrc("");
                     setWarnMsg("请不要点击过快，会坏掉的QAQ");
-                    break;
+                    return;
                 case 404:
                 case 500:
                     setErrorMsg("生成失败！请确认输入ID为正版账号！");
-                    break;
+                    return;
+                case 503:
+                    setErrorMsg("服务器连接失败，请稍后再试");
+                    return;
             }
 
             const blob = await res.blob();
@@ -105,7 +109,10 @@ export default function App() {
     }
 
     return (
-        <Stack sx={{ mb: 10 }}>
+        <Stack sx={{
+            mb: 10,
+            background: '#FFFFFF'
+        }}>
             <Stack spacing={2} sx={{
                 width: 0.77,
                 mt: "3%",

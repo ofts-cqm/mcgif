@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "net.ofts"
-version = "1.0-SNAPSHOT"
+version = "alpha-1.0"
 
 repositories {
     mavenCentral()
@@ -24,9 +24,9 @@ application {
 }
 
 tasks.shadowJar {
-    archiveBaseName.set("proxy-server")
+    archiveBaseName.set("proxy")
     archiveVersion.set(version.toString())
-    archiveClassifier.set("") // 生成 proxy-server-1.0.0.jar
+    archiveClassifier.set("")
 
     mergeServiceFiles()
 }
