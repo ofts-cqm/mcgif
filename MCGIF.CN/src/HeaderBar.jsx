@@ -22,16 +22,24 @@ export default function HeaderBar() {
                         justifyContent="space-between"
                         sx={{ width: '100%' }}
                     >
-                        <Typography
-                            variant="h4"
-                            fontWeight={700}
-                            sx={{
-                                letterSpacing: '0.08em',
-                                textTransform: 'uppercase',
-                            }}
-                        >
-                            MCGIF.CN｜我的世界动图网，让你的皮肤动起来~
-                        </Typography>
+                        <Stack direction="row" sx={{
+                            height: '80%',
+                            justifyContent: "center",
+                            alignItems: "center"
+                        }} spacing={2}>
+                            <img src="/mcgif.svg" alt="logo" style={{ height: '80%' }} />
+
+                            <Typography
+                                variant="h4"
+                                fontWeight={700}
+                                sx={{
+                                    letterSpacing: '0.08em',
+                                    textTransform: 'uppercase',
+                                }}
+                            >
+                                MCGIF.CN｜我的世界动图网，让你的皮肤动起来~
+                            </Typography>
+                        </Stack>
 
                         <Typography variant='h5' onClick={() => setOpen(true)} sx={{ "&:hover": { textDecoration: "underline" } }} style={{ cursor: 'pointer' }}>关于本站</Typography>
                     </Stack>

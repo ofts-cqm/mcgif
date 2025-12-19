@@ -1,5 +1,5 @@
 ﻿import './App.css'
-import { FormGroup, Button, Checkbox, FormControlLabel, Slider, Paper, Grid, Divider, Stack, Alert, Typography } from '@mui/material';
+import { FormGroup, FormControl, RadioGroup, Radio, Checkbox, FormControlLabel, Slider, Paper, Grid, Divider, Stack, Alert, Typography } from '@mui/material';
 import { MuiColorInput } from 'mui-color-input'
 import { useState } from "react";
 import OptionItem from './OptionItem';
@@ -23,16 +23,15 @@ export default function App() {
     const [background, setBackground] = useState('#ffffff');
     const [transparentBG, setTransparentBG] = useState(false);
     const [light, setLight] = useState('#ffffff');
+    const [ignoreLight, setIgnoreLight] = useState(false);
     const [headSize, setHeadSize] = useState(1);
     const [speed, setSpeed] = useState(1);
     const [pitch, setPitch] = useState(0);
     const [slim, setSlim] = useState(0);
 
-    const states = [
-        { label: "默认", value: 0 },
-        { label: "标准", value: 1 },
-        { label: "瘦", value: 2 },
-    ];
+    function handleSlim(event) {
+        setSlim(event.target.value);
+    }
 
     async function parseGen(res) {
         try {
@@ -73,11 +72,11 @@ export default function App() {
         setWarnMsg("")
 
         const parsedBG = transparentBG ? "0x00000000" : background.replace("#", "0x");
-        const parsedLight = light.replace("#", "0x");
+        const parsedLight = ignoreLight ? "0xFFFFFFFF" : light.replace("#", "0x");
         let args = `bg=${parsedBG}&light=${parsedLight}&head=${headSize}&x=${1 / speed * 20}&y=${pitch}`;
 
-        if (slim !== 0) {
-            args += `&t=${slim === 2}`;
+        if (slim != 0) {
+            args += `&t=${slim == 2}`;
         }
 
         if (genContent === "sneak") {
@@ -85,6 +84,7 @@ export default function App() {
         } else args += "&duration=100"
 
         fetch(`http://localhost:3001/api/render/?name=${userId}&pose=${genContent}&${args}`).then(parseGen);
+        //fetch(`http://localhost:5173/api/render/name/${userId}/${genContent}?${args}`).then(parseGen);
     }
 
     function handleDownload() {
@@ -102,10 +102,6 @@ export default function App() {
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
-    }
-
-    function handleSlim() {
-        setSlim((slim + 1) % states.length);
     }
 
     return (
@@ -173,7 +169,20 @@ export default function App() {
                             </Stack>
                         </OptionItem>
                         <OptionItem name="环境光颜色：" disabled={false}>
-                            <MuiColorInput format="hex" value={light} onChange={(v) => setLight(v)} />
+                            <Stack direction="row" sx={{
+                                justifyContent: "flex-start",
+                                alignItems: "center",
+                            }}>
+                                <MuiColorInput format="hex" value={light} onChange={(v) => setLight(v)} sx={{ mr: 2 }} style={
+                                    ignoreLight ? {
+                                        pointerEvents: "none",
+                                        opacity: 0.5,
+                                    } : {}
+                                } />
+                                <FormGroup>
+                                    <FormControlLabel control={<Checkbox checked={ignoreLight} onChange={event => setIgnoreLight(event.target.checked)} />} label="透明" />
+                                </FormGroup>
+                            </Stack>
                         </OptionItem>
                         <OptionItem name="头大小：" disabled={genContent === "head" || genContent === "dhead"}>
                             <Slider
@@ -207,12 +216,20 @@ export default function App() {
                             />
                         </OptionItem>
                         <OptionItem name="瘦模型：" disabled={genContent === "head" || genContent === "dhead" || genContent === "homo"}>
-                            <Button
-                                variant="contained"
-                                onClick={handleSlim}
-                            >
-                                {states[slim].label}
-                            </Button>
+                            <FormControl>
+                                <RadioGroup
+                                    row
+                                    aria-labelledby="demo-row-radio-buttons-group-label"
+                                    name="row-radio-buttons-group"
+                                    defaultValue="0"
+                                    value={slim}
+                                    onChange={handleSlim}
+                                >
+                                    <FormControlLabel value="0" control={<Radio />} label="默认" />
+                                    <FormControlLabel value="1" control={<Radio />} label="标准" />
+                                    <FormControlLabel value="2" control={<Radio />} label="瘦" />
+                                </RadioGroup>
+                            </FormControl>
                         </OptionItem>
                     </Stack>
 
@@ -222,7 +239,7 @@ export default function App() {
                     background: `linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1))`,
                     boxShadow: 2,
                     borderRadius: 1,
-                    p: 2
+                    p: 2,
                 }}
                 >
                     <Stack direction="row" sx={{
@@ -239,7 +256,7 @@ export default function App() {
                     </Stack>
 
                     {warnMsg !== "" && <Alert severity="warning">{warnMsg}</Alert>}
-                    {errorMsg === "" && imgSrc !== "" && imgSrc !== "w" && <img src={imgSrc} alt="Generated Content" style={{ width: '100%' }} />}
+                    {errorMsg === "" && imgSrc !== "" && imgSrc !== "w" && <img src={imgSrc} alt="Generated Content" style={{ maxWidth: '100%', maxHeight: '50vh'}} />}
                     {errorMsg === "" && imgSrc === "" && <Typography sx={{ my: 10 }}>填写完信息后点击“生成”来生成图片！</Typography>}
                     {errorMsg === "" && imgSrc === "w" && <Typography variant="h6" sx={{ mt: 20 }}> 请不要多次点击，服务器正在努力生成！</Typography>}
                     {errorMsg === "" && imgSrc === "w" && <Typography variant="h6" sx={{ mb: 20 }}>动图可能会比较慢，请耐心等待 </Typography>}
