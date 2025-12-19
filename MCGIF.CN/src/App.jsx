@@ -111,7 +111,6 @@ export default function App() {
     return (
         <Stack sx={{
             mb: 10,
-            background: '#FFFFFF'
         }}>
             <Stack spacing={2} sx={{
                 width: 0.77,

@@ -1,13 +1,16 @@
 ﻿import { AppBar, Container, Toolbar, Stack, Typography } from '@mui/material'
+import Description from './Description.jsx'
+import { useState } from "react";
 
 export default function HeaderBar() {
+    const [open, setOpen] = useState(false);
+
     return (
         <AppBar
             position="sticky"
             elevation={0}
+            className="bar"
             sx={{
-                background: '#F7F7FF',
-                color: 'common.black',
                 boxShadow: 2,
             }}
         >
@@ -27,10 +30,14 @@ export default function HeaderBar() {
                                 textTransform: 'uppercase',
                             }}
                         >
-                            MCGIF.CN｜MC动图网
+                            MCGIF.CN｜我的世界动图网，让你的皮肤动起来~
                         </Typography>
+
+                        <Typography variant='h5' onClick={() => setOpen(true)} sx={{ "&:hover": { textDecoration: "underline" } }}>关于本站</Typography>
                     </Stack>
                 </Toolbar>
+
+                <Description open={open} setOpen={setOpen} />
             </Container>
         </AppBar>
     )

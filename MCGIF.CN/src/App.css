@@ -1,8 +1,34 @@
 #root {
-  width: 100%;
-  min-height: 100vh;
-  margin: 0;
-  text-align: center;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+@font-face {
+    font-family: "Pixel";
+    src: url("./assets/font.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@media (prefers-color-scheme: dark){
+    .bar {
+        background-color: #343434 !important;
+        color: #fff !important;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .bar {
+        background-color: #F7F7FF !important;
+        color: rgb(12, 12, 12) !important;
+    }
+}
+
+
+body {
+    font-family: "Pixel", sans-serif;
 }
 
 .logo {

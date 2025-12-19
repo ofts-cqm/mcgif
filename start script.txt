@@ -1,1 +1,0 @@
-sudo mysqld --datadir="C:\ProgramData\MySQL\MySQL Server 8.4\Data"
