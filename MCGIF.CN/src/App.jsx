@@ -107,7 +107,7 @@ export default function App({theme}) {
             args += "&duration=" + (Math.round((100 / speed) / 10) * 10).toString();
         } else args += "&duration=100"
 
-        fetch(`https://mcgif.cn/api/render/?name=${userId}&pose=${genContent}&${args}`).then(parseGen);
+        fetch(`/api/render/?name=${userId}&pose=${genContent}&${args}`).then(parseGen);
         //fetch(`http://localhost:5173/api/render/name/${userId}/${genContent}?${args}`).then(parseGen);
     }
 
