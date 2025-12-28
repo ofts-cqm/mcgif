@@ -12,7 +12,15 @@
     font-style: normal;
 }
 
-@media (prefers-color-scheme: dark){
+@font-face {
+    font-family: "Unifont";
+    src: url("./assets/unifont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@media (prefers-color-scheme: dark) {
     .bar {
         background-color: #343434 !important;
         color: #fff !important;
@@ -28,43 +36,47 @@
 
 
 body {
-    font-family: "Pixel", sans-serif;
+    font-family: "Pixel", "Unifont", sans-serif;
 }
 
+
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
 }
+
 .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+    filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+    filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
 @keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+    a:nth-of-type(2) .logo {
+        animation: logo-spin infinite 20s linear;
+    }
 }
 
 .card {
-  padding: 2em;
+    padding: 2em;
 }
 
 .read-the-docs {
-  color: #888;
+    color: #888;
 }
 
 .text-input {
@@ -91,7 +103,8 @@ body {
     font-size: 18px;
     padding: 10px;
     text-align: center;
-    font-family: Pixel;
+    font-family: "Pixel", "Unifont", sans-serif;
+
     box-sizing: border-box;
     border-radius: var(--radius-sm);
     transition: all var(--transition-fast);
@@ -125,33 +138,35 @@ body {
     margin-left: 40%;
 }
 
-    .gen:before {
-        transition: 0.5s all ease;
-        position: absolute;
-        top: 0;
-        left: 50%;
-        right: 50%;
-        bottom: 0;
-        opacity: 0;
-        content: '';
-        background-color: #5392ef80;
-        z-index: -1;
-    }
+.gen:before {
+    transition: 0.5s all ease;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    opacity: 0;
+    content: '';
+    background-color: #5392ef80;
+    z-index: -1;
+}
 
-    .gen:hover, .gen:focus {
-        color: white;
-    }
+.gen:hover,
+.gen:focus {
+    color: white;
+}
 
-        .gen:hover:before, .gen:focus:before {
-            transition: 0.5s all ease;
-            left: 0;
-            right: 0;
-            opacity: 1;
-        }
+.gen:hover:before,
+.gen:focus:before {
+    transition: 0.5s all ease;
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
 
-    .gen:active {
-        transform: scale(0.9);
-    }
+.gen:active {
+    transform: scale(0.9);
+}
 
 .contentSwitcher {
     border: none;
@@ -160,19 +175,19 @@ body {
     background-color: transparent;
 }
 
-    .contentSwitcher:focus {
-        outline: none;
-    }
+.contentSwitcher:focus {
+    outline: none;
+}
 
-    .contentSwitcher .contentSVG {
-        margin: 10%;
-        transition: margin 100ms ease
-    }
+.contentSwitcher .contentSVG {
+    margin: 10%;
+    transition: margin 100ms ease
+}
 
-    .contentSwitcher:hover .contentSVG {
-        margin: 0;
-        transition: margin 100ms ease
-    }
+.contentSwitcher:hover .contentSVG {
+    margin: 0;
+    transition: margin 100ms ease
+}
 
 /* From Uiverse.io by vinodjangid07 */
 .Btn {
@@ -219,18 +234,18 @@ body {
     letter-spacing: 0.5px;
 }
 
-    .tooltip::before {
-        position: absolute;
-        content: "";
-        width: 10px;
-        height: 10px;
-        background-color: rgb(12, 12, 12);
-        background-size: 1000%;
-        background-position: center;
-        transform: rotate(45deg);
-        left: -5%;
-        transition-duration: .3s;
-    }
+.tooltip::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: rgb(12, 12, 12);
+    background-size: 1000%;
+    background-position: center;
+    transform: rotate(45deg);
+    left: -5%;
+    transition-duration: .3s;
+}
 
 .Btn:hover .tooltip {
     opacity: 1;
@@ -242,25 +257,203 @@ body {
     transition-duration: .3s;
 }
 
-    .Btn:hover .icon2 {
-        border-bottom: 2px solid rgb(235, 235, 235);
-        border-left: 2px solid rgb(235, 235, 235);
-        border-right: 2px solid rgb(235, 235, 235);
+.Btn:hover .icon2 {
+    border-bottom: 2px solid rgb(235, 235, 235);
+    border-left: 2px solid rgb(235, 235, 235);
+    border-right: 2px solid rgb(235, 235, 235);
+}
+
+.Btn:hover .svgIcon {
+    fill: rgb(255, 255, 255);
+    animation: slide-in-top 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.color-input-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: rgba(var(--mdui-color-surface-container), 0.5);
+    padding: 6px 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(var(--mdui-color-outline-variant), 0.5);
+    width: fit-content;
+    transition: border-color 0.3s;
+}
+
+.color-input-container:focus-within {
+    border-color: rgb(var(--mdui-color-primary));
+}
+
+.color-preview {
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.color-preview input[type="color"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.hex-input {
+    background: transparent;
+    border: none;
+    color: inherit;
+    font-family: "Pixel", "Unifont", monospace;
+
+    width: 80px;
+    font-size: 1rem;
+    outline: none;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 16px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.options-header {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+    position: relative;
+    width: 100%;
+}
+
+.config-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+@media (max-width: 900px) {
+    .config-grid {
+        grid-template-columns: 1fr;
     }
 
-    .Btn:hover .svgIcon {
-        fill: rgb(255, 255, 255);
-        animation: slide-in-top 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    .main-container {
+        padding: 0 8px;
+    }
+}
+
+/* Prevent content overflow for specific problematic elements */
+.main-container,
+.options-header,
+.config-grid {
+    overflow-x: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Prevent content overflow globally */
+* {
+    box-sizing: border-box;
+}
+
+.option-item-container {
+    position: relative;
+    transition: opacity 0.4s ease, max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), margin 0.4s ease;
+}
+
+.option-item-grid {
+    display: grid;
+    grid-template-columns: 180px minmax(0, 1fr) 100px;
+    width: 100%;
+    gap: 16px;
+    align-items: center;
+}
+
+.option-item-label {
+    text-align: left;
+    font-weight: bold;
+    font-size: 1rem;
+    min-width: 180px;
+}
+
+.option-item-value {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    min-width: 0;
+}
+
+@media (max-width: 600px) {
+    .option-item-grid {
+        grid-template-columns: 1fr;
+        gap: 8px;
     }
 
-@keyframes slide-in-top {
-    0% {
-        transform: translateY(-10px);
-        opacity: 0;
+    .option-item-label {
+        min-width: unset;
     }
 
-    100% {
-        transform: translateY(0px);
-        opacity: 1;
+    .option-item-grid>div:nth-child(3) {
+        text-align: left !important;
     }
+}
+
+.responsive-bar {
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0 8% !important;
+    height: 88px !important;
+    z-index: 1000 !important;
+}
+
+.main-content {
+    padding-top: 88px;
+    /* Offset for fixed header */
+}
+
+.responsive-title {
+    font-size: 2rem;
+}
+
+.logo-img {
+    height: 70px;
+}
+
+@media (max-width: 600px) {
+    .responsive-bar {
+        padding: 0 16px !important;
+        height: 64px !important;
+    }
+
+    .main-content {
+        padding-top: 64px;
+        /* Offset for smaller mobile header */
+    }
+
+    .responsive-title {
+        font-size: 1.25rem !important;
+    }
+
+    .logo-img {
+        height: 48px !important;
+    }
+
+}
+
+.content-option-img {
+    width: 100%;
+    aspect-ratio: 600 / 900;
+    object-fit: cover;
 }

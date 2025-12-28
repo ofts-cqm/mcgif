@@ -1,81 +1,43 @@
-﻿import { AppBar, Container, Toolbar, Stack, Typography, Link, Divider } from '@mui/material'
-import { useTranslation } from 'react-i18next';
-
-function Bar({ middle = false }) {
-    return <Divider orientation="vertical" variant={middle ? "middle" : ""} flexItem sx={{ mx: 1, borderRightWidth: 1, bgcolor: '#000000' }} />;
-}
-
-function TextButton({ children, onClick }) {
-    return <Typography sx={{ "&:hover": { textDecoration: "underline" } }} style={{ cursor: 'pointer' }} onClick={onClick}>{children}</Typography>;
-}
+﻿import { useTranslation } from 'react-i18next';
+import { snackbar } from 'mdui/functions/snackbar';
 
 export default function FootBar() {
     const { t } = useTranslation();
 
     function AayongClicked() {
         navigator.clipboard.writeText("599005767").then(() => {
-            alert(t("footer.aayong"));
+            snackbar({ message: t("footer.aayong") });
         })
     }
 
     function OFTSClicked() {
         navigator.clipboard.writeText("qianmuchen.sam@gmail.com").then(() => {
-            alert(t("footer.ofts"));
+            snackbar({ message: t("footer.ofts") });
         });
     }
 
     return (
-        <AppBar
-            position="sticky"
-            elevation={0}
-            className="bar"
-            sx={{
-                boxShadow: 2,
-            }}
-        >
-            <Container maxWidth="lg">
-                <Toolbar disableGutters sx={{ py: 1.5, minHeight: '88px' }}>
-                    <Stack alignItems="center" sx={{
-                        width: '100%',
-                        justifyContent: "center",
-                        alignItems: "center"
-                    }}>
-                        <Stack
-                            direction="row"
-                            alignItems="center"
-                            sx={{
-                                width: '100%', justifyContent: "center",
-                                alignItems: "center"
-                            }}
-                        >
-                            <Link href="https://mccag.cn" style={{ fontSize: "1.3rem" }} color="inherit" underline="none">{t("footer.friend")}</Link>
-                        </Stack>
-                        <Stack
-                            direction="row"
-                            alignItems="center"
-                            sx={{
-                                width: '100%', justifyContent: "center",
-                                alignItems: "center"
-                            }}
-                        >
-                            <Typography>{t("footer.dev")}</Typography>
-                        </Stack>
-                        <Stack
-                            direction="row"
-                            alignItems="center"
-                            sx={{
-                                width: '100%', justifyContent: "center",
-                                alignItems: "center"
-                            }}
-                        >
-                            <Typography >{t("footer.contact")}</Typography>
-                            <TextButton onClick={AayongClicked}>Aayong</TextButton>
-                            <Bar middle={true} />
-                            <TextButton onClick={OFTSClicked}>OFTS_CQM</TextButton>
-                        </Stack>
-                    </Stack>
-                </Toolbar>
-            </Container>
-        </AppBar>
-    )
+        <mdui-bottom-app-bar style={{ padding: '16px', height: 'auto', flexDirection: 'column', gap: '8px' }}>
+            <div style={{ display: 'flex', justifyContent: 'center', width: '100%', gap: '16px' }}>
+                <a href="https://mccag.cn" style={{ textDecoration: 'none', color: 'inherit' }}>
+                    {t("footer.friend")}
+                </a>
+            </div>
+
+            <div style={{ textAlign: 'center', fontSize: '0.9rem', opacity: 0.8 }}>
+                {t("footer.dev")}
+            </div>
+
+            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '12px', fontSize: '0.9rem' }}>
+                <span>{t("footer.contact")}</span>
+                <mdui-button variant="text" onClick={AayongClicked} style={{ minWidth: 'auto', padding: '0 4px' }}>
+                    Aayong
+                </mdui-button>
+                <div style={{ width: '1px', height: '12px', backgroundColor: 'currentColor', opacity: 0.3 }}></div>
+                <mdui-button variant="text" onClick={OFTSClicked} style={{ minWidth: 'auto', padding: '0 4px' }}>
+                    OFTS_CQM
+                </mdui-button>
+            </div>
+        </mdui-bottom-app-bar>
+    );
 }

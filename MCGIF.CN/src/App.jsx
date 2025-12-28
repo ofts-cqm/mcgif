@@ -1,30 +1,9 @@
 ﻿import './App.css'
-import {
-    FormGroup,
-    FormControl,
-    RadioGroup,
-    Radio,
-    Checkbox,
-    FormControlLabel,
-    Slider,
-    Paper,
-    Grid,
-    Divider,
-    Stack,
-    Alert,
-    Typography,
-    useMediaQuery,
-    Dialog,
-    DialogTitle,
-    DialogContent,
-    DialogActions,
-    Button
-} from '@mui/material';
-import { MuiColorInput } from 'mui-color-input'
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import OptionItem from './OptionItem';
 import ContentOption from './ContentOption';
 import { useTranslation } from 'react-i18next';
+import { snackbar } from 'mdui/functions/snackbar';
 
 import sneak from './assets/sneak.gif'
 import sk from './assets/sk.png'
@@ -32,10 +11,10 @@ import dsk from './assets/dsk.gif'
 import head from './assets/head.png'
 import dhead from './assets/dhead.gif'
 import homo from './assets/homo.png'
-import litang from './assets/litang.png'
 import hip from './assets/hip.gif'
 import temple from './assets/temple.png'
 import trump from './assets/trump.png'
+import litang from './assets/litang.png'
 
 class GenContentProfile {
     constructor(img, name, hasBG, hasHead, hasSpeed, hasPitch, hasModel) {
@@ -51,7 +30,7 @@ class GenContentProfile {
 
 const allContents = [
     new GenContentProfile(sneak, 'sneak', true, true, true, false, true),
-    new GenContentProfile(hip, 'hip', true, true, true, false, true, ),
+    new GenContentProfile(hip, 'hip', true, true, true, false, true),
     new GenContentProfile(sk, 'sk', true, true, false, false, true),
     new GenContentProfile(dsk, 'dsk', true, true, true, true, true),
     new GenContentProfile(head, 'head', false, true, false, false, false),
@@ -62,9 +41,7 @@ const allContents = [
     new GenContentProfile(litang, 'litang', false, true, false, false, true)
 ]
 
-const NUMBER_CONTENT = allContents.length;
-
-export default function App({ theme }) {
+export default function App() {
     const [imgSrc, setImgSrc] = useState("");
     const [errorMsg, setErrorMsg] = useState("");
     const [warnMsg, setWarnMsg] = useState("");
@@ -81,39 +58,73 @@ export default function App({ theme }) {
     const [pitch, setPitch] = useState(0);
     const [slim, setSlim] = useState(0);
     const [startIndex, setStartIndex] = useState(0);
-    const [mobileWarningOpen, setMobileWarningOpen] = useState(useMediaQuery(theme.breakpoints.down('sm')));
+    const [itemsToShow, setItemsToShow] = useState(window.innerWidth < 600 ? 2 : (window.innerWidth < 900 ? 3 : 4));
+    const [errorDialogOpen, setErrorDialogOpen] = useState(false);
+    const [mobileWarningOpen, setMobileWarningOpen] = useState(window.innerWidth < 600);
     const [currentGenProfile, setCurrentGenProfile] = useState(allContents[0]);
 
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
+    const dialogRef = useRef(null);
 
-    const offset = { transform: `translateX(-${startIndex * NUMBER_CONTENT }%)`, width: `${100 * NUMBER_CONTENT / 6}%`, transition: "transform 300ms ease" }
+    const NUMBER_CONTENT = allContents.length;
+    const errorDialogRef = useRef(null);
+    const mobileWarningDialogRef = useRef(null);
 
-    function handleSlim(event) {
-        setSlim(event.target.value);
-    }
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth < 600) {
+                setItemsToShow(2);
+            } else if (window.innerWidth < 900) {
+                setItemsToShow(3);
+            } else {
+                setItemsToShow(4);
+            }
+        };
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+    useEffect(() => {
+        if (errorDialogOpen) {
+            errorDialogRef.current?.setAttribute('open', '');
+        } else {
+            errorDialogRef.current?.removeAttribute('open');
+        }
+    }, [errorDialogOpen]);
+
+
+    useEffect(() => {
+        setTransparentBG(false);
+        setIgnoreLight(false);
+    }, [genContent]);
 
     function setCurrentGen(profile) {
         setCurrentGenProfile(profile);
         setGenContent(profile.name);
     }
 
+
     async function parseGen(res) {
         try {
-            switch (res.status) {
-                case 200:
-                    break;
-                case 400:
-                case 429:
-                    setImgSrc("");
-                    setWarnMsg(t("warning.too_fast"));
-                    return;
-                case 404:
-                case 500:
-                    setErrorMsg(t("error.failed"));
-                    return;
-                case 503:
-                    setErrorMsg(t("error.network"));
-                    return;
+            if (res.status !== 200) {
+                setErrorDialogOpen(true);
+                setImgSrc("");
+                switch (res.status) {
+                    case 400:
+                    case 429:
+                        setWarnMsg(t("warning.too_fast"));
+                        return;
+                    case 404:
+                    case 500:
+                        setErrorMsg(t("error.failed"));
+                        return;
+                    case 503:
+                        setErrorMsg(t("error.network"));
+                        return;
+                    default:
+                        setErrorMsg(t("error.unknown"));
+                        return;
+                }
             }
 
             const blob = await res.blob();
@@ -129,6 +140,7 @@ export default function App({ theme }) {
     function handleGen() {
         if (new Date().getTime() - lastGen < 3000) {
             setWarnMsg(t("warning.too_fast"));
+            snackbar({ message: t("warning.too_fast") });
             return;
         }
         setImgSrc("w")
@@ -136,7 +148,7 @@ export default function App({ theme }) {
         setWarnMsg("")
 
         const parsedBG = transparentBG ? "0x00000000" : background.replace("#", "0x");
-        const parsedLight = ignoreLight ? "0xFFFFFFFF" : light.replace("#", "0x");
+        const parsedLight = (transparentBG || ignoreLight) ? "0xFFFFFFFF" : light.replace("#", "0x");
         let args = `bg=${parsedBG}&light=${parsedLight}&head=${headSize}&x=${1 / speed * 20}&y=${pitch}`;
 
         if (slim != 0) {
@@ -154,6 +166,7 @@ export default function App({ theme }) {
     function handleDownload() {
         if (imgSrc === "" || imgSrc === "w" || errorMsg !== "") {
             setWarnMsg(t("warning.no_content"));
+            snackbar({ message: t("warning.no_content") });
             return;
         }
         const imageUrl = imgSrc;
@@ -169,215 +182,228 @@ export default function App({ theme }) {
     }
 
     function contentLeft() {
-        if (startIndex == 0) return;
-        setStartIndex(startIndex - 1)
+        if (startIndex === 0) return;
+        setStartIndex(Math.max(0, startIndex - 1));
     }
 
     function contentRight() {
-        if (startIndex == NUMBER_CONTENT - 6) return;
-        setStartIndex(startIndex + 1)
+        if (startIndex >= NUMBER_CONTENT - itemsToShow) return;
+        setStartIndex(Math.min(NUMBER_CONTENT - itemsToShow, startIndex + 1));
     }
 
     return (
-        <Stack sx={{
-            mb: 10,
-        }}>
-            <Dialog open={mobileWarningOpen} onClose={() => setMobileWarningOpen(false)} fullWidth maxWidth="sm">
-                <DialogTitle>{t("warning.title")}</DialogTitle>
-                <DialogContent>{t("warning.not_adaptive")} </DialogContent>
-                <DialogActions sx={{ px: 3, pb: 2 }}>
-                    <Button onClick={() => setMobileWarningOpen(false)}>{t("close")}</Button>
-                </DialogActions>
-            </Dialog>
+        <div className="main-container">
 
-            <Stack sx={{ mt: "3%", alignItems: "center", }} direction="row">
 
-                <button className="contentSwitcher" onClick={contentLeft}>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.0} stroke="#AAAAFF" className="contentSVG">
-                        <defs>
-                            <filter id="blur">
-                                <feGaussianBlur stdDeviation="0.5" />
-                            </filter>
-                        </defs>
-                        <path strokeLinecap="sharp" strokeLinejoin="sharp" d="M15.75 19.5 8.25 12l7.5-7.5" filter="url(#blur)" />
-                        <path strokeLinecap="sharp" strokeLinejoin="sharp" d="M15.75 19.5 8.25 12l7.5-7.5" />
-                    </svg>
-                </button>
+            <div className="options-header">
+                <mdui-button-icon
+                    onClick={contentLeft}
+                    disabled={startIndex === 0}
+                >
+                    <mdui-icon-chevron-left></mdui-icon-chevron-left>
+                </mdui-button-icon>
 
-                <Stack spacing={2} sx={{
-                    width: 0.8,
-                    background: `linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1))`,
-                    boxShadow: "2",
-                    borderRadius: 3,
-                    p: '1%',
-                    overflow: 'hidden'
+                <div style={{
+                    flex: 1,
+                    overflow: 'hidden',
+                    padding: '16px',
+                    borderRadius: '16px',
+                    backgroundColor: 'rgba(var(--mdui-color-surface-container), 0.5)'
                 }}>
-                    <Typography variant='h3'>{t("gen.title")}</Typography>
-                    <Stack spacing={2} direction="row" sx={offset}>
-                        {
-                            allContents.map((content) => (<ContentOption key={content.name} value={content} current={genContent} setValue={setCurrentGen} />))
-                        }
-                    </Stack>
-                </Stack>
-                <button className="contentSwitcher" onClick={contentRight}>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.0} stroke="#AAAAFF" className="contentSVG" >
-                        <defs>
-                            <filter id="blur">
-                                <feGaussianBlur stdDeviation="0.5" />
-                            </filter>
-                        </defs>
-                        <path strokeLinecap="sharp" strokeLinejoin="sharp" d="m8.25 4.5 7.5 7.5-7.5 7.5" filter="url(#blur)" />
-                        <path strokeLinecap="sharp" strokeLinejoin="sharp" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                    </svg>
+                    <div className="responsive-title" style={{ marginBottom: '16px', textAlign: 'left', fontWeight: 'bold' }}>
+                        {t("gen.title")}
+                    </div>
+                    <div style={{
+                        display: 'flex',
+                        gap: '16px',
+                        transition: 'transform 0.3s ease',
+                        transform: `translateX(-${startIndex * (100 / itemsToShow)}%)`,
+                        '--items-to-show': itemsToShow
+                    }}>
+                        {allContents.map((content) => (
+                            <ContentOption
+                                key={content.name}
+                                value={content}
+                                current={genContent}
+                                setValue={setCurrentGen}
+                            />
+                        ))}
+                    </div>
+                </div>
 
-                </button>
-            </Stack>
+                <mdui-button-icon
+                    onClick={contentRight}
+                    disabled={startIndex >= NUMBER_CONTENT - itemsToShow}
+                >
+                    <mdui-icon-chevron-right></mdui-icon-chevron-right>
+                </mdui-button-icon>
+            </div>
 
-            <Stack spacing={2} sx={{
-                width: 0.8,
-                mt: "3%",
-                mx: "9%",
-                background: `linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1))`,
-                boxShadow: 2,
-                borderRadius: 3,
-                p: '1%'
-            }}>
-                <Grid container spacing={2}>
-                    <Grid size={6}>
-                        <Stack >
+            <mdui-card style={{ marginTop: '24px', padding: '24px' }}>
+                <div className="config-grid">
+                    <div>
+                        <mdui-text-field
+                            label={t("gen.id")}
+                            value={userId}
+                            onInput={(e) => setUserId(e.target.value)}
+                            style={{ width: '100%', marginBottom: '16px' }}
+                        ></mdui-text-field>
 
-                            <input type="text" id="player-id" placeholder={t("gen.id")} value={userId} onChange={(e) => setUserId(e.target.value)} className="text-input" />
-
-                            <button className="gen" onClick={handleGen}>{t("gen.apply")}</button>
-
-
-                            <Divider sx={{ my: 3 }} variant="h6">
-                                <Typography variant="h6">{t("config.title")}</Typography>
-                            </Divider>
-
-
-                            <OptionItem name="bg" enable={currentGenProfile.hasBG} reset={() => { setBackground('#ffffff'); setTransparentBG(false) }}>
-                                <Stack direction="row" sx={{
-                                    justifyContent: "flex-start",
-                                    alignItems: "center",
-                                }}>
-                                    <MuiColorInput format="hex" value={background} onChange={(v) => setBackground(v)} sx={{ mr: 2 }} style={
-                                        transparentBG ? {
-                                            pointerEvents: "none",
-                                            opacity: 0.5,
-                                        } : {}
-                                    } />
-                                    <FormGroup>
-                                        <FormControlLabel control={<Checkbox checked={transparentBG} onChange={event => setTransparentBG(event.target.checked)} />} label={t("config.transparent")} />
-                                    </FormGroup>
-                                </Stack>
-                            </OptionItem>
-                            <OptionItem name="light" enabled={true} reset={() => { setLight('#ffffff'); setIgnoreLight(false) }}>
-                                <Stack direction="row" sx={{
-                                    justifyContent: "flex-start",
-                                    alignItems: "center",
-                                }}>
-                                    <MuiColorInput format="hex" value={light} onChange={(v) => setLight(v)} sx={{ mr: 2 }} style={
-                                        ignoreLight ? {
-                                            pointerEvents: "none",
-                                            opacity: 0.5,
-                                        } : {}
-                                    } />
-                                    <FormGroup>
-                                        <FormControlLabel control={<Checkbox checked={ignoreLight} onChange={event => setIgnoreLight(event.target.checked)} />} label={t("config.transparent")} />
-                                    </FormGroup>
-                                </Stack>
-                            </OptionItem>
-                            <OptionItem name="head" enable={currentGenProfile.hasHead} reset={() => setHeadSize(1)}>
-                                <Slider
-                                    min={0}
-                                    max={5}
-                                    value={headSize}
-                                    onChange={(e, v) => setHeadSize(v)}
-                                    step={0.01}
-                                    valueLabelDisplay="auto"
-                                    valueLabelFormat={(value) => `${~~(value * 100)}%`}
-                                />
-                            </OptionItem>
-                            <OptionItem name="speed" enable={currentGenProfile.hasSpeed} reset={() => setSpeed(1)}>
-                                <Slider
-                                    min={0.3}
-                                    max={5}
-                                    value={speed}
-                                    onChange={(e, v) => setSpeed(v)}
-                                    step={0.01}
-                                    valueLabelDisplay="auto"
-                                    valueLabelFormat={(value) => `${~~(value * 100)}%`}
-                                />
-                            </OptionItem>
-                            <OptionItem name="pitch" enable={currentGenProfile.hasPitch} reset={() => setPitch(0)}>
-                                <Slider
-                                    min={-90}
-                                    max={90}
-                                    value={pitch}
-                                    onChange={(e, v) => setPitch(v)}
-                                    valueLabelDisplay="auto"
-                                />
-                            </OptionItem>
-                            <OptionItem name="slim" enable={currentGenProfile.hasModel} reset={() => setSlim(0)}>
-                                <FormControl>
-                                    <RadioGroup
-                                        row
-                                        aria-labelledby="demo-row-radio-buttons-group-label"
-                                        name="row-radio-buttons-group"
-                                        defaultValue="0"
-                                        value={slim}
-                                        onChange={handleSlim}
-                                    >
-                                        <FormControlLabel value="0" control={<Radio />} label={t("model.default")} />
-                                        <FormControlLabel value="1" control={<Radio />} label={t("model.standard")} />
-                                        <FormControlLabel value="2" control={<Radio />} label={t("model.slim")} />
-                                    </RadioGroup>
-                                </FormControl>
-                            </OptionItem>
-                        </Stack>
-
-                    </Grid>
-
-                    <Grid size={6} sx={{
-                        background: `linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1))`,
-                        boxShadow: 2,
-                        borderRadius: 1,
-                        p: 2,
-                    }}
-                    >
-                        <Stack direction="row" sx={{
-                            justifyContent: "flex-start",
-                            alignItems: "center",
-                        }}>
-                            <Typography variant="h4" align="left" sx={{ my: 2 }}>{t("message.view")}</Typography>
-
-                            <button className="Btn" onClick={handleDownload}>
-                                <svg className="svgIcon" viewBox="0 0 384 512" height="1em" xmlns="http://www.w3.org/2000/svg"><path d="M169.4 470.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 370.8 224 64c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 306.7L54.6 265.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path></svg>
-                                <span className="icon2"></span>
-                                <span className="tooltip">{t("message.download")}</span>
-                            </button>
-                        </Stack>
-
-                        {warnMsg !== "" && <Alert severity="warning">{warnMsg}</Alert>}
-                        {errorMsg === "" && imgSrc !== "" && imgSrc !== "w" && <img src={imgSrc} alt="Generated Content" style={{ maxWidth: '100%', maxHeight: '50vh' }} />}
-                        {errorMsg === "" && imgSrc === "" && <Typography sx={{ my: 10 }}>{t("message.info")}</Typography>}
-                        {errorMsg === "" && imgSrc === "w" && <Typography variant="h6" sx={{ mt: 20 }}>{t("message.warn1")}</Typography>}
-                        {errorMsg === "" && imgSrc === "w" && <Typography variant="h6" sx={{ mb: 20 }}>{t("message.warn2")}</Typography>}
-                        {errorMsg !== "" && <Paper
-                            sx={{
-                                background: `linear-gradient(135deg, rgba(255, 102, 102, 0.1), rgba(162, 75, 75, 0.1))`,
-                                height: '70%',
-                                display: "grid",
-                                placeItems: "center", // centers both vertically & horizontally
-                                p: 2
-                            }}
+                        <mdui-button
+                            full-width
+                            onClick={handleGen}
+                            disabled={!userId.trim()}
+                            style={{ marginBottom: '24px' }}
                         >
-                            <Typography variant="h6" align="center" sx={{ height: '100%' }}>{errorMsg}</Typography>
-                        </Paper>}
-                    </Grid>
-                </Grid>
-            </Stack>
-        </Stack>
+                            {t("gen.apply")}
+                        </mdui-button>
+
+                        <mdui-divider style={{ marginBottom: '24px' }}></mdui-divider>
+                        <div style={{ fontSize: '1.5rem', marginBottom: '16px', fontWeight: 'bold' }}>{t("config.title")}</div>
+
+                        <OptionItem name="bg" enable={currentGenProfile.hasBG} reset={() => { setBackground('#ffffff'); setTransparentBG(false) }}>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '16px', width: '100%', justifyContent: 'space-between' }}>
+                                {!transparentBG ? (
+                                    <div className="color-input-container">
+                                        <div className="color-preview" style={{ backgroundColor: background }}>
+                                            <input
+                                                type="color"
+                                                value={background}
+                                                onChange={(e) => setBackground(e.target.value)}
+                                            />
+                                        </div>
+                                        <input
+                                            type="text"
+                                            className="hex-input"
+                                            value={background}
+                                            onChange={(e) => setBackground(e.target.value)}
+                                        />
+                                    </div>
+                                ) : <div />}
+                                <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                                    <span style={{ fontSize: '0.9rem', opacity: 0.8 }}>{t("config.transparent")}</span>
+                                    <mdui-switch
+                                        checked={transparentBG}
+                                        onChange={(e) => setTransparentBG(e.target.checked)}
+                                    ></mdui-switch>
+                                </div>
+                            </div>
+                        </OptionItem>
+
+                        <OptionItem name="light" reset={() => { setLight('#ffffff'); setIgnoreLight(false) }}>
+                            <div style={{ display: 'flex', alignItems: 'center', gap: '16px', width: '100%', justifyContent: 'space-between' }}>
+                                {(!transparentBG && !ignoreLight) ? (
+                                    <div className="color-input-container">
+                                        <div className="color-preview" style={{ backgroundColor: light }}>
+                                            <input
+                                                type="color"
+                                                value={light}
+                                                onChange={(e) => setLight(e.target.value)}
+                                            />
+                                        </div>
+                                        <input
+                                            type="text"
+                                            className="hex-input"
+                                            value={light}
+                                            onChange={(e) => setLight(e.target.value)}
+                                        />
+                                    </div>
+                                ) : <div />}
+                                <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                                    <span style={{ fontSize: '0.9rem', opacity: 0.8 }}>{t("config.transparent")}</span>
+                                    <mdui-switch
+                                        checked={ignoreLight}
+                                        onChange={(e) => setIgnoreLight(e.target.checked)}
+                                        disabled={transparentBG}
+                                    ></mdui-switch>
+                                </div>
+                            </div>
+                        </OptionItem>
+
+                        <OptionItem name="head" enable={currentGenProfile.hasHead} reset={() => setHeadSize(1)}>
+                            <mdui-slider
+                                min="0"
+                                max="500"
+                                step="1"
+                                value={headSize * 100}
+                                onInput={(e) => setHeadSize(parseFloat(e.target.value) / 100)}
+                                labelFormatter={(value) => `${Number(value)}%`}
+                                style={{ width: '100%' }}
+                            ></mdui-slider>
+                        </OptionItem>
+
+                        <OptionItem name="speed" enable={currentGenProfile.hasSpeed} reset={() => setSpeed(1)}>
+                            <mdui-slider
+                                min="0"
+                                max="500"
+                                step="1"
+                                value={speed * 100}
+                                onInput={(e) => setSpeed(parseFloat(e.target.value) / 100)}
+                                labelFormatter={(value) => `${Number(value)}%`}
+                                style={{ width: '100%' }}
+                            ></mdui-slider>
+                        </OptionItem>
+
+                        <OptionItem name="pitch" enable={currentGenProfile.hasPitch} reset={() => setPitch(90)}>
+                            <mdui-slider
+                                min="0"
+                                max="360"
+                                step="1"
+                                value={pitch}
+                                onInput={(e) => setPitch(parseFloat(e.target.value))}
+                                labelFormatter={(value) => `${Number(value)}°`}
+                                style={{ width: '100%' }}
+                            ></mdui-slider>
+                        </OptionItem>
+
+                        <OptionItem name="slim" enable={currentGenProfile.hasModel} reset={() => setSlim(0)}>
+                            <mdui-radio-group value={slim.toString()} onInput={(e) => setSlim(parseInt(e.target.value))}>
+                                <mdui-radio value="0">{t("model.default")}</mdui-radio>
+                                <mdui-radio value="1">{t("model.standard")}</mdui-radio>
+                                <mdui-radio value="2">{t("model.slim")}</mdui-radio>
+                            </mdui-radio-group>
+                        </OptionItem>
+                    </div>
+
+                    <mdui-card style={{
+                        padding: '24px',
+                        backgroundColor: 'rgba(var(--mdui-color-surface-container), 0.3)',
+                        minHeight: '400px',
+                        display: 'flex',
+                        flexDirection: 'column',
+                        width: '100%'
+                    }}>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
+                            <div className="responsive-title" style={{ fontWeight: 'bold' }}>{t("message.view")}</div>
+                            <mdui-button-icon onClick={handleDownload}>
+                                <mdui-icon-download></mdui-icon-download>
+                            </mdui-button-icon>
+                        </div>
+
+                        <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                            {imgSrc === "w" ? (
+                                <div style={{ textAlign: 'center' }}>
+                                    <mdui-circular-progress></mdui-circular-progress>
+                                    <div style={{ marginTop: '16px' }}>{t("message.warn1")}</div>
+                                    <div style={{ opacity: 0.6 }}>{t("message.warn2")}</div>
+                                </div>
+                            ) : errorMsg ? (
+                                <div style={{ color: 'rgba(var(--mdui-color-error), 1)', textAlign: 'center' }}>
+                                    <mdui-icon-error></mdui-icon-error>
+                                    <div style={{ marginTop: '8px' }}>{errorMsg}</div>
+                                </div>
+                            ) : imgSrc ? (
+                                <img src={imgSrc} alt="Generated" style={{ maxWidth: '100%', maxHeight: '400px', objectFit: 'contain' }} />
+                            ) : (
+                                <div style={{ opacity: 0.5, textAlign: 'center' }}>
+                                    <mdui-icon-image style={{ fontSize: '4rem' }}></mdui-icon-image>
+                                    <div>{t("message.info")}</div>
+                                </div>
+                            )}
+                        </div>
+                    </mdui-card>
+                </div>
+            </mdui-card>
+        </div >
     );
 }
