@@ -148,7 +148,7 @@ export default function App() {
         setWarnMsg("")
 
         const parsedBG = transparentBG ? "0x00000000" : background.replace("#", "0x");
-        const parsedLight = (transparentBG || ignoreLight) ? "0xFFFFFFFF" : light.replace("#", "0x");
+        const parsedLight = ignoreLight ? "0xFFFFFFFF" : light.replace("#", "0x");
         let args = `bg=${parsedBG}&light=${parsedLight}&head=${headSize}&x=${1 / speed * 20}&y=${pitch}`;
 
         if (slim != 0) {
@@ -263,23 +263,21 @@ export default function App() {
 
                         <OptionItem name="bg" enable={currentGenProfile.hasBG} reset={() => { setBackground('#ffffff'); setTransparentBG(false) }}>
                             <div style={{ display: 'flex', alignItems: 'center', gap: '16px', width: '100%', justifyContent: 'space-between' }}>
-                                {!transparentBG ? (
-                                    <div className="color-input-container">
-                                        <div className="color-preview" style={{ backgroundColor: background }}>
-                                            <input
-                                                type="color"
-                                                value={background}
-                                                onChange={(e) => setBackground(e.target.value)}
-                                            />
-                                        </div>
+                                <div className={`color-input-container ${transparentBG ? 'hidden' : ''}`}>
+                                    <div className="color-preview" style={{ backgroundColor: background }}>
                                         <input
-                                            type="text"
-                                            className="hex-input"
+                                            type="color"
                                             value={background}
                                             onChange={(e) => setBackground(e.target.value)}
                                         />
                                     </div>
-                                ) : <div />}
+                                    <input
+                                        type="text"
+                                        className="hex-input"
+                                        value={background}
+                                        onChange={(e) => setBackground(e.target.value)}
+                                    />
+                                </div>
                                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                                     <span style={{ fontSize: '0.9rem', opacity: 0.8 }}>{t("config.transparent")}</span>
                                     <mdui-switch
@@ -292,23 +290,21 @@ export default function App() {
 
                         <OptionItem name="light" enable={true} reset={() => { setLight('#ffffff'); setIgnoreLight(false) }}>
                             <div style={{ display: 'flex', alignItems: 'center', gap: '16px', width: '100%', justifyContent: 'space-between' }}>
-                                {!ignoreLight ? (
-                                    <div className="color-input-container">
-                                        <div className="color-preview" style={{ backgroundColor: light }}>
-                                            <input
-                                                type="color"
-                                                value={light}
-                                                onChange={(e) => setLight(e.target.value)}
-                                            />
-                                        </div>
+                                <div className={`color-input-container ${ignoreLight ? 'hidden' : ''}`}>
+                                    <div className="color-preview" style={{ backgroundColor: light }}>
                                         <input
-                                            type="text"
-                                            className="hex-input"
+                                            type="color"
                                             value={light}
                                             onChange={(e) => setLight(e.target.value)}
                                         />
                                     </div>
-                                ) : <div />}
+                                    <input
+                                        type="text"
+                                        className="hex-input"
+                                        value={light}
+                                        onChange={(e) => setLight(e.target.value)}
+                                    />
+                                </div>
                                 <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
                                     <span style={{ fontSize: '0.9rem', opacity: 0.8 }}>{t("config.transparent")}</span>
                                     <mdui-switch

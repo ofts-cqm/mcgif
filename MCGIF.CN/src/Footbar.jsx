@@ -17,9 +17,16 @@ export default function FootBar() {
     }
 
     return (
-        <mdui-bottom-app-bar style={{ padding: '16px', height: 'auto', flexDirection: 'column', gap: '8px' }}>
+        <footer style={{
+            padding: '32px 16px',
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '8px',
+            backgroundColor: 'rgba(var(--mdui-color-surface-container), 0.8)',
+            borderTop: '1px solid rgba(var(--mdui-color-outline-variant), 0.3)'
+        }}>
             <div style={{ display: 'flex', justifyContent: 'center', width: '100%', gap: '16px' }}>
-                <a href="https://mccag.cn" style={{ textDecoration: 'none', color: 'inherit' }}>
+                <a href="https://mccag.cn" style={{ textDecoration: 'none', color: 'inherit', fontWeight: 'bold' }}>
                     {t("footer.friend")}
                 </a>
             </div>
@@ -38,6 +45,6 @@ export default function FootBar() {
                     OFTS_CQM
                 </mdui-button>
             </div>
-        </mdui-bottom-app-bar>
+        </footer>
     );
 }
