@@ -15,9 +15,9 @@ export default function Root() {
 
     return (
         <StrictMode>
-            <div className="mdui-theme-auto">
+            <div className="mdui-theme-auto" style={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
                 <HeaderBar />
-                <main className="main-content" style={{ minHeight: 'calc(100vh - 176px)', padding: '20px' }}>
+                <main className="main-content" style={{ flex: 1, padding: '20px' }}>
                     <App />
                 </main>
                 <Footbar />

@@ -276,8 +276,16 @@ body {
     padding: 6px 12px;
     border-radius: 8px;
     border: 1px solid rgba(var(--mdui-color-outline-variant), 0.5);
-    width: fit-content;
-    transition: border-color 0.3s;
+    width: 142px;
+    height: 42px;
+    box-sizing: border-box;
+    transition: border-color 0.3s, opacity 0.3s, visibility 0.3s;
+}
+
+.color-input-container.hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
 }
 
 .color-input-container:focus-within {
@@ -318,7 +326,7 @@ body {
 }
 
 .main-container {
-    max-width: 1200px;
+    max-width: 80%;
     margin: 0 auto;
     padding: 0 16px;
     box-sizing: border-box;
@@ -345,6 +353,7 @@ body {
     }
 
     .main-container {
+        max-width: 100%;
         padding: 0 8px;
     }
 }

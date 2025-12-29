@@ -6,7 +6,6 @@
   "error.failed": "生成失败！请确认输入ID为正版账号！",
   "error.network": "服务器连接失败，请稍后再试",
   "error.unknown": "一个未知的错误出现了，请稍后再试",
-  "error.dialog_title": "错误",
   "gen.title": "请选择生成内容",
   "gen.sneak": "打招呼",
   "gen.sk": "模型",
