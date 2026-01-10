@@ -165,12 +165,16 @@ export default function App() {
 
     async function handleRefresh() {
         try {
-            await fetch(`/refresh/name/${userId}`)
+            const res = await fetch(`/refresh/name/${userId}`)
+            if (res.status !== 204) {
+                setErrorMsg(t("error.refresh_failed"));
+                return;
+            }
         } catch {
             setErrorMsg(t("error.refresh_failed"));
             return;
         }
-        //handleGen();
+        handleGen();
     }
 
     function handleDownload() {
