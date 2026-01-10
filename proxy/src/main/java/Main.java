@@ -26,6 +26,23 @@ public class Main {
             });
         }).start(Config.LISTEN_PORT);
 
+        app.get("/refresh/name/{name}", ctx -> {
+            String url = SKIN_VIEWER_BASE + "/refresh/name/" + ctx.pathParam("name");
+
+            Request request = new Request.Builder().url(url).build();
+
+            try (Response response = client.newCall(request).execute()) {
+                if (!response.isSuccessful() || response.body() == null) {
+                    ctx.status(500).result("Skin viewer error");
+                    return;
+                }
+                response.close();
+                ctx.status(204).result("Reload Successful");
+            } catch (ConnectException e){
+                ctx.status(503).result("Failed to connect to target API");
+            }
+        });
+
         app.get("/api/render", ctx -> {
             long now = System.currentTimeMillis();
             AtomicBoolean allowed = new AtomicBoolean(true);

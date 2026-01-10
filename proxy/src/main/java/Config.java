@@ -1,6 +1,4 @@
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 import java.util.Properties;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -20,6 +18,7 @@ public final class Config {
         Properties props = new Properties();
         try (InputStream in = new FileInputStream("application.properties")){
             props.load(in);
+        } catch (FileNotFoundException ignored){
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

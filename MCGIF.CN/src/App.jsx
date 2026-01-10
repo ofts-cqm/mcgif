@@ -163,6 +163,16 @@ export default function App() {
         fetch(`/render/name/${userId}/${genContent}?${args}`).then(parseGen);
     }
 
+    async function handleRefresh() {
+        try {
+            await fetch(`/refresh/name/${userId}`)
+        } catch {
+            setErrorMsg(t("error.refresh_failed"));
+            return;
+        }
+        //handleGen();
+    }
+
     function handleDownload() {
         if (imgSrc === "" || imgSrc === "w" || errorMsg !== "") {
             setWarnMsg(t("warning.no_content"));
@@ -395,6 +405,13 @@ export default function App() {
                                     <div>{t("message.info")}</div>
                                 </div>
                             )}
+                        </div>
+
+                        <div style={{ display: 'flex', alignItems: 'center' }}>
+                            <div>{t("message.refresh")}</div>
+                            <mdui-button-icon onClick={handleRefresh}>
+                                <mdui-icon-refresh></mdui-icon-refresh>
+                            </mdui-button-icon>
                         </div>
                     </mdui-card>
                 </div>
