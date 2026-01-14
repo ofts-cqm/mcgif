@@ -1,20 +1,10 @@
 ﻿import { useTranslation } from 'react-i18next';
-import { snackbar } from 'mdui/functions/snackbar';
 
 export default function FootBar() {
     const { t } = useTranslation();
 
-    function AayongClicked() {
-        navigator.clipboard.writeText("599005767").then(() => {
-            snackbar({ message: t("footer.aayong") });
-        })
-    }
-
-    function OFTSClicked() {
-        navigator.clipboard.writeText("qianmuchen.sam@gmail.com").then(() => {
-            snackbar({ message: t("footer.ofts") });
-        });
-    }
+    // 已删除：AayongClicked 函数
+    // 已删除：OFTSClicked 函数
 
     return (
         <footer style={{
@@ -36,14 +26,18 @@ export default function FootBar() {
             </div>
 
             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '12px', fontSize: '0.9rem' }}>
-                <span>{t("footer.contact")}</span>
-                <mdui-button variant="text" onClick={AayongClicked} style={{ minWidth: 'auto', padding: '0 4px' }}>
-                    Aayong
-                </mdui-button>
-                <div style={{ width: '1px', height: '12px', backgroundColor: 'currentColor', opacity: 0.3 }}></div>
-                <mdui-button variant="text" onClick={OFTSClicked} style={{ minWidth: 'auto', padding: '0 4px' }}>
-                    OFTS_CQM
-                </mdui-button>
+                {/* 核心修改：将文本包裹在a标签中，并设置链接和样式 */}
+                <a 
+                    href="https://www.mcnav.net/" 
+                    style={{ textDecoration: 'none', color: 'inherit' }}
+                    target="_blank"  // 可选：在新标签页打开链接
+                    rel="noopener noreferrer"  // 安全属性，配合target="_blank"使用
+                >
+                    {t("footer.contact")}
+                </a>
+                {/* 已删除：Aayong 对应的 mdui-button */}
+                {/* 已删除：垂直分隔线 div */}
+                {/* 已删除：OFTS_CQM 对应的 mdui-button */}
             </div>
         </footer>
     );
