@@ -9,7 +9,10 @@ export default function ContentOption({ value, current, setValue }) {
             clickable
             onClick={() => setValue(value)}
             style={{
-                padding: '12px',
+                // 新增：设置一行展示6张卡片
+                '--items-to-show': 6,
+                // 可选：微调内边距，让缩小后的卡片更美观（原来12px，可改小一点）
+                padding: '8px',
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
@@ -36,7 +39,8 @@ export default function ContentOption({ value, current, setValue }) {
                 }}
             />
             <div style={{
-                fontSize: '1.2rem',
+                // 可选：微调字体大小，适配缩小后的卡片（原来1.2rem，可改小）
+                fontSize: '1rem',
                 fontWeight: isSelected ? 'bold' : 'normal',
                 textAlign: 'center'
             }}>

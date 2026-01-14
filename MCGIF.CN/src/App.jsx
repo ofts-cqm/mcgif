@@ -8,12 +8,12 @@ import { snackbar } from 'mdui/functions/snackbar';
 import sneak from './assets/sneak.gif'
 import sk from './assets/sk.png'
 import dsk from './assets/dsk.gif'
-import head from './assets/head.png'
-import dhead from './assets/dhead.gif'
 import homo from './assets/homo.png'
 import hip from './assets/hip.gif'
 import temple from './assets/temple.png'
 import trump from './assets/trump.png'
+import head from './assets/head.png'
+import dhead from './assets/dhead.gif'
 import litang from './assets/litang.png'
 
 class GenContentProfile {
@@ -30,15 +30,15 @@ class GenContentProfile {
 
 const allContents = [
     new GenContentProfile(sneak, 'sneak', true, true, true, false, true),
-    new GenContentProfile(hip, 'hip', true, true, true, false, true),
-    new GenContentProfile(sk, 'sk', true, true, false, false, true),
     new GenContentProfile(dsk, 'dsk', true, true, true, true, true),
-    new GenContentProfile(head, 'head', false, true, false, false, false),
-    new GenContentProfile(dhead, 'dhead', false, true, true, true, false),
-    new GenContentProfile(homo, 'homo', false, true, false, false, true),
+    new GenContentProfile(sk, 'sk', true, true, false, false, true),
     new GenContentProfile(trump, 'trump', false, true, false, false, true),
+    new GenContentProfile(homo, 'homo', false, true, false, false, true),
     new GenContentProfile(temple, 'temple', false, true, false, false, true),
-    new GenContentProfile(litang, 'litang', false, true, false, false, true)
+    new GenContentProfile(litang, 'litang', false, true, false, false, true),
+    new GenContentProfile(dhead, 'dhead', false, true, true, true, false),
+    new GenContentProfile(head, 'head', false, true, false, false, false),
+    new GenContentProfile(hip, 'hip', true, true, true, false, true),
 ]
 
 export default function App() {
@@ -159,8 +159,8 @@ export default function App() {
             args += "&duration=" + (Math.round((100 / speed) / 10) * 10).toString();
         } else args += "&duration=100"
 
-        //fetch(`/api/render/?name=${userId}&pose=${genContent}&${args}`).then(parseGen);
-        fetch(`/render/name/${userId}/${genContent}?${args}`).then(parseGen);
+        fetch(`/api/render/?name=${userId}&pose=${genContent}&${args}`).then(parseGen);
+        //fetch(`/render/name/${userId}/${genContent}?${args}`).then(parseGen);
     }
 
     async function handleRefresh() {
