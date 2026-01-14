@@ -165,6 +165,7 @@ export default function App() {
 
     async function handleRefresh() {
         try {
+            if (userId.trim() === "") return;
             const res = await fetch(`/refresh/name/${userId}`)
             if (res.status !== 204) {
                 setErrorMsg(t("error.refresh_failed"));
