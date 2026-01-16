@@ -43,9 +43,9 @@
   "about": "关于本站",
   "language": "语言",
   "footer.dev": "404E | OFTS_CQM | Regu_Miabyss |  Aayong",
-  "footer.contact": "MCNAV导航网",
-  "footer.friend": "MCCAG头像网",
-  "footer.aayong": "已复制阿永QQ：599005767",
-  "footer.ofts": "已复制OFTS邮箱：qianmuchen.sam@gmail.com",
+  "footer.disclaimer": "Minecraft是 Mojang Synergies AB 的商标。我们与 Mojang 没有任何关联",
+  "footer.friends.mcnav": "MCNAV导航网",
+  "footer.friends.mccag": "MCCAG头像网",
+  "footer.friends.sounds": "McCounds",
   "title": "MCGIF.CN｜MC动图网  (让你的皮肤动起来~)"
 }

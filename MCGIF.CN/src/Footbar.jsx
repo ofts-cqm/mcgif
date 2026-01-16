@@ -17,10 +17,10 @@ export default function FootBar() {
                 <a
                     href="https://www.mcnav.net/"
                     style={{ textDecoration: 'none', color: 'inherit' }}
-                    target="_blank"  // 可选：在新标签页打开链接
-                    rel="noopener noreferrer"  // 安全属性，配合target="_blank"使用
+                    target="_blank"  
+                    rel="noopener noreferrer"  
                 >
-                    {t("footer.contact")}
+                    {t("footer.friends.mcnav")}
                 </a>
 
                 <a href="https://mccag.cn" 
@@ -28,8 +28,20 @@ export default function FootBar() {
                     target="_blank"  // 可选：在新标签页打开链接
                     rel="noopener noreferrer"  // 安全属性，配合target="_blank"使用>
                 >
-                    {t("footer.friend")}
+                    {t("footer.friends.mccag")}
                 </a>
+
+                <a href="https://o.xbottle.top/mcsounds/"
+                    style={{ textDecoration: 'none', color: 'inherit' }}
+                    target="_blank"  // 可选：在新标签页打开链接
+                    rel="noopener noreferrer"  // 安全属性，配合target="_blank"使用>
+                >
+                    {t("footer.friends.sounds")}
+                </a>
+            </div>
+
+            <div style={{ textAlign: 'center', fontSize: '0.9rem', opacity: 0.8 }}>
+                {t("footer.disclaimer")}
             </div>
 
             <div style={{ textAlign: 'center', fontSize: '0.9rem', opacity: 0.8 }}>
