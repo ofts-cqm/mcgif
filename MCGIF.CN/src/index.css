@@ -1,8 +1,21 @@
-:root {
-  font-family: 'Unifont', system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  color-scheme: light dark;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "tailwindcss";
+
+
+@font-face {
+  font-family: "Pixel";
+  src: url("./assets/font.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Unifont";
+  src: url("./assets/unifont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 body {
@@ -10,8 +23,6 @@ body {
   padding: 0;
   min-width: 320px;
   min-height: 100vh;
-  background-color: rgb(var(--mdui-color-background));
-  color: rgb(var(--mdui-color-on-background));
 }
 
 #root {
