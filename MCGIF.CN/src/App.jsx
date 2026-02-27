@@ -683,6 +683,9 @@ export default function App() {
                 <footer className={`border-t mt-12 py-12 transition-colors duration-300 ${isDark ? 'border-slate-800 bg-slate-900' : 'border-slate-200 bg-white'}`}>
                     <div className="max-w-7xl mx-auto px-4 text-center space-y-6">
                         <div className={`flex justify-center gap-8 text-sm font-medium ${isDark ? 'text-slate-400' : 'text-slate-500'}`}>
+                            <a href="https://www.cko.cc/" target="_blank" rel="noopener noreferrer" className={`transition-colors ${isDark ? 'hover:text-emerald-400' : 'hover:text-emerald-600'}`}>
+                                {t('footer.ckocc')}
+                            </a>
                             <a href="https://www.mcnav.net/" target="_blank" rel="noopener noreferrer" className={`transition-colors ${isDark ? 'hover:text-emerald-400' : 'hover:text-emerald-600'}`}>
                                 {t('footer.friends.mcnav')}
                             </a>

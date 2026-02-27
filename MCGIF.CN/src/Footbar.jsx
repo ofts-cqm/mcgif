@@ -2,7 +2,8 @@
 
 export default function FootBar() {
     const { t } = useTranslation();
-
+    return ("test")
+/*
     return (
         <footer style={{
             padding: '32px 16px',
@@ -13,14 +14,13 @@ export default function FootBar() {
             borderTop: '1px solid rgba(var(--mdui-color-outline-variant), 0.3)'
         }}>
             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '12px', fontSize: '0.9rem' }}>
-                {/* 核心修改：将文本包裹在a标签中，并设置链接和样式 */}
                 <a
                     href="https://www.cko.cc"
                     style={{ textDecoration: 'none', color: 'inherit' }}
                     target="_blank"  
                     rel="noopener noreferrer"  
                 >
-                    {t("footer.friends.ckocc")}
+                    {t("footer.ckocc")}
                 </a>
 
                 <a
@@ -57,5 +57,5 @@ export default function FootBar() {
                 {t("footer.dev")}
             </div>
         </footer>
-    );
+    );*/
 }
