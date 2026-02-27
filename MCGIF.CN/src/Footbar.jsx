@@ -15,6 +15,15 @@ export default function FootBar() {
             <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '12px', fontSize: '0.9rem' }}>
                 {/* 核心修改：将文本包裹在a标签中，并设置链接和样式 */}
                 <a
+                    href="https://www.cko.cc"
+                    style={{ textDecoration: 'none', color: 'inherit' }}
+                    target="_blank"  
+                    rel="noopener noreferrer"  
+                >
+                    {t("footer.friends.ckocc")}
+                </a>
+
+                <a
                     href="https://www.mcnav.net/"
                     style={{ textDecoration: 'none', color: 'inherit' }}
                     target="_blank"  
