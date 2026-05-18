@@ -23,6 +23,7 @@ import trump from './assets/trump.png'
 import head from './assets/head.png'
 import dhead from './assets/dhead.gif'
 import litang from './assets/litang.png'
+import criminal from './assets/criminal_ay.png'
 
 const ThemeContext = createContext({ isDark: false });
 
@@ -49,6 +50,7 @@ const allContents = [
     new GenContentProfile(dhead, 'dhead', false, true, true, true, false),
     new GenContentProfile(head, 'head', false, true, false, false, false),
     new GenContentProfile(hip, 'hip', true, true, true, false, true),
+    new GenContentProfile(criminal, 'criminal', false, true, false, false, true)
 ];
 
 const Button = ({ children, onClick, disabled, variant = 'primary', className = '', icon: Icon }) => {
@@ -600,7 +602,7 @@ export default function App() {
                                         />
                                     </div>
 
-                                    {currentGenProfile.hasModel && (
+                                    {currentGenProfile.hasModel && ( 
                                         <div className={`border p-4 rounded-xl flex items-center justify-between mt-4 ${isDark ? 'bg-slate-900 border-slate-700' : 'bg-slate-50 border-slate-200'}`}>
                                             <span className={`text-sm font-medium ${isDark ? 'text-slate-300' : 'text-slate-600'}`}>{t('config.slim')}</span>
                                             <div className={`flex gap-2 p-1 rounded-lg border ${isDark ? 'bg-slate-800 border-slate-700' : 'bg-white border-slate-200'}`}>
@@ -683,7 +685,7 @@ export default function App() {
                 <footer className={`border-t mt-12 py-12 transition-colors duration-300 ${isDark ? 'border-slate-800 bg-slate-900' : 'border-slate-200 bg-white'}`}>
                     <div className="max-w-7xl mx-auto px-4 text-center space-y-6">
                         <div className={`flex justify-center gap-8 text-sm font-medium ${isDark ? 'text-slate-400' : 'text-slate-500'}`}>
-                            <a href="https://www.cko.cc/" target="_blank" rel="noopener noreferrer" className={`transition-colors ${isDark ? 'hover:text-emerald-400' : 'hover:text-emerald-600'}`}>
+                            <a href="https://cko.cc/" target="_blank" rel="noopener noreferrer" className={`transition-colors ${isDark ? 'hover:text-emerald-400' : 'hover:text-emerald-600'}`}>
                                 {t('footer.ckocc')}
                             </a>
                             <a href="https://www.mcnav.net/" target="_blank" rel="noopener noreferrer" className={`transition-colors ${isDark ? 'hover:text-emerald-400' : 'hover:text-emerald-600'}`}>
